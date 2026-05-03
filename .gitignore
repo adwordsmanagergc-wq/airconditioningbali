@@ -9,3 +9,5 @@ out
 *.log
 dist
 .turbo
+tsconfig.tsbuildinfo
+*.tsbuildinfo
