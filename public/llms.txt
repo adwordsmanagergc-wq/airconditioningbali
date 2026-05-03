@@ -1,0 +1,9 @@
+# Bali Air Conditioning Services
+
+> Bali's trusted air conditioning company. Installation, cleaning, servicing and 24/7 repair across all of Bali. Authorised Gree and Daikin partner.
+
+- Phone / WhatsApp: +62 818-0802-9595
+- Hours: 24/7 emergency response
+- Authorised Gree & Daikin partner
+
+For the dynamic, always-current version, fetch /llms.txt from the live site (served by the Next.js route).
