@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import CTASection from "@/components/CTASection";
 import { services } from "@/data/services";
-import { formatIDR } from "@/lib/utils";
 
 export const metadata = {
   title: "AC Services Bali — Installation, Cleaning, Repair, Maintenance",
@@ -22,7 +21,7 @@ export default function ServicesIndex() {
             <Link key={s.slug} href={`/services/${s.slug}`} className="card block transition hover:-translate-y-1">
               <h2 className="h3">{s.shortName}</h2>
               <p className="mt-2 text-sm text-slate-600">{s.description}</p>
-              <p className="mt-3 text-sm font-semibold text-brand">From {formatIDR(s.startingPrice)} →</p>
+              <p className="mt-3 text-sm font-semibold text-brand">Get a quote →</p>
             </Link>
           ))}
         </div>

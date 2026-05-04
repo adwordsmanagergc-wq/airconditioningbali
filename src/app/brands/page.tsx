@@ -6,7 +6,7 @@ import { brands } from "@/data/brands";
 
 export const metadata = {
   title: "AC Brands Bali — Authorised Gree & Daikin Supplier",
-  description: "Authorised Gree and Daikin air conditioning supplier and installer in Bali. Compare warranty, price, and best-fit use cases for your villa, apartment or business.",
+  description: "Authorised Gree and Daikin air conditioning supplier and installer in Bali. Compare warranty and best-fit use cases for your villa, apartment or business.",
   alternates: { canonical: "/brands" },
 };
 
@@ -21,7 +21,7 @@ export default function BrandsIndex() {
             <Link key={b.slug} href={`/brands/${b.slug}`} className="card block transition hover:-translate-y-1">
               <h2 className="h3">{b.name}</h2>
               <p className="mt-2 text-sm text-slate-600">{b.tagline}</p>
-              <p className="mt-3 text-sm font-semibold text-brand">{b.priceRange} →</p>
+              <p className="mt-3 text-sm font-semibold text-brand">See {b.name} range →</p>
             </Link>
           ))}
         </div>

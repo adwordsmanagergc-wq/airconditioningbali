@@ -10,7 +10,7 @@ export default function OrganizationSchema() {
     image: `${site.url}/images/og/default.jpg`,
     telephone: site.phoneE164,
     email: site.email,
-    priceRange: "IDR 200,000–IDR 30,000,000",
+    priceRange: "$$",
     address: {
       "@type": "PostalAddress",
       streetAddress: site.address.street,

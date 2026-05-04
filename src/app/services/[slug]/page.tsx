@@ -13,7 +13,6 @@ import { areas } from "@/data/areas";
 import { brands } from "@/data/brands";
 import { installationFaqs, cleaningFaqs, repairFaqs, servicingFaqs, villaFaqs, commercialFaqs, homeFaqs } from "@/data/faqs";
 import { site, waLink } from "@/lib/site";
-import { formatIDR } from "@/lib/utils";
 import { Check } from "lucide-react";
 
 const faqMap: Record<string, typeof homeFaqs> = {
@@ -54,7 +53,6 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
     provider: { "@type": "HVACBusiness", name: site.name, telephone: site.phoneE164, url: site.url },
     areaServed: { "@type": "AdministrativeArea", name: "Bali, Indonesia" },
     description: s.description,
-    offers: { "@type": "Offer", price: s.startingPrice, priceCurrency: "IDR" },
   };
 
   return (
@@ -67,7 +65,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
         <div className="container-prose grid items-start gap-10 md:grid-cols-[2fr_1fr]">
           <div className="space-y-6">
             <QuickAnswer>{s.quickAnswer}</QuickAnswer>
-            <p className="text-slate-700"><strong>TL;DR:</strong> {s.shortName.toLowerCase()} from {formatIDR(s.startingPrice)} ({s.startingPriceLabel.toLowerCase()}). Same-day in South Bali, next-day across the rest of the island. Authorised Gree &amp; Daikin partner. WhatsApp <a className="font-semibold text-brand" href={waLink(`Hi, I'd like a quote for ${s.shortName} in Bali.`)}>{site.phone}</a> for a fixed quote.</p>
+            <p className="text-slate-700"><strong>TL;DR:</strong> {s.shortName.toLowerCase()} across Bali — same-day in South Bali, next-day across the rest of the island. Authorised Gree &amp; Daikin partner. WhatsApp <a className="font-semibold text-brand" href={waLink(`Hi, I'd like a quote for ${s.shortName} in Bali.`)}>{site.phone}</a> for a fixed quote.</p>
 
             <div>
               <h2 className="h2">What&rsquo;s included</h2>
@@ -94,8 +92,11 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             </div>
 
             <div>
-              <h2 className="h2">Pricing</h2>
-              <p className="mt-2 text-slate-700">Starts at <strong className="text-brand">{formatIDR(s.startingPrice)}</strong> — {s.startingPriceLabel}. Final quote depends on number of units, brand, pipe length and accessibility. We send a fixed total on WhatsApp before any visit.</p>
+              <h2 className="h2">How to get a quote</h2>
+              <p className="mt-2 text-slate-700">Every job is quoted as a fixed total before we send a technician — no callout fees, no hourly meter. WhatsApp us a photo of the unit or room, your area in Bali, and the number of units. We reply within 15 minutes with a fixed price and the next available slot.</p>
+              <div className="mt-3 flex flex-wrap gap-3">
+                <a href={waLink(`Hi, I'd like a quote for ${s.shortName} in Bali.`)} target="_blank" rel="noopener noreferrer" className="btn-whatsapp">WhatsApp for a quote</a>
+              </div>
             </div>
 
             <div>

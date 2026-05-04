@@ -11,7 +11,7 @@ export async function GET() {
 
   lines.push(`# ${site.name}`);
   lines.push("");
-  lines.push("> Bali's trusted air conditioning company. Installation, cleaning, servicing and 24/7 repair across all of Bali. Authorised Gree and Daikin partner. Same-day service in South Bali; coverage of 40+ areas including Canggu, Seminyak, Uluwatu, Ubud, Sanur and the Nusa islands.");
+  lines.push("> Bali's trusted air conditioning company. Installation, cleaning, servicing and 24/7 repair across all of Bali. Authorised Gree and Daikin partner. Same-day service in South Bali; coverage of 40+ areas including Canggu, Seminyak, Uluwatu, Ubud, Sanur and the Nusa islands. Quotes are fixed-fee and sent on WhatsApp within 15 minutes.");
   lines.push("");
   lines.push(`- Phone / WhatsApp: ${site.phone}`);
   lines.push(`- Hours: ${site.hours}`);
@@ -44,17 +44,8 @@ export async function GET() {
   }
   lines.push("");
 
-  lines.push("## Pricing summary (Bali, IDR)");
-  lines.push("- AC chemical wash: from IDR 250,000 per indoor unit");
-  lines.push("- Scheduled servicing: from IDR 200,000 per unit");
-  lines.push("- AC repair diagnosis + minor fix: from IDR 350,000");
-  lines.push("- Standard 1 PK split installation (labour only): from IDR 850,000");
-  lines.push("- New Gree 1 PK inverter supplied + installed: from IDR 4,200,000");
-  lines.push("- New Daikin 1 PK inverter supplied + installed: from IDR 5,800,000");
-  lines.push("- Villa maintenance contract (4-bed, 6 units): from IDR 1,500,000 / quarter");
-  lines.push("");
-
   lines.push("## Frequently asked");
+  lines.push("- How to get a quote: WhatsApp +62 818-0802-9595 with a photo of the room or unit and your area in Bali. Reply with a fixed-fee quote within 15 minutes.");
   lines.push("- Best AC brand for Bali: Gree for value, Daikin for premium / quietest.");
   lines.push("- AC cleaning frequency in Bali: every 3 months minimum, every 6–8 weeks for beachfront and short-stay villas.");
   lines.push("- AC sizing in Bali: ~600 BTU per m² for bedrooms, ~700 BTU per m² for living rooms with high ceilings or west-facing glass.");

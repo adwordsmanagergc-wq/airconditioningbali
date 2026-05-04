@@ -12,7 +12,6 @@ import LocalBusinessSchema from "@/components/schema/LocalBusinessSchema";
 import { areas, getArea } from "@/data/areas";
 import { services } from "@/data/services";
 import { site, waLink } from "@/lib/site";
-import { formatIDR } from "@/lib/utils";
 
 export function generateStaticParams() {
   return areas.map((a) => ({ slug: a.slug }));
@@ -22,7 +21,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const a = getArea(params.slug);
   if (!a) return {};
   const title = `Air Conditioning ${a.name}, Bali — AC Service, Installation & Repair`;
-  const description = `Air conditioning services in ${a.name}, Bali. Same-day AC installation, cleaning and 24/7 repair. Authorised Gree & Daikin partner. WhatsApp quotes from ${site.phone}.`;
+  const description = `Air conditioning services in ${a.name}, Bali. Same-day AC installation, cleaning and 24/7 repair. Authorised Gree & Daikin partner. WhatsApp ${site.phone} for a fixed quote.`;
   return {
     title,
     description: description.slice(0, 158),
@@ -94,11 +93,11 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
   const neighbours = a.neighbours.map((slug) => areas.find((x) => x.slug === slug)).filter(Boolean) as typeof areas;
 
   const areaFaqs = [
-    { q: `How much does AC installation cost in ${a.name}?`, a: `AC installation in ${a.name} starts from IDR 850,000 for a standard 1 PK split with up to 4m of pipe. A new Gree 1 PK inverter supplied and installed in ${a.name} starts from IDR 4,200,000; a Daikin equivalent from IDR 5,800,000. We give a fixed quote on WhatsApp before any visit.` },
+    { q: `How do I get a quote for AC services in ${a.name}?`, a: `WhatsApp us at ${site.phone} with a photo of the room or unit, plus what you need (install, clean, fix, new system). We reply within 15 minutes with a fixed quote — no callout fees and no hourly meter.` },
     { q: `Can you service AC the same day in ${a.name}?`, a: `${a.responseTime} for ${a.name}. ${a.region === "South Bali" ? "We have technicians based in Canggu and Kerobokan who cover South Bali same day, usually within 2 hours of a midday booking." : a.region === "Bukit Peninsula" ? "Our Bukit van covers Uluwatu, Ungasan, Pecatu, Bingin, Balangan, Jimbaran and Nusa Dua same day from a single base." : a.region === "Central Bali" ? "Ubud and central Bali bookings made before midday are usually done same day; otherwise next day." : "Visits are scheduled — we batch our route to keep the cost reasonable for clients in this region."}` },
     { q: `How often should AC be cleaned in ${a.name}?`, a: `Every 3 months minimum. ${a.region === "Bukit Peninsula" || a.region === "East Bali" || a.region === "Nusa Islands" ? `${a.name} sits in a heavy salt-air zone, so we strongly recommend every 6–8 weeks for short-stay villas and beach clubs.` : a.region === "Central Bali" ? `${a.name}'s humidity drives mould growth fast — short-stay villas should clean every 6–8 weeks.` : `Beach-club units, beachfront villas and high-occupancy short-stay rentals in ${a.name} should clean every 6–8 weeks.`}` },
     { q: `What's the most common AC problem in ${a.name}?`, a: `${issues[0]}. Closely followed by ${issues[1].toLowerCase()}. We see these every week in ${a.name} and carry the parts to fix on the same visit.` },
-    { q: `Do you handle villa maintenance contracts in ${a.name}?`, a: `Yes — many of our villa-package clients are based in ${a.name}. A 4-bedroom villa with 6 AC units is IDR 1,500,000 per quarter, all in. Includes scheduled visits, photo reports, priority same-day breakdown response and discounted parts.` },
+    { q: `Do you handle villa maintenance contracts in ${a.name}?`, a: `Yes — many of our villa-package clients are based in ${a.name}. Contracts include scheduled visits, photo reports, priority same-day breakdown response and an annual deep chemical wash on every unit. Send us a unit count for a fixed monthly or quarterly quote.` },
     { q: `Do you install Gree and Daikin in ${a.name}?`, a: `Yes — we are the authorised Gree and Daikin installer for ${a.name}. New units are registered under your name with the manufacturer for full warranty: 5-year compressor on Gree, 3-year compressor on Daikin.` },
   ];
 
@@ -115,7 +114,7 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
         <div className="container-prose grid items-start gap-10 md:grid-cols-[2fr_1fr]">
           <div className="space-y-6">
             <QuickAnswer>
-              We provide air conditioning installation, chemical cleaning, scheduled servicing and 24/7 repair across {a.name}, Bali. {a.responseTime}. AC cleaning starts at IDR 250,000 per unit; new Gree splits from IDR 4.2M installed; Daikin from IDR 5.8M. WhatsApp <a className="font-semibold text-brand" href={waLink(`Hi, I'd like a quote for AC services in ${a.name}.`)}>{site.phone}</a> for a fixed quote.
+              We provide air conditioning installation, chemical cleaning, scheduled servicing and 24/7 repair across {a.name}, Bali. {a.responseTime}. Authorised Gree &amp; Daikin partner. WhatsApp <a className="font-semibold text-brand" href={waLink(`Hi, I'd like a quote for AC services in ${a.name}.`)}>{site.phone}</a> for a fixed quote.
             </QuickAnswer>
             <p className="text-slate-700"><strong>TL;DR:</strong> full AC service in {a.name} — install, clean, fix. {a.responseTime}. Authorised Gree &amp; Daikin partner.</p>
 
@@ -139,7 +138,7 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
                 {services.map((s) => (
                   <Link key={s.slug} href={`/services/${s.slug}`} className="card block transition hover:-translate-y-1">
                     <h3 className="text-base font-semibold">{s.shortName} in {a.name}</h3>
-                    <p className="mt-1 text-sm text-slate-600">From {formatIDR(s.startingPrice)}</p>
+                    <p className="mt-1 text-sm text-slate-600">Get a fixed quote on WhatsApp →</p>
                   </Link>
                 ))}
               </div>
@@ -162,21 +161,10 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
             </div>
 
             <div>
-              <h2 className="h2">Sample pricing in {a.name}</h2>
-              <div className="mt-4 overflow-x-auto rounded-2xl border border-slate-100">
-                <table className="min-w-full divide-y divide-slate-100 text-sm">
-                  <thead className="bg-brand/5 text-left">
-                    <tr><th className="px-4 py-3 font-semibold">Job</th><th className="px-4 py-3 font-semibold">Starting price</th></tr>
-                  </thead>
-                  <tbody className="divide-y divide-slate-100 bg-white">
-                    {services.map((s) => (
-                      <tr key={s.slug}>
-                        <td className="px-4 py-3"><Link className="hover:text-brand" href={`/services/${s.slug}`}>{s.shortName}</Link></td>
-                        <td className="px-4 py-3 font-semibold text-brand">{formatIDR(s.startingPrice)}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+              <h2 className="h2">How to get a quote in {a.name}</h2>
+              <p className="mt-2 text-slate-700">Every job is fixed-fee and quoted upfront — no callout charge and no hourly meter. WhatsApp us a photo of the unit or room, and we&rsquo;ll come back within 15 minutes with a fixed total and the next available slot in {a.name}.</p>
+              <div className="mt-3 flex flex-wrap gap-3">
+                <a href={waLink(`Hi, I'd like a quote for AC services in ${a.name}.`)} target="_blank" rel="noopener noreferrer" className="btn-whatsapp">WhatsApp for a quote</a>
               </div>
             </div>
 
@@ -184,7 +172,7 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
               <h2 className="h2">Why locals in {a.name} choose us</h2>
               <ul className="mt-3 grid gap-2 text-sm text-slate-700">
                 <li>• Authorised Gree and Daikin partner with manufacturer warranty registered under your name</li>
-                <li>• Fixed-price quotes on WhatsApp — no callout fees, no hourly meter</li>
+                <li>• Fixed-fee quotes on WhatsApp — no callout charge, no hourly meter</li>
                 <li>• English-speaking technicians and photo reports, perfect for absentee villa owners</li>
                 <li>• 24/7 emergency response for breakdowns in {a.name}</li>
                 <li>• 90-day workmanship warranty on every repair, 12-month on every install</li>

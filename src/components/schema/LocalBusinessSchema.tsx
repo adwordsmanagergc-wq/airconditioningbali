@@ -18,7 +18,7 @@ export default function LocalBusinessSchema({
     url,
     telephone: site.phoneE164,
     image: `${site.url}/images/og/default.jpg`,
-    priceRange: "IDR 200,000–IDR 30,000,000",
+    priceRange: "$$",
     address: {
       "@type": "PostalAddress",
       addressLocality: areaName || site.address.city,

@@ -38,13 +38,6 @@ export default function BrandPage({ params }: { params: { slug: string } }) {
     name: m.name,
     brand: { "@type": "Brand", name: b.name },
     description: `${m.type} — ${m.capacity}. ${m.bestFor}`,
-    offers: {
-      "@type": "Offer",
-      price: m.price.replace(/[^0-9]/g, ""),
-      priceCurrency: "IDR",
-      availability: "https://schema.org/InStock",
-      seller: { "@type": "Organization", name: site.name },
-    },
   }));
 
   return (
@@ -57,7 +50,7 @@ export default function BrandPage({ params }: { params: { slug: string } }) {
         <div className="container-prose grid items-start gap-10 md:grid-cols-[2fr_1fr]">
           <div className="space-y-6">
             <QuickAnswer>{b.quickAnswer}</QuickAnswer>
-            <p className="text-slate-700"><strong>TL;DR:</strong> {b.tagline} {b.priceRange}. {b.warranty}.</p>
+            <p className="text-slate-700"><strong>TL;DR:</strong> {b.tagline} {b.warranty}.</p>
 
             <div>
               <h2 className="h2">Why choose {b.name} in Bali</h2>
@@ -78,7 +71,6 @@ export default function BrandPage({ params }: { params: { slug: string } }) {
                       <th className="px-4 py-3 font-semibold">Model</th>
                       <th className="px-4 py-3 font-semibold">Type</th>
                       <th className="px-4 py-3 font-semibold">Capacity</th>
-                      <th className="px-4 py-3 font-semibold">Price (supplied + installed)</th>
                       <th className="px-4 py-3 font-semibold">Best for</th>
                     </tr>
                   </thead>
@@ -88,13 +80,13 @@ export default function BrandPage({ params }: { params: { slug: string } }) {
                         <td className="px-4 py-3 font-medium">{m.name}</td>
                         <td className="px-4 py-3">{m.type}</td>
                         <td className="px-4 py-3">{m.capacity}</td>
-                        <td className="px-4 py-3 font-semibold text-brand">{m.price}</td>
                         <td className="px-4 py-3 text-slate-600">{m.bestFor}</td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
               </div>
+              <p className="mt-3 text-sm text-slate-600">WhatsApp us your room sizes and we&rsquo;ll match each room to the right {b.name} model and quote a fixed supply-and-install total.</p>
             </div>
 
             <div>
@@ -114,9 +106,9 @@ export default function BrandPage({ params }: { params: { slug: string } }) {
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 bg-white">
-                    <tr><td className="px-4 py-3">Starting price (1 PK installed)</td><td className="px-4 py-3">{b.models[0].price}</td><td className="px-4 py-3">{other.models[0].price}</td></tr>
                     <tr><td className="px-4 py-3">Warranty</td><td className="px-4 py-3">{b.warranty}</td><td className="px-4 py-3">{other.warranty}</td></tr>
                     <tr><td className="px-4 py-3">Best for</td><td className="px-4 py-3">{b.bestFor}</td><td className="px-4 py-3">{other.bestFor}</td></tr>
+                    <tr><td className="px-4 py-3">Tagline</td><td className="px-4 py-3">{b.tagline}</td><td className="px-4 py-3">{other.tagline}</td></tr>
                   </tbody>
                 </table>
               </div>
@@ -131,7 +123,7 @@ export default function BrandPage({ params }: { params: { slug: string } }) {
       </section>
 
       <FAQList items={homeFaqs} />
-      <CTASection heading={`Get a fixed price on a new ${b.name} AC.`} />
+      <CTASection heading={`Get a fixed quote on a new ${b.name} AC.`} />
       {productSchemas.map((p, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(p) }} />
       ))}

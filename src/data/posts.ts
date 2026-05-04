@@ -15,21 +15,20 @@ export const posts: Post[] = [
   {
     slug: "daikin-vs-gree-bali",
     title: "Daikin vs Gree in Bali: Which AC Brand Is Best for the Tropics?",
-    description: "Side-by-side comparison of Daikin and Gree air conditioners in Bali — warranty, noise, real-world durability in salt air and humidity, and which one wins for your budget.",
-    excerpt: "Daikin or Gree? We install both every week across Bali. Here's the honest comparison — warranty, noise, real-world salt-air durability, and which one wins for your budget.",
+    description: "Side-by-side comparison of Daikin and Gree air conditioners in Bali — warranty, noise, real-world durability in salt air and humidity, and which one wins for your villa.",
+    excerpt: "Daikin or Gree? We install both every week across Bali. Here's the honest comparison — warranty, noise, real-world salt-air durability, and which one wins for your villa.",
     date: "2026-01-12",
     author: "I Made Suarjana, Lead Technician",
     reviewer: "Reviewed by the technical team at Bali Air Conditioning Services",
     readingTime: "8 min read",
     body: `## TL;DR
 
-Gree gives you the best value-for-money inverter split in Bali. Daikin gives you the quietest, most precise, longest-lasting unit money can buy on the island. For most villas and apartments, Gree is the smart pick — for master bedrooms, hotel rooms and noise-sensitive spaces, the Daikin premium is worth it.
+Gree gives you excellent value-for-money inverter splits in Bali. Daikin gives you the quietest, most precise, longest-lasting unit money can buy on the island. For most villas and apartments, Gree is the smart pick — for master bedrooms, hotel rooms and noise-sensitive spaces, the Daikin premium is worth it.
 
 ## Quick comparison table
 
 | Feature | Gree | Daikin |
 | --- | --- | --- |
-| 1 PK installed price (Bali) | from IDR 4.2M | from IDR 5.8M |
 | Compressor warranty | 5 years | 3 years |
 | Indoor noise (low fan) | 25–28 dB | 19–22 dB |
 | Refrigerant | R32 | R32 |
@@ -40,7 +39,7 @@ Gree gives you the best value-for-money inverter split in Bali. Daikin gives you
 
 ## Warranty: where Gree actually wins
 
-This surprises people. Gree gives a 5-year compressor warranty — two years longer than Daikin's 3 years. In Bali's tropical environment that matters: the compressor is the single most expensive component to replace (about 60–70% of a new unit), and it's the part most stressed by 30°C+ ambient temperatures running 8–12 hours a day.
+This surprises people. Gree gives a 5-year compressor warranty — two years longer than Daikin's 3 years. In Bali's tropical environment that matters: the compressor is the single most expensive component to replace, and it's the part most stressed by 30°C+ ambient temperatures running 8–12 hours a day.
 
 We register every unit with Gree Indonesia and Daikin Indonesia under your name, so claims go directly through us as the authorised partner.
 
@@ -48,7 +47,7 @@ We register every unit with Gree Indonesia and Daikin Indonesia under your name,
 
 A Daikin Smile Inverter on low fan runs at 19–22 dB. That's quieter than a whisper. A Gree Lomo Eco on low fan runs at 25–28 dB. Both are good — but in a master bedroom or a hotel suite, the Daikin difference is audible.
 
-If your unit is over a study, a music room or a baby's bedroom, spend the extra IDR 1.6M for the Daikin. If it's in a guest bedroom or living room, the Gree is fine.
+If your unit is over a study, a music room or a baby's bedroom, the Daikin premium is worth it. If it's in a guest bedroom or living room, the Gree is fine.
 
 ## Salt-air corrosion: Bukit and beachfront villas
 
@@ -60,7 +59,7 @@ If you're buying for an Uluwatu, Bingin, Balangan or Pererenan villa, **always p
 
 Both brands run R32 refrigerant, both have full inverter compressors, both will run at 30–60% lower steady-state power than an old non-inverter unit. The Daikin inverter is smoother — it ramps the compressor speed more gradually, which means less wear and slightly lower bills (we estimate 5–10% lower than the equivalent Gree).
 
-For a 1 PK unit running 8 hours a day in Bali, expect roughly 90–150 kWh per month — about IDR 130,000–220,000 at PLN residential tariff.
+For a 1 PK unit running 8 hours a day in Bali, expect roughly 90–150 kWh per month.
 
 ## Which should you buy?
 
@@ -76,7 +75,7 @@ For a typical 4-bedroom Bali villa:
 
 That mix is what most of our villa-package clients choose. WhatsApp us a floor plan and we'll size every room and quote both brands side by side.`,
     faq: [
-      { q: "Is Daikin worth the extra cost in Bali?", a: "For master bedrooms, hotel rooms and noise-sensitive spaces — yes. The lower noise floor (19–22 dB) and smoother inverter are noticeable. For guest rooms and living areas, Gree gives you 90% of the performance for 70% of the price." },
+      { q: "Is Daikin worth the extra cost in Bali?", a: "For master bedrooms, hotel rooms and noise-sensitive spaces — yes. The lower noise floor (19–22 dB) and smoother inverter are noticeable. For guest rooms and living areas, Gree gives you most of the performance for a lower spend." },
       { q: "Are Gree units reliable in Bali's humidity?", a: "Yes. Modern Gree inverters with R32 refrigerant and Gold Fin coil protection are designed for tropical conditions, with a 5-year compressor warranty. We've installed thousands across Bali and the failure rate is comparable to Daikin." },
       { q: "Which brand handles salt air better?", a: "Both — provided you buy the anti-corrosion model. Gree's Gold Fin and Daikin's Blue Fin treatments both roughly double outdoor unit lifespan in coastal areas." },
       { q: "Are spare parts available in Bali?", a: "Yes for both. We carry capacitors, sensors, PCBs and refrigerant for both brands in our service vans, and Indonesian distributors stock everything else with 1–3 day lead time to Bali." },
@@ -132,61 +131,61 @@ A **chemical wash** is a 45-minute deep clean. We foam an AC coil cleaner onto t
 
 Any of those, message us — we'll quote on the spot.
 
-## Cost in Bali
-
-- Standard service: IDR 200,000 per unit (IDR 175,000 on contract from 4 units)
-- Chemical wash: IDR 250,000 per indoor split, IDR 350,000 per ceiling cassette
-- Villa contract: from IDR 1.5M per quarter for a 4-bedroom, 6-unit villa
-
 ## Don't DIY this in Bali
 
-We get a few callouts a month to clean up after a DIY chemical wash gone wrong — usually a flooded room because the bag-and-rinse cover wasn't fitted properly, or a damaged PCB because water got into the electronics bay. The IDR 250,000 saving isn't worth the IDR 4M unit replacement.`,
+We get a few callouts a month to clean up after a DIY chemical wash gone wrong — usually a flooded room because the bag-and-rinse cover wasn't fitted properly, or a damaged PCB because water got into the electronics bay. The small saving isn't worth the unit replacement.`,
     faq: [
       { q: "Can I just clean the filters myself between services?", a: "Yes — and you should. Pull the front cover, lift out the mesh filters, rinse under the shower, dry in the shade and refit. Doing this monthly between professional services keeps cooling capacity high." },
       { q: "What happens if I never service my AC?", a: "Cooling capacity drops 20–40% within 12 months, electricity bills rise, mould smells appear, drain lines block and flood the room, and the compressor eventually dies from running flat-out trying to compensate. Most Bali compressor failures we see are unserviced units." },
-      { q: "Do you offer a discount for multiple units?", a: "Yes — from 3 units in one visit, we drop the per-unit price. Villa managers booking 6+ units get our maintenance-package rate." },
+      { q: "Do you offer a discount for multiple units?", a: "Yes — from 3 units in one visit, we drop the per-unit rate. Villa managers booking 6+ units get our maintenance-package rate." },
     ],
   },
   {
-    slug: "ac-installation-cost-bali-2026",
-    title: "AC Installation Cost in Bali 2026: Full Price Breakdown",
-    description: "Complete 2026 price guide for AC installation in Bali — labour-only, supply and install, multi-split and ceiling cassette pricing for villas, apartments and businesses.",
-    excerpt: "What does AC installation actually cost in Bali in 2026? Full breakdown — supply, labour, pipe, gas and warranty — for split, multi-split and cassette systems.",
+    slug: "what-affects-ac-installation-cost-bali",
+    title: "What Affects AC Installation Cost in Bali? A Buyer's Guide",
+    description: "An honest guide to what drives the cost of an air conditioner installation in Bali — unit choice, pipe length, mounting, power supply and warranty. No hidden surprises.",
+    excerpt: "Why does one quote come in much higher than another? A guide to the seven factors that actually drive AC installation cost in Bali — so you can compare quotes fairly.",
     date: "2026-01-04",
     author: "I Made Suarjana, Lead Technician",
     readingTime: "7 min read",
-    body: `## TL;DR — Bali AC installation prices in 2026
+    body: `## TL;DR
 
-| Job | Price (IDR) | What's included |
-| --- | --- | --- |
-| Install only — 1 PK split (you supply unit) | from 850,000 | Mount, 4m pipe, gas top-up, vacuum, test |
-| Supply & install — Gree 1 PK inverter | from 4,200,000 | Brand new unit + full install |
-| Supply & install — Daikin 1 PK inverter | from 5,800,000 | Brand new unit + full install |
-| Multi-split — Daikin 1 outdoor + 3 indoor | from 22,000,000 | Full design and install |
-| Ceiling cassette — Gree 2.5 PK | from 14,500,000 | Drop-ceiling install |
-| Ceiling cassette — Daikin 2.5 PK | from 19,500,000 | Drop-ceiling install |
-| VRF system (commercial) | quote per design | Heat-load calc + design + install |
+Two AC quotes can look very different even for the "same" job. The seven factors below are what actually drive the price. Once you understand them, comparing quotes from different installers becomes much easier — and you'll know whether the cheap quote is genuinely cheap or just leaving things out.
 
-## What drives the price
+## 1. The unit itself
 
-**1. The unit itself.** A brand new Gree Lomo Eco 1 PK inverter retails in Bali at around IDR 3.4M; a Daikin Smile Inverter 1 PK at around IDR 4.8M. We sell at competitive market prices because we buy in volume from the official Indonesian distributor.
+The single biggest variable. A budget non-inverter Midea 1 PK is at one end of the scale; a premium Daikin Smile Inverter 1 PK with anti-corrosion coatings is at the other. The Gree mid-range sits comfortably in between.
 
-**2. Labour.** A two-technician crew at IDR 850,000 per standard split is the going rate from a quality installer in Bali. Cheaper installs exist — they're usually one technician, no vacuum purge, and no leak test, which means a refrigerant leak within 6 months.
+What you pay for as you move up the scale: quieter indoor units, smoother inverter compressors, better dehumidify performance, longer compressor warranty, anti-corrosion coil coatings, and longer real-world lifespan in tropical conditions.
 
-**3. Pipework.** First 4m of insulated copper pipe and drain is included. Beyond that we charge IDR 150,000 per metre. Multi-storey villas with 8–12m runs add IDR 600,000–1,200,000.
+## 2. Installation labour
 
-**4. Outdoor mounting.** Wall bracket included. Ground stand, raised platform or roof rack adds IDR 250,000–800,000. Custom stainless-steel salt-resistant brackets for Bukit installs add IDR 1,000,000–1,500,000.
+A two-technician crew doing a proper install — site survey, vacuum purge to 500 microns, pressure leak test, neat electrical termination, commissioning cool-down test — is the going rate from a quality installer in Bali. Cheaper installs exist, and they are usually one technician, no vacuum, no leak test, which means a refrigerant leak within 6 months.
 
-**5. Power supply.** A power isolator at the outdoor unit is included. If your villa needs a new dedicated breaker in the consumer unit, add IDR 350,000–600,000.
+## 3. Pipework
 
-**6. Warranty.** Our installs include a 12-month workmanship warranty plus the manufacturer warranty on the unit (5-year compressor on Gree, 3-year on Daikin).
+The first 4m of insulated copper pipe and drain is included in our standard install. Beyond that, every additional metre is charged at a fixed rate. Multi-storey villas with long vertical runs from outdoor unit to indoor unit add to the price quickly — sometimes the difference between a IDR-friendly quote and an eye-watering one is just pipe length.
 
-## What to watch out for
+## 4. Outdoor unit mounting
 
-- **"Cash" installs without a warranty card.** No paper means no warranty when the compressor fails in year 2.
-- **No vacuum purge.** Skipping the vacuum step means moisture in the system, which kills the compressor within 18 months.
-- **Undersized cable.** A 1.5 PK unit needs at minimum 2.5mm² cable; a 2 PK needs 4mm². Cheap installers run 1.5mm² and the cable overheats.
-- **No isolator at the outdoor unit.** Required by Indonesian electrical regulations and required if you ever want to service the unit without killing power to the whole house.
+A wall bracket on flat blockwork is the cheapest. A ground stand on a paved area is similar. A raised platform, a roof rack, or a custom stainless-steel salt-resistant bracket for a Bukit clifftop villa all add to the price. We often see this skipped by cheap quoters, then bolted on as a "surprise" once the install is underway.
+
+## 5. Power supply
+
+Every install needs an isolator at the outdoor unit (required by Indonesian electrical regulations, and needed if you ever want to service the unit without killing power to the whole house). If your villa needs a new dedicated breaker in the consumer unit, that adds to the price. New 3-phase circuits for cassettes and VRF systems add more.
+
+## 6. Warranty and registration
+
+A genuinely warrantied install includes registration of the unit with the manufacturer (Gree Indonesia or Daikin Indonesia) under your name, plus the installer's own workmanship warranty. "Cash" installs without paperwork look cheap until the compressor fails in year 2 and there's no warranty to claim against.
+
+## 7. Add-ons that are worth paying for
+
+- **Anti-corrosion coil treatment** on outdoor units within 1km of the coast — extends lifespan dramatically
+- **Surge protector** on the outdoor isolator — prevents PCB damage from wet-season power surges
+- **Salt-resistant stainless brackets** on the Bukit
+- **Condensate pump** instead of gravity drain on cassettes and ducted
+
+These aren't always quoted by default. Ask. They pay for themselves.
 
 ## What our installs include
 
@@ -200,13 +199,13 @@ We get a few callouts a month to clean up after a DIY chemical wash gone wrong �
 - 12-month workmanship warranty + registered manufacturer warranty
 - Photo report and printed warranty card
 
-## Get a fixed quote
+## How to get a fair quote
 
-WhatsApp us a photo of the room, the planned outdoor unit location and the brand you're considering. We reply with a fixed total in 15 minutes, no callout fee.`,
+WhatsApp us a photo of the room, the planned outdoor unit location and the brand you're considering. We reply with a fixed total in 15 minutes, no callout fee — and we list every line item, so you can compare it apples-to-apples with any other quote you've received.`,
     faq: [
-      { q: "Is the installation price negotiable?", a: "Volume jobs (3+ units in one visit, multi-split designs, full villa fit-outs) get a discount. Single-unit jobs are at our published rate — already competitive for the quality." },
+      { q: "Why do quotes vary so much for the same job?", a: "Because cheaper quotes often skip line items: vacuum purge, leak test, isolator, anti-corrosion coatings, warranty registration, surge protection. A like-for-like comparison usually narrows the gap dramatically." },
       { q: "Do you charge a callout fee?", a: "No. Quotes are free. We only charge for the work itself." },
-      { q: "Can I supply my own unit?", a: "Yes — install only is from IDR 850,000 for a standard 1 PK split. We won't warranty the unit itself if you supply, but we still warranty the installation workmanship for 12 months." },
+      { q: "Can I supply my own unit?", a: "Yes — install-only is available for a standard split. We won't warranty the unit itself if you supply, but we still warranty the installation workmanship for 12 months." },
       { q: "Do you remove the old unit?", a: "Yes — included free with any new install. We pump down the old refrigerant safely and recycle through a licensed scrapper." },
     ],
   },
@@ -341,14 +340,14 @@ WhatsApp us a short video of the smell description and the unit running — we'l
   {
     slug: "villa-ac-maintenance-contracts-bali",
     title: "Villa Owner's Guide to AC Maintenance Contracts in Bali",
-    description: "Everything Bali villa owners and managers need to know about AC maintenance contracts — pricing, scheduling, photo reports, breakdown response, and how to avoid the worst pitfalls.",
-    excerpt: "If you own or manage a Bali villa, an AC maintenance contract pays for itself within 12 months. Here's what to look for, what to avoid, and how the pricing works.",
+    description: "Everything Bali villa owners and managers need to know about AC maintenance contracts — what's included, scheduling, photo reports, breakdown response, and how to avoid the worst pitfalls.",
+    excerpt: "If you own or manage a Bali villa, an AC maintenance contract pays for itself in avoided repairs. Here's what to look for, what to avoid, and the questions to ask any provider.",
     date: "2025-12-15",
     author: "I Made Suarjana, Lead Technician",
     readingTime: "7 min read",
     body: `## TL;DR
 
-An AC maintenance contract on a 4-bedroom Bali villa typically costs **IDR 1.5M per quarter** (IDR 250,000 per unit) and includes scheduled servicing, photo reports, priority breakdown response and discounted parts. For absentee owners and high-occupancy short-stay villas, it's the cheapest insurance against the IDR 6M+ cost of a single compressor replacement.
+A good AC maintenance contract on a Bali villa includes scheduled servicing, photo reports, priority breakdown response and an annual deep chemical wash on every unit. For absentee owners and high-occupancy short-stay villas, it's the cheapest insurance against the cost of a single compressor replacement.
 
 ## Why villas need contracts more than houses
 
@@ -358,7 +357,7 @@ A typical Bali villa has 5–10 AC units, each running 8–14 hours a day in the
 - Drain lines block and water leaks ruin floors
 - Compressors fail prematurely from running flat-out
 - Guest reviews suffer ("the AC was loud and weak")
-- Repair costs spike to IDR 5–10M per unit instead of IDR 250,000 per service
+- Repair costs spike, often unpredictably
 
 A contract turns unpredictable big repair bills into predictable small service bills.
 
@@ -372,18 +371,6 @@ A contract turns unpredictable big repair bills into predictable small service b
 - **One annual deep chemical wash per unit included**
 - **Direct WhatsApp line for the villa manager** — same person every time
 - **Owner reporting in English** — for absentee owners overseas
-
-## Pricing tiers
-
-| Villa size | Units | Quarterly contract | Per visit (pay-as-you-go for comparison) |
-| --- | --- | --- | --- |
-| 2-bedroom | 3 | IDR 850,000 | IDR 1,050,000 |
-| 3-bedroom | 4–5 | IDR 1,200,000 | IDR 1,400,000 |
-| 4-bedroom | 6 | IDR 1,500,000 | IDR 1,800,000 |
-| 5-bedroom | 7–8 | IDR 2,000,000 | IDR 2,400,000 |
-| 6-bedroom | 9–10 | IDR 2,500,000 | IDR 3,000,000 |
-
-Monthly contracts add ~30% to the quarterly price. Guest-changeover packages (changeover check between every booking) are quoted separately based on annual occupancy.
 
 ## Pitfalls to avoid
 
@@ -408,32 +395,32 @@ Send us your villa address and the number of AC units. We do a free audit visit,
       { q: "Do contracts cover repairs?", a: "Labour on minor repairs (capacitor replacement, sensor swap, drain unblock) is included on contract. Major parts (compressor, PCB, fan motor) are quoted at our wholesale-plus rate, capped at agreed prices in the contract." },
       { q: "Can I pause the contract during low season?", a: "Yes — many short-stay villas pause monthly contracts during Ramadan or low season and revert to quarterly. We're flexible." },
       { q: "Do you handle multiple villas under one account?", a: "Yes — we have several villa management groups on a single master contract with monthly invoicing across 10–30 villas." },
-      { q: "What if my villa is in Ubud or the Bukit?", a: "Same pricing applies — we have technicians based in Canggu, the Bukit and Ubud, and the response time commitment is the same." },
+      { q: "What if my villa is in Ubud or the Bukit?", a: "Same coverage applies — we have technicians based in Canggu, the Bukit and Ubud, and the response time commitment is the same." },
     ],
   },
   {
     slug: "inverter-vs-non-inverter-ac-bali",
     title: "Inverter vs Non-Inverter AC: Which Saves More in Bali?",
-    description: "Inverter air conditioners cost more upfront but use less power. Here's the real-world payback period in Bali, with kWh comparisons and PLN bill calculations.",
-    excerpt: "Inverters save 30–40% on power versus non-inverters, but they cost more. Here's the real Bali payback calculation in 2026.",
+    description: "Inverter air conditioners cost more upfront but use much less power. Here's the real-world comparison in Bali — kWh, lifespan, noise, comfort.",
+    excerpt: "Inverters save 30–40% on power versus non-inverters and last longer. Here's the full Bali comparison and why we install inverters only.",
     date: "2025-12-08",
     author: "I Made Suarjana, Lead Technician",
     readingTime: "5 min read",
     body: `## TL;DR
 
-In Bali, inverter ACs pay back the price difference within **18–24 months** for any unit running more than 6 hours a day. For owner-occupied villas and short-stay rentals, always buy inverter. For a rarely-used staff room or storage area, non-inverter is fine.
+In Bali, inverter ACs comfortably pay back the upfront premium within their service life — usually within 2 years for any unit running more than 6 hours a day. For owner-occupied villas and short-stay rentals, always buy inverter. For a rarely-used staff room or storage area, non-inverter is fine.
 
-## The numbers
+## Power consumption — the real difference
 
 A 1 PK unit running 8 hours a day:
 
-| Type | Avg power draw | Monthly kWh | Monthly cost (PLN tariff IDR 1,500/kWh) |
-| --- | --- | --- | --- |
-| Non-inverter 1 PK | 950W average | 228 kWh | ~IDR 342,000 |
-| Inverter 1 PK | 600W average | 144 kWh | ~IDR 216,000 |
-| **Difference** | | **84 kWh** | **~IDR 126,000** |
+| Type | Avg power draw | Monthly kWh |
+| --- | --- | --- |
+| Non-inverter 1 PK | 950W average | ~228 kWh |
+| Inverter 1 PK | 600W average | ~144 kWh |
+| **Difference** | | **~84 kWh per month per unit** |
 
-That's roughly **IDR 1.5M per year per unit saved**. A 4-bedroom villa with 6 units saves IDR 9M per year on power.
+Multiply that across 6 units in a 4-bedroom villa and the savings are significant — typically enough to cover the upfront premium on the inverter units within 2 years.
 
 ## How inverter actually works
 
@@ -457,9 +444,9 @@ An inverter compressor varies its speed continuously — it ramps up hard when y
 
 ## What we recommend
 
-For any villa, apartment or business in Bali, we install inverter only. The IDR 1.5M extra per unit is recovered in under 2 years through PLN bill savings alone, and the longer lifespan means an extra 3–5 years of service before replacement.
+For any villa, apartment or business in Bali, we install inverter only. The upfront premium is recovered well within service life through PLN bill savings alone, and the longer lifespan means an extra 3–5 years of service before replacement.
 
-The Gree Lomo Eco at IDR 4.2M and the Daikin Smile Inverter at IDR 5.8M are both excellent inverter choices for a 1 PK install.`,
+The Gree Lomo Eco and Daikin Smile Inverter ranges are both excellent inverter choices for a 1 PK install.`,
     faq: [
       { q: "Can I tell if my current AC is inverter or non-inverter?", a: "Look for the word 'Inverter' on the indoor unit faceplate, or check the energy rating sticker — inverters typically show 4–5 stars under SNI energy labelling, non-inverters typically 1–3 stars. We can also tell from the model number on a quick photo." },
       { q: "Do inverters work with solar?", a: "Yes — inverter ACs play very well with solar systems because they don't have the heavy startup current spikes that non-inverters do. A 3kW solar system can comfortably run 2–3 inverter ACs during sunny hours." },
@@ -469,12 +456,12 @@ The Gree Lomo Eco at IDR 4.2M and the Daikin Smile Inverter at IDR 5.8M are both
   {
     slug: "top-ac-problems-canggu-villas",
     title: "Top 7 AC Problems in Canggu Villas (and How to Fix Them)",
-    description: "After 10,000+ jobs in Canggu, here are the seven most common AC faults we see — water leaks, weak cooling, mould, breaker trips and more. Plus how each one is fixed.",
+    description: "After thousands of jobs in Canggu, here are the seven most common AC faults we see — water leaks, weak cooling, mould, breaker trips and more. Plus how each one is fixed.",
     excerpt: "We've seen every AC problem a Canggu villa can throw at us. Here are the seven we fix most weeks — with the real causes and the actual fixes.",
     date: "2025-12-01",
     author: "I Made Suarjana, Lead Technician",
     readingTime: "8 min read",
-    body: `## After 10,000+ jobs in Canggu...
+    body: `## After thousands of jobs in Canggu...
 
 These are the seven AC problems we see most often in Canggu villas, in order of frequency. Five of them are preventable with regular servicing.
 
@@ -514,15 +501,15 @@ These are the seven AC problems we see most often in Canggu villas, in order of 
 
 **Cause:** usually a failing capacitor causing the compressor to draw excessive starting current, or a short on a damp PCB after wet-season power surges.
 
-**Fix:** test with a clamp meter on the spot; replace the capacitor (IDR 350,000) or the PCB (IDR 1.2–2.5M depending on brand).
+**Fix:** test with a clamp meter on the spot; replace the capacitor or the PCB.
 
-**Prevention:** install a surge protector on the outdoor isolator (IDR 350,000 one-off) — pays for itself the first time it saves a PCB.
+**Prevention:** install a surge protector on the outdoor isolator — pays for itself the first time it saves a PCB.
 
 ## 6. AC suddenly louder than usual
 
 **Cause:** loose fan blade balance, worn outdoor fan motor bearings, or a failing compressor.
 
-**Fix:** dynamic-balance the fan or replace the motor (IDR 800,000–1,500,000); compressor replacement starts at IDR 4M and is usually only worth it on units under 6 years old.
+**Fix:** dynamic-balance the fan or replace the motor; compressor replacement is usually only worth it on units under 6 years old.
 
 **Prevention:** quarterly servicing catches bearing wear and fan-blade imbalance early.
 
@@ -530,13 +517,13 @@ These are the seven AC problems we see most often in Canggu villas, in order of 
 
 **Cause:** dead batteries (50% of cases), damaged remote (30%), or a faulty IR receiver on the indoor unit (20%).
 
-**Fix:** new batteries first; new remote (IDR 150,000); IR receiver swap (IDR 600,000).
+**Fix:** new batteries first; new remote; IR receiver swap.
 
 **Prevention:** keep the remote out of direct sunlight and away from spillable drinks.
 
 ## What to do when something goes wrong
 
-WhatsApp us a short video of the unit running, the brand and model (on the silver sticker on the side of the indoor unit), and any error code on the display. We diagnose remotely and quote a fixed-price fix before sending a tech. Most Canggu callouts are completed same day.`,
+WhatsApp us a short video of the unit running, the brand and model (on the silver sticker on the side of the indoor unit), and any error code on the display. We diagnose remotely and quote a fixed fix before sending a tech. Most Canggu callouts are completed same day.`,
     faq: [
       { q: "Why do Canggu villas have so many AC problems?", a: "Three reasons: high humidity feeds mould, salt air from the coast corrodes outdoor units, and most builders under-spec ACs in new villas — meaning units run flat-out and wear faster." },
       { q: "Can I prevent most of these problems?", a: "Yes — quarterly servicing prevents 80% of the issues on this list. The other 20% (lightning surges, salt corrosion on Bukit-style cliff villas, builder shortcuts) need surge protectors and anti-corrosion outdoor units." },
@@ -577,7 +564,7 @@ A blackout curtain or external sunscreen on west-facing glass cuts late-afternoo
 
 ## 6. Service the unit quarterly
 
-A clean evaporator coil and outdoor condenser run 15–25% more efficient than a neglected unit. The IDR 200,000 quarterly service typically saves IDR 500,000–800,000 a year per unit on power.
+A clean evaporator coil and outdoor condenser run 15–25% more efficient than a neglected unit. The cost of a quarterly service is typically recovered through reduced PLN bills.
 
 ## 7. Replace 1.5mm² cabling with 2.5mm² (older villas)
 
@@ -585,7 +572,7 @@ Undersized cable to the outdoor unit causes voltage drop, which makes the compre
 
 ## 8. Upgrade to inverter
 
-Non-inverter to inverter upgrade saves 30–40% on running cost. A 1 PK inverter pays back the price premium in 18–24 months.
+Non-inverter to inverter upgrade saves 30–40% on running cost. A 1 PK inverter pays back the price premium well within service life.
 
 ## 9. Right-size the unit
 
@@ -597,7 +584,7 @@ Most modern ACs have a 24-hour timer. Set it to off 30 minutes before you usuall
 
 ## 11. Add a surge protector
 
-Power surges damage capacitors and PCBs, which then run inefficiently for weeks before they finally fail. A IDR 350,000 surge protector at the outdoor isolator prevents this and protects 5–8% of efficiency over the life of the unit.
+Power surges damage capacitors and PCBs, which then run inefficiently for weeks before they finally fail. A surge protector at the outdoor isolator prevents this and protects 5–8% of efficiency over the life of the unit.
 
 ## 12. Switch to a higher PLN tariff if needed (counter-intuitive)
 
@@ -605,14 +592,14 @@ If you're on the low residential tariff (R-1/450 VA) and your villa keeps trippi
 
 ## Real example
 
-A 4-bedroom Canggu villa we serviced in 2025 was paying IDR 4.5M/month on PLN. We:
+A 4-bedroom Canggu villa we serviced was running well above the local average on PLN. We:
 
 - Replaced two undersized 0.5 PK units with 1 PK inverters
 - Added surge protectors on all 6 outdoor units
 - Set up a quarterly service schedule
 - Trained the housekeeper to set 25°C standard
 
-Six months later, the same villa is paying IDR 2.8M/month — a saving of IDR 20.4M per year. The unit upgrades and surge protectors paid back in 9 months.`,
+Six months later, the same villa was paying significantly less on PLN — the unit upgrades and surge protectors paid back well inside a year.`,
     faq: [
       { q: "Does turning the AC off completely save power?", a: "Yes for breaks longer than 30 minutes. For shorter breaks, leaving it at 25–26°C uses less power than restarting from a hot room." },
       { q: "Should I close vents in unused rooms?", a: "Bali villas don't usually have central ducted systems — each room has its own split unit. Just turn off the AC in unused rooms and close the door." },
@@ -629,20 +616,20 @@ Six months later, the same villa is paying IDR 2.8M/month — a saving of IDR 20
     readingTime: "9 min read",
     body: `## TL;DR ranking
 
-| Rank | Brand | Best for | Starting price (1 PK installed) |
-| --- | --- | --- | --- |
-| 1 | Daikin | Premium, quiet, long-lasting | IDR 5.8M |
-| 2 | Gree | Best value with 5-year compressor warranty | IDR 4.2M |
-| 3 | Panasonic | Solid mid-range with great parts availability | IDR 5.4M |
-| 4 | Mitsubishi Electric | Premium with excellent inverter tech | IDR 6.2M |
-| 5 | LG | Strong inverter range, good warranty | IDR 4.8M |
-| 6 | Samsung | Decent build, weak local service network | IDR 4.6M |
-| 7 | Sharp | Budget-friendly, basic features | IDR 3.8M |
-| 8 | Midea | Cheapest, but reliability is mixed | IDR 3.5M |
+| Rank | Brand | Best for |
+| --- | --- | --- |
+| 1 | Daikin | Premium, quiet, long-lasting |
+| 2 | Gree | Best value with 5-year compressor warranty |
+| 3 | Panasonic | Solid mid-range with great parts availability |
+| 4 | Mitsubishi Electric | Premium with excellent inverter tech |
+| 5 | LG | Strong inverter range, good warranty |
+| 6 | Samsung | Decent build, weak local service network |
+| 7 | Sharp | Budget-friendly, basic features |
+| 8 | Midea | Cheapest, but reliability is mixed |
 
 ## 1. Daikin — premium
 
-The Japanese gold standard. Quietest indoor units (19–22 dB), smoothest inverter ramp, best dehumidify mode, longest real-world lifespan in Bali. The premium is IDR 1.5–2M per unit over the equivalent Gree, but for master bedrooms, hotel rooms and any noise-sensitive space it's worth it.
+The Japanese gold standard. Quietest indoor units (19–22 dB), smoothest inverter ramp, best dehumidify mode, longest real-world lifespan in Bali. Worth the premium for master bedrooms, hotel rooms and any noise-sensitive space.
 
 **Warranty:** 1 year unit + 3 years compressor.
 
@@ -654,19 +641,19 @@ The world's largest AC manufacturer. Excellent inverter performance, 5-year comp
 
 ## 3. Panasonic — reliable mid-range
 
-A strong Japanese alternative to Daikin at a slightly lower price. The inverter PCBs are particularly reliable and parts availability across Indonesia is excellent. Slightly louder than Daikin and the dehumidify mode isn't quite as good.
+A strong Japanese alternative to Daikin at a slightly lower premium. The inverter PCBs are particularly reliable and parts availability across Indonesia is excellent. Slightly louder than Daikin and the dehumidify mode isn't quite as good.
 
 **Warranty:** 1 year unit + 5 years compressor.
 
 ## 4. Mitsubishi Electric — premium alternative
 
-Excellent inverter technology, very quiet, exceptional cooling precision. The downsides in Bali: higher price than Daikin, slightly slower parts lead times, and the local service network is smaller. Usually only worth it if you have a brand preference or specific commercial-grade requirements.
+Excellent inverter technology, very quiet, exceptional cooling precision. The downsides in Bali: slightly slower parts lead times and a smaller local service network than Daikin or Gree. Usually worth it only if you have a brand preference or specific commercial-grade requirements.
 
 **Warranty:** 1 year unit + 3 years compressor.
 
 ## 5. LG — solid Korean option
 
-Better than its reputation suggests. The Dual Inverter line is genuinely good, the 10-year compressor warranty (introduced 2024) is generous, and prices are competitive. The downsides: PCBs have a higher failure rate than Japanese brands in our experience, and the indoor units are louder than Daikin or Panasonic.
+Better than its reputation suggests. The Dual Inverter line is genuinely good and the 10-year compressor warranty (introduced 2024) is generous. Downsides: PCBs have a higher failure rate than Japanese brands in our experience, and the indoor units are louder than Daikin or Panasonic.
 
 **Warranty:** 1 year unit + 10 years compressor (Dual Inverter line).
 
@@ -703,8 +690,8 @@ For a typical 4-bedroom Bali villa we recommend a Daikin in the master, Gree eve
 
 We don't install no-name "white label" brands that flood some Bali shops. The capacitors, PCBs and compressors in those units have no real warranty backing, and parts are impossible to source after a year. We've turned away dozens of "supply your own unit" jobs because we won't put our 12-month workmanship warranty against an unknown brand we can't get parts for.`,
     faq: [
-      { q: "Is Daikin really worth the extra cost?", a: "For master bedrooms and hotel rooms — yes. For guest rooms and living areas — Gree gives you 90% of the performance for 70% of the price." },
-      { q: "Why not buy the cheapest brand?", a: "Because the savings disappear the first time you need a part. A IDR 1M cheaper unit that fails at 24 months and can't be repaired costs you a full replacement; a IDR 4.2M Gree with a 5-year compressor warranty doesn't." },
+      { q: "Is Daikin really worth the extra cost?", a: "For master bedrooms and hotel rooms — yes. For guest rooms and living areas — Gree gives you most of the performance for less." },
+      { q: "Why not buy the cheapest brand?", a: "Because the savings disappear the first time you need a part. A cheaper unit that fails at 24 months and can't be repaired costs you a full replacement; a Gree with a 5-year compressor warranty doesn't." },
       { q: "Do you sell and install all these brands?", a: "We are authorised partners for Gree and Daikin. We can supply and install Panasonic, Mitsubishi Electric and LG on request. We service all major brands." },
     ],
   },
