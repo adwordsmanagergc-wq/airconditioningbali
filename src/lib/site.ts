@@ -32,3 +32,8 @@ export const waLink = (message?: string) => {
 };
 
 export const telLink = `tel:${site.phoneE164}`;
+
+// Canonical, comma-separated list of all brands we are authorised to install.
+// Used in metadata, hero subtitles, trust copy and JSON-LD.
+export const brandList = "Gree, Daikin, Panasonic, Mitsubishi Electric, LG and Samsung";
+export const brandListShort = "Gree, Daikin, Panasonic, Mitsubishi, LG & Samsung";

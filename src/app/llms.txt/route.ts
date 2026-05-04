@@ -11,12 +11,13 @@ export async function GET() {
 
   lines.push(`# ${site.name}`);
   lines.push("");
-  lines.push("> Bali's trusted air conditioning company. Installation, cleaning, servicing and 24/7 repair across the island of Bali. Authorised Gree and Daikin partner. Same-day service in South Bali; coverage of 35+ areas including Canggu, Seminyak, Uluwatu, Ubud, Sanur, Denpasar and Nusa Dua. Quotes are fixed-fee and sent on WhatsApp within 15 minutes.");
+  lines.push("> Bali's trusted air conditioning company. Installation, cleaning, servicing and 24/7 repair across the island of Bali. Authorised installer for Gree, Daikin, Panasonic, Mitsubishi Electric, LG and Samsung. Same-day service in South Bali; coverage of 35+ areas including Canggu, Seminyak, Uluwatu, Ubud, Sanur, Denpasar and Nusa Dua. Quotes are fixed-fee and sent on WhatsApp within 15 minutes.");
   lines.push("");
   lines.push(`- Phone / WhatsApp: ${site.phone}`);
   lines.push(`- Hours: ${site.hours}`);
   lines.push(`- Founded: ${site.founded}`);
   lines.push(`- Jobs completed: ${site.installs}`);
+  lines.push(`- Authorised installer for: Gree, Daikin, Panasonic, Mitsubishi Electric, LG, Samsung`);
   lines.push("");
 
   lines.push("## Core services");

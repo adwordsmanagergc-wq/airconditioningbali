@@ -6,7 +6,7 @@ import { brands } from "@/data/brands";
 
 export const metadata = {
   title: "AC Brands Bali — Gree, Daikin, Panasonic, Mitsubishi, LG & Samsung",
-  description: "Compare every major air conditioning brand sold in Bali — Gree, Daikin, Panasonic, Mitsubishi Electric, LG and Samsung. Authorised Gree & Daikin partner; full supply, install and service on all six.",
+  description: "Compare every major air conditioning brand sold in Bali — Gree, Daikin, Panasonic, Mitsubishi Electric, LG and Samsung. Authorised installer for all six, with full supply, install and lifetime service.",
   alternates: { canonical: "/brands" },
 };
 
@@ -16,7 +16,7 @@ export default function BrandsIndex() {
       <Breadcrumbs items={[{ label: "Brands", href: "/brands" }]} />
       <Hero
         h1="AC Brands We Supply, Install & Service in Bali"
-        sub="Authorised partners for Gree and Daikin. Full supply, install and lifetime servicing on Panasonic, Mitsubishi Electric, LG and Samsung."
+        sub="Authorised installer for every major brand sold in Indonesia — Gree, Daikin, Panasonic, Mitsubishi Electric, LG and Samsung. Manufacturer warranty registered under your name."
       />
       <section className="section">
         <div className="container-prose">

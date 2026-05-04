@@ -16,7 +16,7 @@ export const services: Service[] = [
     shortName: "Installation",
     title: "AC Installation Bali — Same-Day Fitting Across the Island",
     description:
-      "Professional split, multi-split, and cassette AC installation across Bali. Authorised Gree and Daikin partner. Same-day fitting available in Canggu, Seminyak, Uluwatu, Ubud, Sanur and 35+ other areas.",
+      "Professional split, multi-split, and cassette AC installation across Bali. Authorised installer for Gree, Daikin, Panasonic, Mitsubishi Electric, LG and Samsung. Same-day fitting available in Canggu, Seminyak, Uluwatu, Ubud, Sanur and 35+ other areas.",
     quickAnswer:
       "We install split, multi-split and cassette air conditioners across Bali — same-day in Canggu, Seminyak, Uluwatu, Ubud and most of South Bali. Every install is bracket-mounted, vacuum-purged, gas-tested and backed by a 12-month workmanship warranty. WhatsApp us a photo of the room for a fixed quote.",
     inclusions: [
@@ -38,13 +38,13 @@ export const services: Service[] = [
   },
   {
     slug: "new-ac-systems-bali",
-    name: "New AC Systems Bali (Gree & Daikin)",
+    name: "New AC Systems Bali",
     shortName: "New Systems",
-    title: "New AC Systems Bali — Authorised Gree & Daikin Supply + Install",
+    title: "New AC Systems Bali — Authorised Supply & Install for Every Brand",
     description:
-      "Buy a new air conditioner in Bali with full supply, install and warranty. Authorised Gree and Daikin reseller. Inverter splits, multi-splits and ceiling cassettes for villas, offices and restaurants.",
+      "Buy a new air conditioner in Bali with full supply, install and warranty. Authorised installer for Gree, Daikin, Panasonic, Mitsubishi Electric, LG and Samsung. Inverter splits, multi-splits and ceiling cassettes for villas, offices and restaurants.",
     quickAnswer:
-      "We supply and install brand-new Gree and Daikin inverter systems anywhere in Bali, usually within 24–72 hours of order. Every unit is registered with the manufacturer under your name for full warranty. WhatsApp us your room sizes for a fixed quote on the right Gree or Daikin spec.",
+      "We supply and install brand-new inverter systems anywhere in Bali — Gree, Daikin, Panasonic, Mitsubishi Electric, LG or Samsung — usually within 24–72 hours of order. Every unit is registered with the manufacturer under your name for full warranty. WhatsApp us your room sizes for a fixed quote.",
     inclusions: [
       "Brand-new sealed unit with manufacturer warranty",
       "Full installation by certified technicians",
@@ -57,9 +57,9 @@ export const services: Service[] = [
     ],
     process: [
       { step: "BTU sizing call", detail: "Tell us the room size in m² and we recommend a 0.5, 0.75, 1, 1.5 or 2 PK unit — properly sized for Bali's humidity, not under-speced like most builders." },
-      { step: "Brand and budget", detail: "We compare Gree (best value, 5-year compressor warranty) versus Daikin (premium quietness and durability) for your budget and use case." },
+      { step: "Brand and budget", detail: "We compare brands for your budget and use case — Gree for value, Daikin or Mitsubishi for premium quiet, Panasonic for reliable mid-tier, LG for the longest compressor warranty, Samsung WindFree for sensitive sleepers." },
       { step: "Delivery and install", detail: "Order today, install tomorrow in most South Bali areas. Ubud, North Bali and the Nusa islands within 72 hours." },
-      { step: "Warranty registration", detail: "We register the unit with Gree Indonesia or Daikin Indonesia under your name so warranty claims go directly through us." },
+      { step: "Warranty registration", detail: "We register the unit with the manufacturer (Gree, Daikin, Panasonic, Mitsubishi, LG or Samsung Indonesia) under your name so warranty claims go directly through us." },
     ],
   },
   {

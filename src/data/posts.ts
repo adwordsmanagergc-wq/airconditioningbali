@@ -692,7 +692,7 @@ We don't install no-name "white label" brands that flood some Bali shops. The ca
     faq: [
       { q: "Is Daikin really worth the extra cost?", a: "For master bedrooms and hotel rooms — yes. For guest rooms and living areas — Gree gives you most of the performance for less." },
       { q: "Why not buy the cheapest brand?", a: "Because the savings disappear the first time you need a part. A cheaper unit that fails at 24 months and can't be repaired costs you a full replacement; a Gree with a 5-year compressor warranty doesn't." },
-      { q: "Do you sell and install all these brands?", a: "We are authorised partners for Gree and Daikin. We can supply and install Panasonic, Mitsubishi Electric and LG on request. We service all major brands." },
+      { q: "Do you sell and install all these brands?", a: "We are an authorised installer for Gree, Daikin, Panasonic, Mitsubishi Electric, LG and Samsung — full supply, install and registered manufacturer warranty on all six. We can also service Sharp, Midea and most legacy units." },
     ],
   },
 ];

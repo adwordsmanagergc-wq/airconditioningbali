@@ -5,8 +5,8 @@ export default function TrustStrip() {
   return (
     <section aria-label="Trust signals" className="border-y border-slate-100 bg-white">
       <div className="container-prose grid grid-cols-2 gap-6 py-8 sm:grid-cols-4">
-        <Item icon={<ShieldCheck size={22} aria-hidden />} title="Gree authorised" sub="Indonesia partner" />
-        <Item icon={<Award size={22} aria-hidden />} title="Daikin authorised" sub="Premium installer" />
+        <Item icon={<ShieldCheck size={22} aria-hidden />} title="Authorised installer" sub="6 major brands" />
+        <Item icon={<Award size={22} aria-hidden />} title="Manufacturer warranty" sub="Registered to you" />
         <Item icon={<Wrench size={22} aria-hidden />} title={site.installs} sub="Jobs completed" />
         <Item icon={<Clock size={22} aria-hidden />} title="24/7" sub="Emergency response" />
       </div>

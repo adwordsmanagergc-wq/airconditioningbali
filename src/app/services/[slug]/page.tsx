@@ -12,7 +12,7 @@ import { services, getService } from "@/data/services";
 import { areas } from "@/data/areas";
 import { brands } from "@/data/brands";
 import { installationFaqs, cleaningFaqs, repairFaqs, servicingFaqs, villaFaqs, commercialFaqs, homeFaqs } from "@/data/faqs";
-import { site, waLink } from "@/lib/site";
+import { site, waLink, brandList } from "@/lib/site";
 import { Check } from "lucide-react";
 
 const faqMap: Record<string, typeof homeFaqs> = {
@@ -65,7 +65,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
         <div className="container-prose grid items-start gap-10 md:grid-cols-[2fr_1fr]">
           <div className="space-y-6">
             <QuickAnswer>{s.quickAnswer}</QuickAnswer>
-            <p className="text-slate-700"><strong>TL;DR:</strong> {s.shortName.toLowerCase()} across Bali — same-day in South Bali, next-day across the rest of the island. Authorised Gree &amp; Daikin partner. WhatsApp <a className="font-semibold text-brand" href={waLink(`Hi, I'd like a quote for ${s.shortName} in Bali.`)}>{site.phone}</a> for a fixed quote.</p>
+            <p className="text-slate-700"><strong>TL;DR:</strong> {s.shortName.toLowerCase()} across Bali — same-day in South Bali, next-day across the rest of the island. Authorised installer for every major brand. WhatsApp <a className="font-semibold text-brand" href={waLink(`Hi, I'd like a quote for ${s.shortName} in Bali.`)}>{site.phone}</a> for a fixed quote.</p>
 
             <div>
               <h2 className="h2">What&rsquo;s included</h2>
@@ -101,7 +101,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
 
             <div>
               <h2 className="h2">Brands we service</h2>
-              <p className="mt-2 text-slate-700">Authorised partners for Gree and Daikin, plus full service capability on Panasonic, Mitsubishi Electric, LG, Samsung, Sharp and Midea.</p>
+              <p className="mt-2 text-slate-700">We are an authorised installer for {brandList}, plus full service capability on Sharp, Midea and most legacy brands.</p>
               <div className="mt-4 flex flex-wrap gap-3">
                 {brands.map((b) => (
                   <Link key={b.slug} href={`/brands/${b.slug}`} className="rounded-full border border-brand px-4 py-2 text-sm font-medium text-brand hover:bg-brand hover:text-white">{b.name} Bali</Link>

@@ -37,7 +37,7 @@ export default function Hero({
             </a>
           </div>
           <ul className="mt-6 grid gap-3 text-sm text-slate-700 sm:grid-cols-3">
-            <li className="flex items-center gap-2"><ShieldCheck size={18} className="text-brand" aria-hidden /> Gree & Daikin authorised</li>
+            <li className="flex items-center gap-2"><ShieldCheck size={18} className="text-brand" aria-hidden /> Authorised — all major brands</li>
             <li className="flex items-center gap-2"><Wrench size={18} className="text-brand" aria-hidden /> {site.installs} jobs completed</li>
             <li className="flex items-center gap-2"><Clock size={18} className="text-brand" aria-hidden /> 24/7 emergency response</li>
           </ul>

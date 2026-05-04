@@ -11,7 +11,7 @@ import TrustStrip from "@/components/TrustStrip";
 import LocalBusinessSchema from "@/components/schema/LocalBusinessSchema";
 import { areas, getArea } from "@/data/areas";
 import { services } from "@/data/services";
-import { site, waLink } from "@/lib/site";
+import { site, waLink, brandList } from "@/lib/site";
 
 export function generateStaticParams() {
   return areas.map((a) => ({ slug: a.slug }));
@@ -21,7 +21,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const a = getArea(params.slug);
   if (!a) return {};
   const title = `Air Conditioning ${a.name}, Bali — AC Service, Installation & Repair`;
-  const description = `Air conditioning services in ${a.name}, Bali. Same-day AC installation, cleaning and 24/7 repair. Authorised Gree & Daikin partner. WhatsApp ${site.phone} for a fixed quote.`;
+  const description = `Air conditioning services in ${a.name}, Bali. Same-day AC installation, cleaning and 24/7 repair. Authorised installer for Gree, Daikin, Panasonic, Mitsubishi, LG and Samsung. WhatsApp ${site.phone}.`;
   return {
     title,
     description: description.slice(0, 158),
@@ -33,7 +33,7 @@ const microclimateNotes: Record<string, string> = {
   "South Bali": "South Bali runs hot and humid year-round, with wet-season power surges and dry-season dust. Most units in this region need a chemical wash every 3 months and a full service every 6 months to keep cooling capacity above 90%.",
   "Bukit Peninsula": "The Bukit faces heavy salt-air corrosion from constant onshore wind. Outdoor condensers without anti-corrosion coatings typically lose 30–40% lifespan compared to inland units. We always spec Gold Fin or Daikin's Blue Fin coil protection here.",
   "Central Bali": "Ubud and the central highlands sit at higher humidity than the coast — frequently 85%+ — which encourages mould growth on evaporator coils. Power supply can also be unstable, so a surge protector on every outdoor unit is a must.",
-  "East Bali": "East Bali combines coastal salt exposure with longer travel times for parts. We schedule weekly visits and hold a stock of common Gree and Daikin parts in our service van for the trip.",
+  "East Bali": "East Bali combines coastal salt exposure with longer travel times for parts. We schedule weekly visits and hold a stock of common parts (Gree, Daikin, Panasonic, Mitsubishi, LG, Samsung) in our service van for the trip.",
   "West Bali": "West Bali ranges from rice-paddy humidity inland to direct salt spray on the Tanah Lot coast. Sizing matters more here — undersized units run flat-out 24/7 and burn through compressors.",
   "North Bali": "North Bali is generally cooler and drier than the south, but overnight humidity still drives mould without proper drain maintenance. Lovina and Singaraja both need quarterly cleaning at minimum.",
 };
@@ -91,7 +91,7 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
     { q: `How often should AC be cleaned in ${a.name}?`, a: `Every 3 months minimum. ${a.region === "Bukit Peninsula" || a.region === "East Bali" ? `${a.name} sits in a heavy salt-air zone, so we strongly recommend every 6–8 weeks for short-stay villas and beach clubs.` : a.region === "Central Bali" ? `${a.name}'s humidity drives mould growth fast — short-stay villas should clean every 6–8 weeks.` : `Beach-club units, beachfront villas and high-occupancy short-stay rentals in ${a.name} should clean every 6–8 weeks.`}` },
     { q: `What's the most common AC problem in ${a.name}?`, a: `${issues[0]}. Closely followed by ${issues[1].toLowerCase()}. We see these every week in ${a.name} and carry the parts to fix on the same visit.` },
     { q: `Do you handle villa maintenance contracts in ${a.name}?`, a: `Yes — many of our villa-package clients are based in ${a.name}. Contracts include scheduled visits, photo reports, priority same-day breakdown response and an annual deep chemical wash on every unit. Send us a unit count for a fixed monthly or quarterly quote.` },
-    { q: `Do you install Gree and Daikin in ${a.name}?`, a: `Yes — we are the authorised Gree and Daikin installer for ${a.name}. New units are registered under your name with the manufacturer for full warranty: 5-year compressor on Gree, 3-year compressor on Daikin.` },
+    { q: `Which AC brands do you install in ${a.name}?`, a: `We are an authorised installer for Gree, Daikin, Panasonic, Mitsubishi Electric, LG and Samsung in ${a.name}. Every new unit is registered under your name with the manufacturer for full warranty — 5-year compressor on Gree and Panasonic, 10-year on LG Dual Inverter, 3-year on Daikin and Mitsubishi.` },
   ];
 
   return (
@@ -99,7 +99,7 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
       <Breadcrumbs items={[{ label: "Areas", href: "/areas" }, { label: a.name, href: `/areas/${a.slug}` }]} />
       <Hero
         h1={`Air Conditioning Services in ${a.name}, Bali`}
-        sub={`${a.blurb} Same-day AC installation, cleaning and 24/7 repair across ${a.name}. Authorised Gree & Daikin partner.`}
+        sub={`${a.blurb} Same-day AC installation, cleaning and 24/7 repair across ${a.name}. Authorised installer for every major brand.`}
       />
       <TrustStrip />
 
@@ -107,9 +107,9 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
         <div className="container-prose grid items-start gap-10 md:grid-cols-[2fr_1fr]">
           <div className="space-y-6">
             <QuickAnswer>
-              We provide air conditioning installation, chemical cleaning, scheduled servicing and 24/7 repair across {a.name}, Bali. {a.responseTime}. Authorised Gree &amp; Daikin partner. WhatsApp <a className="font-semibold text-brand" href={waLink(`Hi, I'd like a quote for AC services in ${a.name}.`)}>{site.phone}</a> for a fixed quote.
+              We provide air conditioning installation, chemical cleaning, scheduled servicing and 24/7 repair across {a.name}, Bali. {a.responseTime}. Authorised installer for {brandList}. WhatsApp <a className="font-semibold text-brand" href={waLink(`Hi, I'd like a quote for AC services in ${a.name}.`)}>{site.phone}</a> for a fixed quote.
             </QuickAnswer>
-            <p className="text-slate-700"><strong>TL;DR:</strong> full AC service in {a.name} — install, clean, fix. {a.responseTime}. Authorised Gree &amp; Daikin partner.</p>
+            <p className="text-slate-700"><strong>TL;DR:</strong> full AC service in {a.name} — install, clean, fix. {a.responseTime}. Authorised installer for every major brand.</p>
 
             <div>
               <h2 className="h2">{a.name} at a glance</h2>
@@ -164,7 +164,7 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
             <div>
               <h2 className="h2">Why locals in {a.name} choose us</h2>
               <ul className="mt-3 grid gap-2 text-sm text-slate-700">
-                <li>• Authorised Gree and Daikin partner with manufacturer warranty registered under your name</li>
+                <li>• Authorised installer for {brandList} with manufacturer warranty registered under your name</li>
                 <li>• Fixed-fee quotes on WhatsApp — no callout charge, no hourly meter</li>
                 <li>• English-speaking technicians and photo reports, perfect for absentee villa owners</li>
                 <li>• 24/7 emergency response for breakdowns in {a.name}</li>

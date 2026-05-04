@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 
 export const metadata = {
   title: "About Us — Bali's Trusted Air Conditioning Specialists",
-  description: "Bali Air Conditioning Services has been installing, cleaning and repairing AC units across Bali since 2015. Authorised Gree & Daikin partner with 10,000+ jobs completed.",
+  description: "Air Conditioning Bali has been installing, cleaning and repairing AC units across Bali since 2015. Authorised installer for Gree, Daikin, Panasonic, Mitsubishi, LG and Samsung. 10,000+ jobs completed.",
   alternates: { canonical: "/about" },
 };
 
@@ -15,7 +15,7 @@ export default function AboutPage() {
   return (
     <>
       <Breadcrumbs items={[{ label: "About", href: "/about" }]} />
-      <Hero h1="About Bali Air Conditioning Services" sub={`Founded in ${site.founded}. ${site.installs} jobs across the island. Authorised Gree & Daikin partner.`} />
+      <Hero h1="About Air Conditioning Bali" sub={`Founded in ${site.founded}. ${site.installs} jobs across the island. Authorised installer for every major brand.`} />
       <TrustStrip />
 
       <section className="section">
@@ -33,7 +33,7 @@ export default function AboutPage() {
               <li><strong>Fixed-price, on-WhatsApp quotes.</strong> No callout fees. No hourly meter running. We agree the total before any tech sets out.</li>
               <li><strong>Photo reports after every visit.</strong> Perfect for absentee owners and villa managers who can&rsquo;t be on site.</li>
               <li><strong>Genuine 24/7 emergency response.</strong> A real technician picks up after hours, not a call-centre.</li>
-              <li><strong>Authorised partner status with Gree &amp; Daikin.</strong> Manufacturer warranty registered under your name, not ours.</li>
+              <li><strong>Authorised installer for every major brand.</strong> Gree, Daikin, Panasonic, Mitsubishi Electric, LG and Samsung — manufacturer warranty registered under your name, not ours.</li>
               <li><strong>Bali-specific install practices.</strong> Anti-corrosion coatings, surge protection, condensate-pump options, brackets sized for tropical-storm wind loads.</li>
             </ul>
 
@@ -52,7 +52,7 @@ export default function AboutPage() {
               <dl className="mt-4 grid gap-3 text-sm">
                 <Stat term="Founded" detail={site.founded} />
                 <Stat term="Jobs completed" detail={site.installs} />
-                <Stat term="Authorised partners" detail="Gree &amp; Daikin Indonesia" />
+                <Stat term="Authorised brands" detail="Gree, Daikin, Panasonic, Mitsubishi, LG, Samsung" />
                 <Stat term="Coverage" detail="35+ Bali areas" />
                 <Stat term="Emergency line" detail="24/7" />
               </dl>

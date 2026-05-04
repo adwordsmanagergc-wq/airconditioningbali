@@ -10,13 +10,13 @@ import { services } from "@/data/services";
 import { areas } from "@/data/areas";
 import { brands } from "@/data/brands";
 import { homeFaqs } from "@/data/faqs";
-import { site, waLink } from "@/lib/site";
+import { site, waLink, brandList } from "@/lib/site";
 import { Wrench, SprayCan, Hammer, ClipboardCheck, Building2, Home as HomeIcon, ShieldCheck, Sparkles, Truck, Users } from "lucide-react";
 
 export const metadata = {
   title: "Air Conditioning Bali — Installation, Cleaning & 24/7 Repair",
   description:
-    "Bali's trusted air conditioning experts. Same-day AC installation, cleaning, servicing and repair across Canggu, Seminyak, Uluwatu, Ubud, Sanur and 35+ areas. Authorised Gree & Daikin partner.",
+    "Bali's trusted air conditioning experts. Same-day AC installation, cleaning, servicing and repair across Canggu, Seminyak, Uluwatu, Ubud, Sanur and 35+ areas. Authorised installer for Gree, Daikin, Panasonic, Mitsubishi, LG and Samsung.",
   alternates: { canonical: "/" },
 };
 
@@ -35,7 +35,7 @@ export default function HomePage() {
     <>
       <Hero
         h1="Bali's Trusted Air Conditioning Experts — Installation, Cleaning & Servicing Across the Island"
-        sub="Same-day AC service from a 24/7 team that actually knows Bali villas. Authorised Gree & Daikin partner. Fixed quotes on WhatsApp in 15 minutes."
+        sub="Same-day AC service from a 24/7 team that actually knows Bali villas. Authorised installer for every major brand sold in Indonesia. Fixed quotes on WhatsApp in 15 minutes."
       />
       <TrustStrip />
 
@@ -43,10 +43,10 @@ export default function HomePage() {
         <div className="container-prose grid items-start gap-10 md:grid-cols-[2fr_1fr]">
           <div className="space-y-6">
             <QuickAnswer>
-              We are a Bali-based air conditioning company specialising in residential and commercial AC installation, cleaning, servicing and 24/7 repair. We are authorised partners for Gree and Daikin and cover Canggu, Seminyak, Uluwatu, Ubud, Sanur and 35+ other Bali areas same-day. Quotes are fixed-fee and sent on WhatsApp within 15 minutes.
+              We are a Bali-based air conditioning company specialising in residential and commercial AC installation, cleaning, servicing and 24/7 repair. We are an authorised installer for {brandList} and cover Canggu, Seminyak, Uluwatu, Ubud, Sanur and 35+ other Bali areas same-day. Quotes are fixed-fee and sent on WhatsApp within 15 minutes.
             </QuickAnswer>
             <p className="text-slate-700">
-              <strong>TL;DR:</strong> we install, clean, service and fix split, multi-split and ceiling-cassette air conditioners across Bali — usually same day in South Bali. Authorised Gree and Daikin partner. WhatsApp <a className="font-semibold text-brand" href={waLink()}>{site.phone}</a> for a fixed quote.
+              <strong>TL;DR:</strong> we install, clean, service and fix split, multi-split and ceiling-cassette air conditioners across Bali — usually same day in South Bali. Authorised installer for every major brand. WhatsApp <a className="font-semibold text-brand" href={waLink()}>{site.phone}</a> for a fixed quote.
             </p>
           </div>
           <QuoteForm />
@@ -87,7 +87,7 @@ export default function HomePage() {
       <section className="section bg-brand-mist">
         <div className="container-prose">
           <h2 className="h2">Brands we supply, install and service in Bali</h2>
-          <p className="mt-2 max-w-2xl text-slate-700">Authorised partners for Gree and Daikin. Full supply, install and service capability on the other major brands available in Indonesia.</p>
+          <p className="mt-2 max-w-2xl text-slate-700">We are an authorised installer for every major air conditioning brand sold in Indonesia — full supply, install, manufacturer warranty registration and lifetime servicing.</p>
           <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {brands.map((b) => (
               <Link key={b.slug} href={`/brands/${b.slug}`} className="card transition hover:-translate-y-1">
