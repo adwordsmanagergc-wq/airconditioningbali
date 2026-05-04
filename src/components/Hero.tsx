@@ -1,18 +1,26 @@
-import Image from "next/image";
 import { Phone, MessageCircle, Star, ShieldCheck, Clock } from "lucide-react";
 import { telLink, waLink, site } from "@/lib/site";
+import HeroSlideshow, { type HeroSlide } from "./HeroSlideshow";
+
+const defaultSlides: HeroSlide[] = [
+  { src: "/images/hero/air-conditioning-bali-villa-canggu.webp", alt: "Air conditioning installed in a Canggu villa bedroom, Bali" },
+  { src: "/images/hero/air-conditioning-bali-villa-master.webp", alt: "Modern split air conditioner in a Bali villa master bedroom" },
+  { src: "/images/hero/air-conditioning-bali-living-room.webp", alt: "Air conditioner cooling an open-plan villa living room in Bali" },
+  { src: "/images/hero/air-conditioning-bali-uluwatu.webp", alt: "Daikin air conditioner installed in an Uluwatu clifftop villa, Bali" },
+  { src: "/images/hero/air-conditioning-bali-seminyak.webp", alt: "Gree inverter split AC fitted in a Seminyak villa, Bali" },
+  { src: "/images/hero/air-conditioning-bali-installation.webp", alt: "Professional air conditioning installation in a Bali villa" },
+];
 
 export default function Hero({
   h1,
   sub,
-  imageSrc = "/images/hero/villa-ac-canggu.jpg",
-  imageAlt = "Modern split air conditioner installed in a Balinese villa bedroom in Canggu",
+  slides,
 }: {
   h1: string;
   sub: string;
-  imageSrc?: string;
-  imageAlt?: string;
+  slides?: HeroSlide[];
 }) {
+  const heroSlides = slides && slides.length > 0 ? slides : defaultSlides;
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-brand-mist to-white">
       <div className="container-prose grid items-center gap-10 py-12 md:grid-cols-2 md:py-20">
@@ -35,16 +43,7 @@ export default function Hero({
           </ul>
         </div>
         <div className="relative">
-          <div className="aspect-[4/3] w-full overflow-hidden rounded-3xl bg-slate-100 shadow-card">
-            <Image
-              src={imageSrc}
-              alt={imageAlt}
-              width={960}
-              height={720}
-              priority
-              className="h-full w-full object-cover"
-            />
-          </div>
+          <HeroSlideshow slides={heroSlides} />
           <div className="absolute -bottom-6 left-6 hidden rounded-2xl bg-white p-4 shadow-card md:flex md:items-center md:gap-3">
             <div className="grid h-10 w-10 place-items-center rounded-full bg-brand text-white font-bold">10K+</div>
             <div>
