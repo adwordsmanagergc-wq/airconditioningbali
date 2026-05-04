@@ -131,17 +131,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container-prose">
-          <h2 className="h2">What our customers say</h2>
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
-            <Testimonial name="Sarah, Canggu villa owner" body="Same-day chemical wash on five units before guests arrived. Photo reports were brilliant — exactly what an absentee owner needs." />
-            <Testimonial name="Made, Seminyak café manager" body="Two cassettes installed overnight without us closing for service. Quiet, clean install, no surprises." />
-            <Testimonial name="James, Uluwatu" body="Salt air had killed our outdoor units. They specced corrosion-protected Daikins and the problem hasn't come back." />
-          </div>
-        </div>
-      </section>
-
       <section className="section bg-brand-mist">
         <div className="container-prose">
           <h2 className="h2">From the blog</h2>
@@ -178,15 +167,6 @@ function Step({ n, title, body }: { n: number; title: string; body: string }) {
       <h3 className="mt-3 text-base font-semibold">{title}</h3>
       <p className="mt-2 text-sm text-slate-600">{body}</p>
     </li>
-  );
-}
-
-function Testimonial({ name, body }: { name: string; body: string }) {
-  return (
-    <figure className="card">
-      <blockquote className="text-sm text-slate-700">&ldquo;{body}&rdquo;</blockquote>
-      <figcaption className="mt-3 text-xs font-semibold text-slate-500">{name}</figcaption>
-    </figure>
   );
 }
 

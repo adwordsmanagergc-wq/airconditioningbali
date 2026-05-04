@@ -29,7 +29,6 @@ export default function LocalBusinessSchema({
     openingHoursSpecification: [
       { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], opens: "00:00", closes: "23:59" },
     ],
-    aggregateRating: { "@type": "AggregateRating", ratingValue: site.ratingValue, reviewCount: site.reviewCount },
     areaServed: areaName ? { "@type": "Place", name: `${areaName}, Bali` } : { "@type": "AdministrativeArea", name: "Bali, Indonesia" },
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;

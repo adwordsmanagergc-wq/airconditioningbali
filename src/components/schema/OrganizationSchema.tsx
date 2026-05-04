@@ -23,8 +23,7 @@ export default function OrganizationSchema() {
     openingHoursSpecification: [
       { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], opens: "00:00", closes: "23:59" },
     ],
-    sameAs: [site.social.instagram, site.social.facebook, site.social.google],
-    aggregateRating: { "@type": "AggregateRating", ratingValue: site.ratingValue, reviewCount: site.reviewCount },
+    sameAs: [site.social.instagram, site.social.facebook],
     areaServed: { "@type": "AdministrativeArea", name: "Bali, Indonesia" },
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;

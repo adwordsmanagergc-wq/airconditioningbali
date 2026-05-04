@@ -1,4 +1,4 @@
-# Bali Air Conditioning Services — Website
+# Air Conditioning Bali — Website
 
 Production-ready Next.js 14 website for an air conditioning services company operating across Bali, Indonesia. Built for SEO, AI search (LLM/GEO/AEO) and high conversion via WhatsApp.
 
@@ -44,7 +44,7 @@ All content lives under `src/data/`:
 
 - `src/data/services.ts` — the 7 service offerings, pricing, what's included, process
 - `src/data/brands.ts` — Gree and Daikin model line-up
-- `src/data/areas.ts` — 40 areas with name, slug, region, lat/lng, blurb, neighbours
+- `src/data/areas.ts` — 37 Bali areas with name, slug, region, lat/lng, blurb, neighbours
 - `src/data/faqs.ts` — FAQ banks per service
 - `src/data/posts.ts` — blog articles (markdown body + FAQ)
 - `src/lib/site.ts` — business name, phone, address, hours, social
@@ -134,4 +134,4 @@ public/
 
 ## License
 
-Proprietary — © Bali Air Conditioning Services.
+Proprietary — © Air Conditioning Bali.

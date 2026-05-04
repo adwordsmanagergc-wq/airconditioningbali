@@ -9,8 +9,8 @@ export default function Footer() {
       <div className="container-prose grid gap-10 py-14 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-2">
-            <span className="grid h-9 w-9 place-items-center rounded-xl bg-brand text-white font-bold">B</span>
-            <span className="text-sm font-bold leading-tight">Bali Air<br />Conditioning</span>
+            <span className="grid h-9 w-9 place-items-center rounded-xl bg-brand text-white font-bold">A</span>
+            <span className="text-sm font-bold leading-tight">Air Conditioning<br />Bali</span>
           </div>
           <p className="mt-4 text-sm text-slate-600">{site.tagline}</p>
           <div className="mt-4 space-y-1 text-sm text-slate-700">
@@ -23,7 +23,6 @@ export default function Footer() {
           <div className="mt-4 flex gap-3 text-sm">
             <a className="hover:text-brand" href={site.social.instagram}>Instagram</a>
             <a className="hover:text-brand" href={site.social.facebook}>Facebook</a>
-            <a className="hover:text-brand" href={site.social.google}>Google</a>
           </div>
         </div>
         <div>

@@ -1,4 +1,4 @@
-import { ShieldCheck, Star, Clock, Award } from "lucide-react";
+import { ShieldCheck, Wrench, Clock, Award } from "lucide-react";
 import { site } from "@/lib/site";
 
 export default function TrustStrip() {
@@ -7,7 +7,7 @@ export default function TrustStrip() {
       <div className="container-prose grid grid-cols-2 gap-6 py-8 sm:grid-cols-4">
         <Item icon={<ShieldCheck size={22} aria-hidden />} title="Gree authorised" sub="Indonesia partner" />
         <Item icon={<Award size={22} aria-hidden />} title="Daikin authorised" sub="Premium installer" />
-        <Item icon={<Star size={22} aria-hidden />} title={`${site.ratingValue}★`} sub={`${site.reviewCount}+ reviews`} />
+        <Item icon={<Wrench size={22} aria-hidden />} title={site.installs} sub="Jobs completed" />
         <Item icon={<Clock size={22} aria-hidden />} title="24/7" sub="Emergency response" />
       </div>
     </section>

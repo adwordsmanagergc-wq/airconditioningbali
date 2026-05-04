@@ -13,13 +13,18 @@ Every image referenced in the site, with the exact path and recommended alt text
 | Path | Used in | Alt text |
 | --- | --- | --- |
 | `public/images/logo.png` | JSON-LD Organization schema | (logo, no alt) |
-| `public/images/og/default.jpg` | Default OpenGraph share card | Bali Air Conditioning Services logo card |
+| `public/images/og/default.jpg` | Default OpenGraph share card | Air Conditioning Bali logo card |
 
-## Hero image
+## Hero slideshow (cross-fades every 4s on every page)
 
-| Path | Used in | Alt text |
-| --- | --- | --- |
-| `public/images/hero/villa-ac-canggu.jpg` | Default hero on every page | Modern split air conditioner installed in a Balinese villa bedroom in Canggu |
+| Path | Alt text |
+| --- | --- |
+| `public/images/hero/air-conditioning-bali-villa-canggu.webp` | Air conditioning installed in a Canggu villa bedroom, Bali |
+| `public/images/hero/air-conditioning-bali-villa-master.webp` | Modern split air conditioner in a Bali villa master bedroom |
+| `public/images/hero/air-conditioning-bali-living-room.webp` | Air conditioner cooling an open-plan villa living room in Bali |
+| `public/images/hero/air-conditioning-bali-uluwatu.webp` | Daikin air conditioner installed in an Uluwatu clifftop villa, Bali |
+| `public/images/hero/air-conditioning-bali-seminyak.webp` | Gree inverter split AC fitted in a Seminyak villa, Bali |
+| `public/images/hero/air-conditioning-bali-installation.webp` | Professional air conditioning installation in a Bali villa |
 
 ## Brands
 
@@ -54,12 +59,12 @@ Every image referenced in the site, with the exact path and recommended alt text
 
 | Path | Alt text |
 | --- | --- |
-| `public/images/team/technician-1.jpg` | Lead AC technician at Bali Air Conditioning Services |
-| `public/images/team/team-group.jpg` | The Bali Air Conditioning Services team in Canggu |
+| `public/images/team/technician-1.jpg` | Lead AC technician at Air Conditioning Bali |
+| `public/images/team/team-group.jpg` | The Air Conditioning Bali team in Canggu |
 
 ## Areas
 
-One hero image per area (40 total). Pattern: `public/images/areas/<slug>.jpg`. Suggested alt text pattern: `Air conditioning service in <Area name>, Bali`.
+One hero image per area (37 total). Pattern: `public/images/areas/<slug>.jpg`. Suggested alt text pattern: `Air conditioning service in <Area name>, Bali`.
 
 - `seminyak.jpg` — Air conditioning service in Seminyak, Bali
 - `canggu.jpg` — Air conditioning service in Canggu, Bali
@@ -98,9 +103,6 @@ One hero image per area (40 total). Pattern: `public/images/areas/<slug>.jpg`. S
 - `singaraja.jpg` — Air conditioning service in Singaraja, Bali
 - `munduk.jpg` — Air conditioning service in Munduk, Bali
 - `bedugul.jpg` — Air conditioning service in Bedugul, Bali
-- `nusa-lembongan.jpg` — Air conditioning service on Nusa Lembongan
-- `nusa-penida.jpg` — Air conditioning service on Nusa Penida
-- `nusa-ceningan.jpg` — Air conditioning service on Nusa Ceningan
 
 ## Blog post header images (optional, recommended)
 

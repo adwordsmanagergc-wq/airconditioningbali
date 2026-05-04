@@ -12,7 +12,7 @@ Every item is implemented in the codebase. Replace placeholder images and add re
 - [x] Canonical URL — `alternates.canonical` per route
 - [x] Hreflang stubs — `en-ID` and `id-ID` in root layout
 - [x] Visible breadcrumbs + `BreadcrumbList` schema (`src/components/Breadcrumbs.tsx`)
-- [x] Internal linking — every service page links to all 40 areas; every area page links to all services and 4 neighbouring areas; footer lists every area
+- [x] Internal linking — every service page links to every area; every area page links to all services and 4 neighbouring areas; footer lists every area
 
 ## Structured data (JSON-LD)
 

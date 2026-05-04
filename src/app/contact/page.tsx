@@ -7,7 +7,7 @@ import { MessageCircle, Phone, Mail, Clock, MapPin } from "lucide-react";
 
 export const metadata = {
   title: "Contact — Bali Air Conditioning Services",
-  description: "Contact Bali Air Conditioning Services. WhatsApp +62 818-0802-9595, 24/7 emergency line, fixed-price quotes within 15 minutes. Coverage across all 40+ Bali areas.",
+  description: "Contact Air Conditioning Bali. WhatsApp +62 818-0802-9595, 24/7 emergency line, fixed-fee quotes within 15 minutes. Coverage across all major Bali areas.",
   alternates: { canonical: "/contact" },
 };
 

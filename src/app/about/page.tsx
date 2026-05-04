@@ -52,9 +52,8 @@ export default function AboutPage() {
               <dl className="mt-4 grid gap-3 text-sm">
                 <Stat term="Founded" detail={site.founded} />
                 <Stat term="Jobs completed" detail={site.installs} />
-                <Stat term="Google rating" detail={`${site.ratingValue}★ (${site.reviewCount}+ reviews)`} />
                 <Stat term="Authorised partners" detail="Gree &amp; Daikin Indonesia" />
-                <Stat term="Coverage" detail="40+ Bali areas" />
+                <Stat term="Coverage" detail="35+ Bali areas" />
                 <Stat term="Emergency line" detail="24/7" />
               </dl>
             </div>

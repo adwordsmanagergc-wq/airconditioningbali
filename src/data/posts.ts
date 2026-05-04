@@ -19,7 +19,7 @@ export const posts: Post[] = [
     excerpt: "Daikin or Gree? We install both every week across Bali. Here's the honest comparison — warranty, noise, real-world salt-air durability, and which one wins for your villa.",
     date: "2026-01-12",
     author: "I Made Suarjana, Lead Technician",
-    reviewer: "Reviewed by the technical team at Bali Air Conditioning Services",
+    reviewer: "Reviewed by the technical team at Air Conditioning Bali",
     readingTime: "8 min read",
     body: `## TL;DR
 

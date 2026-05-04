@@ -13,9 +13,9 @@ export default function Header() {
     <header className="sticky top-0 z-40 border-b border-slate-100 bg-white/90 backdrop-blur">
       <div className="container-prose flex items-center justify-between gap-4 py-3">
         <Link href="/" className="flex items-center gap-2" aria-label={`${site.name} home`}>
-          <span className="grid h-9 w-9 place-items-center rounded-xl bg-brand text-white font-bold">B</span>
+          <span className="grid h-9 w-9 place-items-center rounded-xl bg-brand text-white font-bold">A</span>
           <span className="hidden text-sm font-bold leading-tight sm:block">
-            Bali Air<br />Conditioning
+            Air Conditioning<br />Bali
           </span>
         </Link>
         <nav aria-label="Primary" className="hidden items-center gap-6 lg:flex">
@@ -23,7 +23,7 @@ export default function Header() {
           <NavDropdown
             label="Areas"
             items={areas.slice(0, 12).map((a) => ({ href: `/areas/${a.slug}`, label: a.name }))}
-            footer={{ href: "/areas", label: "View all 40 areas →" }}
+            footer={{ href: "/areas", label: "View all areas →" }}
           />
           <Link href="/brands/gree-air-conditioning-bali" className="text-sm font-medium hover:text-brand">Gree</Link>
           <Link href="/brands/daikin-air-conditioning-bali" className="text-sm font-medium hover:text-brand">Daikin</Link>
@@ -53,7 +53,7 @@ export default function Header() {
             <MobileGroup
               label="Areas"
               items={areas.slice(0, 12).map((a) => ({ href: `/areas/${a.slug}`, label: a.name }))}
-              footer={{ href: "/areas", label: "All 40 areas →" }}
+              footer={{ href: "/areas", label: "All areas →" }}
             />
             <Link className="px-3 py-2 text-sm font-medium" href="/brands/gree-air-conditioning-bali">Gree Bali</Link>
             <Link className="px-3 py-2 text-sm font-medium" href="/brands/daikin-air-conditioning-bali">Daikin Bali</Link>

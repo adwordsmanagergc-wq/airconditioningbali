@@ -36,7 +36,6 @@ const microclimateNotes: Record<string, string> = {
   "East Bali": "East Bali combines coastal salt exposure with longer travel times for parts. We schedule weekly visits and hold a stock of common Gree and Daikin parts in our service van for the trip.",
   "West Bali": "West Bali ranges from rice-paddy humidity inland to direct salt spray on the Tanah Lot coast. Sizing matters more here — undersized units run flat-out 24/7 and burn through compressors.",
   "North Bali": "North Bali is generally cooler and drier than the south, but overnight humidity still drives mould without proper drain maintenance. Lovina and Singaraja both need quarterly cleaning at minimum.",
-  "Nusa Islands": "The Nusa islands are challenging — extreme salt exposure, limited local technicians, and parts crossing on the fast boat. We schedule monthly preventative visits to avoid emergencies that mean a 24-hour wait for parts.",
 };
 
 const commonIssuesByRegion: Record<string, string[]> = {
@@ -76,12 +75,6 @@ const commonIssuesByRegion: Record<string, string[]> = {
     "Outdoor unit fan motor wear from coastal exposure",
     "Filter blockage from kitchen fumes in restaurant fit-outs",
   ],
-  "Nusa Islands": [
-    "Severe salt-air corrosion within 12 months on cheap outdoor units",
-    "PCB damage from generator-powered villa setups",
-    "Refrigerant leaks from poor installation by non-specialists",
-    "Drain blockages from sand and salt residue",
-  ],
 };
 
 export default function AreaPage({ params }: { params: { slug: string } }) {
@@ -95,7 +88,7 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
   const areaFaqs = [
     { q: `How do I get a quote for AC services in ${a.name}?`, a: `WhatsApp us at ${site.phone} with a photo of the room or unit, plus what you need (install, clean, fix, new system). We reply within 15 minutes with a fixed quote — no callout fees and no hourly meter.` },
     { q: `Can you service AC the same day in ${a.name}?`, a: `${a.responseTime} for ${a.name}. ${a.region === "South Bali" ? "We have technicians based in Canggu and Kerobokan who cover South Bali same day, usually within 2 hours of a midday booking." : a.region === "Bukit Peninsula" ? "Our Bukit van covers Uluwatu, Ungasan, Pecatu, Bingin, Balangan, Jimbaran and Nusa Dua same day from a single base." : a.region === "Central Bali" ? "Ubud and central Bali bookings made before midday are usually done same day; otherwise next day." : "Visits are scheduled — we batch our route to keep the cost reasonable for clients in this region."}` },
-    { q: `How often should AC be cleaned in ${a.name}?`, a: `Every 3 months minimum. ${a.region === "Bukit Peninsula" || a.region === "East Bali" || a.region === "Nusa Islands" ? `${a.name} sits in a heavy salt-air zone, so we strongly recommend every 6–8 weeks for short-stay villas and beach clubs.` : a.region === "Central Bali" ? `${a.name}'s humidity drives mould growth fast — short-stay villas should clean every 6–8 weeks.` : `Beach-club units, beachfront villas and high-occupancy short-stay rentals in ${a.name} should clean every 6–8 weeks.`}` },
+    { q: `How often should AC be cleaned in ${a.name}?`, a: `Every 3 months minimum. ${a.region === "Bukit Peninsula" || a.region === "East Bali" ? `${a.name} sits in a heavy salt-air zone, so we strongly recommend every 6–8 weeks for short-stay villas and beach clubs.` : a.region === "Central Bali" ? `${a.name}'s humidity drives mould growth fast — short-stay villas should clean every 6–8 weeks.` : `Beach-club units, beachfront villas and high-occupancy short-stay rentals in ${a.name} should clean every 6–8 weeks.`}` },
     { q: `What's the most common AC problem in ${a.name}?`, a: `${issues[0]}. Closely followed by ${issues[1].toLowerCase()}. We see these every week in ${a.name} and carry the parts to fix on the same visit.` },
     { q: `Do you handle villa maintenance contracts in ${a.name}?`, a: `Yes — many of our villa-package clients are based in ${a.name}. Contracts include scheduled visits, photo reports, priority same-day breakdown response and an annual deep chemical wash on every unit. Send us a unit count for a fixed monthly or quarterly quote.` },
     { q: `Do you install Gree and Daikin in ${a.name}?`, a: `Yes — we are the authorised Gree and Daikin installer for ${a.name}. New units are registered under your name with the manufacturer for full warranty: 5-year compressor on Gree, 3-year compressor on Daikin.` },
@@ -146,7 +139,7 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
 
             <div>
               <h2 className="h2">Response time &amp; coverage map</h2>
-              <p className="mt-2 text-slate-700"><strong>{a.responseTime}.</strong> Our nearest crew is dispatched from {a.region === "South Bali" ? "our Canggu base" : a.region === "Bukit Peninsula" ? "our Bukit service van based near Pecatu" : a.region === "Central Bali" ? "our Ubud-based technicians" : a.region === "East Bali" ? "our scheduled East Bali route" : a.region === "North Bali" ? "our scheduled North Bali route" : a.region === "West Bali" ? "our Canggu base for west-side coverage" : "our scheduled fast-boat route"}.</p>
+              <p className="mt-2 text-slate-700"><strong>{a.responseTime}.</strong> Our nearest crew is dispatched from {a.region === "South Bali" ? "our Canggu base" : a.region === "Bukit Peninsula" ? "our Bukit service van based near Pecatu" : a.region === "Central Bali" ? "our Ubud-based technicians" : a.region === "East Bali" ? "our scheduled East Bali route" : a.region === "North Bali" ? "our scheduled North Bali route" : "our Canggu base for west-side coverage"}.</p>
               <div className="mt-4 overflow-hidden rounded-2xl border border-slate-100">
                 <iframe
                   title={`Map of ${a.name}, Bali`}
@@ -177,14 +170,6 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
                 <li>• 24/7 emergency response for breakdowns in {a.name}</li>
                 <li>• 90-day workmanship warranty on every repair, 12-month on every install</li>
               </ul>
-            </div>
-
-            <div>
-              <h2 className="h2">What clients in {a.name} say</h2>
-              <figure className="mt-3 card">
-                <blockquote className="text-sm text-slate-700">&ldquo;Booked through WhatsApp on Saturday morning, technicians at our {a.name} villa by lunchtime. Cleaned six units, replaced one capacitor, photo report by dinner. Best AC company we&rsquo;ve used in Bali.&rdquo;</blockquote>
-                <figcaption className="mt-3 text-xs font-semibold text-slate-500">Verified Google review — {a.name} villa owner</figcaption>
-              </figure>
             </div>
 
             <div>

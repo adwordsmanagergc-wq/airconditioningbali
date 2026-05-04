@@ -1,7 +1,7 @@
 export type Area = {
   slug: string;
   name: string;
-  region: "South Bali" | "Bukit Peninsula" | "Central Bali" | "East Bali" | "West Bali" | "North Bali" | "Nusa Islands";
+  region: "South Bali" | "Bukit Peninsula" | "Central Bali" | "East Bali" | "West Bali" | "North Bali";
   lat: number;
   lng: number;
   blurb: string;
@@ -40,16 +40,13 @@ export const areas: Area[] = [
   { slug: "tanah-lot", name: "Tanah Lot", region: "West Bali", lat: -8.6212, lng: 115.0867, blurb: "Coastal area around the iconic temple — heavy salt-spray exposure on every villa.", neighbours: ["pererenan", "tabanan", "mengwi", "canggu"], responseTime: "Same-day in most cases" },
   { slug: "mengwi", name: "Mengwi", region: "West Bali", lat: -8.5546, lng: 115.1736, blurb: "Inland regency between Canggu and the central highlands.", neighbours: ["tabanan", "pererenan", "canggu", "bedugul"], responseTime: "Same-day in most cases" },
   { slug: "gianyar", name: "Gianyar", region: "Central Bali", lat: -8.5430, lng: 115.3253, blurb: "Regency east of Ubud — mix of inland villas, art markets and small commercial venues.", neighbours: ["ubud", "klungkung", "penestanan", "tegallalang"], responseTime: "Next-day in most cases" },
-  { slug: "klungkung", name: "Klungkung", region: "East Bali", lat: -8.5359, lng: 115.4021, blurb: "Historic regency east of Gianyar — gateway to Nusa Penida.", neighbours: ["gianyar", "candidasa", "ubud", "amed"], responseTime: "Next-day across East Bali" },
+  { slug: "klungkung", name: "Klungkung", region: "East Bali", lat: -8.5359, lng: 115.4021, blurb: "Historic regency east of Gianyar with growing villa development.", neighbours: ["gianyar", "candidasa", "ubud", "amed"], responseTime: "Next-day across East Bali" },
   { slug: "candidasa", name: "Candidasa", region: "East Bali", lat: -8.5103, lng: 115.5708, blurb: "Quiet east-coast resort town with steady villa and boutique hotel demand.", neighbours: ["amed", "klungkung", "gianyar", "ubud"], responseTime: "Next-day across East Bali" },
   { slug: "amed", name: "Amed", region: "East Bali", lat: -8.3389, lng: 115.6688, blurb: "Black-sand fishing and dive village on Bali's east coast — heavy salt exposure.", neighbours: ["candidasa", "klungkung", "lovina", "singaraja"], responseTime: "Next-day across East Bali" },
   { slug: "lovina", name: "Lovina", region: "North Bali", lat: -8.1583, lng: 115.0260, blurb: "North-coast resort strip — laid-back, dolphin-watching crowd, with growing villa stock.", neighbours: ["singaraja", "munduk", "bedugul", "amed"], responseTime: "Next-day across North Bali" },
   { slug: "singaraja", name: "Singaraja", region: "North Bali", lat: -8.1120, lng: 115.0884, blurb: "Bali's old colonial capital and the largest city in the north.", neighbours: ["lovina", "munduk", "bedugul", "amed"], responseTime: "Next-day across North Bali" },
   { slug: "munduk", name: "Munduk", region: "North Bali", lat: -8.2528, lng: 115.0703, blurb: "Cool mountain village famed for waterfalls, coffee plantations and humidity-prone retreats.", neighbours: ["bedugul", "lovina", "singaraja", "tabanan"], responseTime: "Next-day across North Bali" },
   { slug: "bedugul", name: "Bedugul", region: "Central Bali", lat: -8.2756, lng: 115.1664, blurb: "Highland lake district with cool nights — surprisingly demanding on AC heating/dehumidify modes.", neighbours: ["munduk", "tabanan", "mengwi", "lovina"], responseTime: "Next-day in most cases" },
-  { slug: "nusa-lembongan", name: "Nusa Lembongan", region: "Nusa Islands", lat: -8.6817, lng: 115.4451, blurb: "Small island off Bali's southeast coast — extreme salt exposure and parts logistics.", neighbours: ["nusa-ceningan", "nusa-penida", "sanur", "candidasa"], responseTime: "Scheduled visits via fast boat" },
-  { slug: "nusa-penida", name: "Nusa Penida", region: "Nusa Islands", lat: -8.7270, lng: 115.5440, blurb: "The largest of the three islands — a fast-growing tourism market with limited local AC support.", neighbours: ["nusa-lembongan", "nusa-ceningan", "sanur", "candidasa"], responseTime: "Scheduled visits via fast boat" },
-  { slug: "nusa-ceningan", name: "Nusa Ceningan", region: "Nusa Islands", lat: -8.6925, lng: 115.4602, blurb: "The smallest of the Nusa trio — boutique villas and a handful of resorts.", neighbours: ["nusa-lembongan", "nusa-penida", "sanur", "candidasa"], responseTime: "Scheduled visits via fast boat" },
 ];
 
 export const getArea = (slug: string) => areas.find((a) => a.slug === slug);

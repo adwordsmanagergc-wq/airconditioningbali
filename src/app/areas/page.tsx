@@ -6,17 +6,17 @@ import { areas } from "@/data/areas";
 
 export const metadata = {
   title: "Areas We Cover — AC Services Across Bali",
-  description: "Air conditioning services in 40+ Bali areas — Canggu, Seminyak, Uluwatu, Ubud, Sanur, Denpasar, Nusa Dua and more. Same-day in South Bali, scheduled across the rest of the island.",
+  description: "Air conditioning services across 35+ Bali areas — Canggu, Seminyak, Uluwatu, Ubud, Sanur, Denpasar, Nusa Dua and more. Same-day in South Bali, scheduled across the rest of the island.",
   alternates: { canonical: "/areas" },
 };
 
-const regions = ["South Bali", "Bukit Peninsula", "Central Bali", "West Bali", "East Bali", "North Bali", "Nusa Islands"] as const;
+const regions = ["South Bali", "Bukit Peninsula", "Central Bali", "West Bali", "East Bali", "North Bali"] as const;
 
 export default function AreasIndex() {
   return (
     <>
       <Breadcrumbs items={[{ label: "Areas", href: "/areas" }]} />
-      <Hero h1="AC Services in Every Area of Bali" sub="40+ dedicated location pages across South Bali, the Bukit, Ubud, Sanur, Denpasar, North Bali, East Bali and the Nusa islands." />
+      <Hero h1="AC Services in Every Area of Bali" sub="Dedicated location pages across South Bali, the Bukit, Ubud, Sanur, Denpasar, North Bali, East Bali and West Bali." />
       <section className="section">
         <div className="container-prose space-y-10">
           {regions.map((r) => {
