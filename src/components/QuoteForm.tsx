@@ -68,7 +68,7 @@ export default function QuoteForm({ defaultArea, defaultService }: { defaultArea
       <button type="submit" disabled={status === "sending"} className="btn-primary">
         {status === "sending" ? "Sending..." : "Send Quote Request"}
       </button>
-      {status === "ok" ? <p className="text-sm text-emerald-600">Thanks — we'll reply on WhatsApp shortly.</p> : null}
+      {status === "ok" ? <p className="text-sm text-emerald-600">Thanks — we&apos;ll reply on WhatsApp shortly.</p> : null}
       {error ? <p className="text-sm text-red-600">{error}</p> : null}
     </form>
   );
