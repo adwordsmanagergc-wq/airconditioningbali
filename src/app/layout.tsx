@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import MobileBottomBar from "@/components/MobileBottomBar";
 import OrganizationSchema from "@/components/schema/OrganizationSchema";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -79,6 +80,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             `}</Script>
           </>
         ) : null}
+        <Analytics />
       </body>
     </html>
   );
