@@ -30,7 +30,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 export default function BrandPage({ params }: { params: { slug: string } }) {
   const b = getBrand(params.slug);
   if (!b) return notFound();
-  const other = brands.find((x) => x.slug !== b.slug)!;
+  const other = getBrand(b.compareTo) ?? brands.find((x) => x.slug !== b.slug)!;
+  const otherBrands = brands.filter((x) => x.slug !== b.slug);
 
   const productSchemas = b.models.map((m) => ({
     "@context": "https://schema.org",
@@ -113,6 +114,18 @@ export default function BrandPage({ params }: { params: { slug: string } }) {
                 </table>
               </div>
               <p className="mt-3 text-sm"><Link href={`/brands/${other.slug}`} className="font-semibold text-brand">Compare {other.name} →</Link></p>
+            </div>
+
+            <div>
+              <h2 className="h2">Other brands we install in Bali</h2>
+              <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                {otherBrands.map((o) => (
+                  <Link key={o.slug} href={`/brands/${o.slug}`} className="rounded-xl border border-slate-100 bg-white p-4 transition hover:-translate-y-1 hover:shadow-card">
+                    <p className="font-semibold">{o.name}{o.authorised ? <span className="ml-2 pill">Authorised</span> : null}</p>
+                    <p className="mt-1 text-sm text-slate-600">{o.tagline}</p>
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
           <aside className="space-y-6 lg:sticky lg:top-24">

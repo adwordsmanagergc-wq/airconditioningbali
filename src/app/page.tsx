@@ -86,22 +86,23 @@ export default function HomePage() {
 
       <section className="section bg-brand-mist">
         <div className="container-prose">
-          <h2 className="h2">Featured brands</h2>
-          <div className="mt-8 grid gap-6 md:grid-cols-2">
+          <h2 className="h2">Brands we supply, install and service in Bali</h2>
+          <p className="mt-2 max-w-2xl text-slate-700">Authorised partners for Gree and Daikin. Full supply, install and service capability on the other major brands available in Indonesia.</p>
+          <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {brands.map((b) => (
-              <div key={b.slug} className="card">
+              <Link key={b.slug} href={`/brands/${b.slug}`} className="card transition hover:-translate-y-1">
                 <div className="flex items-center justify-between">
                   <h3 className="h3">{b.name}</h3>
-                  <span className="pill">Authorised</span>
+                  {b.authorised ? <span className="pill">Authorised</span> : null}
                 </div>
-                <p className="mt-3 text-slate-700">{b.tagline}</p>
-                <p className="mt-3 text-sm text-slate-600">{b.bestFor}</p>
-                <div className="mt-4 flex gap-3">
-                  <Link href={`/brands/${b.slug}`} className="btn-outline">See {b.name} range</Link>
-                  <a href={waLink(`Hi, I'd like a quote for a new ${b.name} AC in Bali.`)} className="btn-whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-                </div>
-              </div>
+                <p className="mt-3 text-sm text-slate-700">{b.tagline}</p>
+                <p className="mt-3 text-xs text-slate-500"><strong>Best for:</strong> {b.bestFor.split(".")[0]}.</p>
+                <p className="mt-3 text-sm font-semibold text-brand">See {b.name} range →</p>
+              </Link>
             ))}
+          </div>
+          <div className="mt-6">
+            <Link href="/brands" className="btn-outline">Compare all brands</Link>
           </div>
         </div>
       </section>

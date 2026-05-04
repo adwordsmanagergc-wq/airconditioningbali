@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { services } from "@/data/services";
 import { areas } from "@/data/areas";
+import { brands } from "@/data/brands";
 import { site, telLink, waLink } from "@/lib/site";
 
 export default function Footer() {
@@ -31,8 +32,12 @@ export default function Footer() {
             {services.map((s) => (
               <li key={s.slug}><Link href={`/services/${s.slug}`} className="text-slate-700 hover:text-brand">{s.shortName}</Link></li>
             ))}
-            <li><Link href="/brands/gree-air-conditioning-bali" className="text-slate-700 hover:text-brand">Gree Bali</Link></li>
-            <li><Link href="/brands/daikin-air-conditioning-bali" className="text-slate-700 hover:text-brand">Daikin Bali</Link></li>
+          </ul>
+          <h3 className="mt-6 text-sm font-bold uppercase tracking-wide">Brands</h3>
+          <ul className="mt-4 space-y-2 text-sm">
+            {brands.map((b) => (
+              <li key={b.slug}><Link href={`/brands/${b.slug}`} className="text-slate-700 hover:text-brand">{b.name} Bali</Link></li>
+            ))}
           </ul>
         </div>
         <div className="md:col-span-2">

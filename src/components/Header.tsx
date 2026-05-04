@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { services } from "@/data/services";
 import { areas } from "@/data/areas";
+import { brands } from "@/data/brands";
 import { site, waLink } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
@@ -25,8 +26,11 @@ export default function Header() {
             items={areas.slice(0, 12).map((a) => ({ href: `/areas/${a.slug}`, label: a.name }))}
             footer={{ href: "/areas", label: "View all areas →" }}
           />
-          <Link href="/brands/gree-air-conditioning-bali" className="text-sm font-medium hover:text-brand">Gree</Link>
-          <Link href="/brands/daikin-air-conditioning-bali" className="text-sm font-medium hover:text-brand">Daikin</Link>
+          <NavDropdown
+            label="Brands"
+            items={brands.map((b) => ({ href: `/brands/${b.slug}`, label: b.name }))}
+            footer={{ href: "/brands", label: "Compare all brands →" }}
+          />
           <Link href="/about" className="text-sm font-medium hover:text-brand">About</Link>
           <Link href="/blog" className="text-sm font-medium hover:text-brand">Blog</Link>
           <Link href="/contact" className="text-sm font-medium hover:text-brand">Contact</Link>
@@ -55,8 +59,11 @@ export default function Header() {
               items={areas.slice(0, 12).map((a) => ({ href: `/areas/${a.slug}`, label: a.name }))}
               footer={{ href: "/areas", label: "All areas →" }}
             />
-            <Link className="px-3 py-2 text-sm font-medium" href="/brands/gree-air-conditioning-bali">Gree Bali</Link>
-            <Link className="px-3 py-2 text-sm font-medium" href="/brands/daikin-air-conditioning-bali">Daikin Bali</Link>
+            <MobileGroup
+              label="Brands"
+              items={brands.map((b) => ({ href: `/brands/${b.slug}`, label: b.name }))}
+              footer={{ href: "/brands", label: "Compare all →" }}
+            />
             <Link className="px-3 py-2 text-sm font-medium" href="/about">About</Link>
             <Link className="px-3 py-2 text-sm font-medium" href="/blog">Blog</Link>
             <Link className="px-3 py-2 text-sm font-medium" href="/contact">Contact</Link>
