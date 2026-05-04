@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { services } from "@/data/services";
@@ -13,11 +14,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-slate-100 bg-white/90 backdrop-blur">
       <div className="container-prose flex items-center justify-between gap-4 py-3">
-        <Link href="/" className="flex items-center gap-2" aria-label={`${site.name} home`}>
-          <span className="grid h-9 w-9 place-items-center rounded-xl bg-brand text-white font-bold">A</span>
-          <span className="hidden text-sm font-bold leading-tight sm:block">
-            Air Conditioning<br />Bali
-          </span>
+        <Link href="/" className="flex items-center" aria-label={`${site.name} home`}>
+          <Image
+            src="/images/logo.webp"
+            alt={`${site.name} — Service & Installation`}
+            width={720}
+            height={470}
+            priority
+            className="h-12 w-auto sm:h-14"
+          />
         </Link>
         <nav aria-label="Primary" className="hidden items-center gap-6 lg:flex">
           <NavDropdown label="Services" items={services.map((s) => ({ href: `/services/${s.slug}`, label: s.shortName }))} />

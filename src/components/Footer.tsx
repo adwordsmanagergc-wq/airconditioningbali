@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { services } from "@/data/services";
 import { areas } from "@/data/areas";
 import { brands } from "@/data/brands";
@@ -9,10 +10,15 @@ export default function Footer() {
     <footer className="border-t border-slate-100 bg-brand-mist">
       <div className="container-prose grid gap-10 py-14 md:grid-cols-4">
         <div>
-          <div className="flex items-center gap-2">
-            <span className="grid h-9 w-9 place-items-center rounded-xl bg-brand text-white font-bold">A</span>
-            <span className="text-sm font-bold leading-tight">Air Conditioning<br />Bali</span>
-          </div>
+          <Link href="/" aria-label={`${site.name} home`} className="inline-block">
+            <Image
+              src="/images/logo.webp"
+              alt={`${site.name} — Service & Installation`}
+              width={720}
+              height={470}
+              className="h-14 w-auto"
+            />
+          </Link>
           <p className="mt-4 text-sm text-slate-600">{site.tagline}</p>
           <div className="mt-4 space-y-1 text-sm text-slate-700">
             <p><strong>{site.name}</strong></p>
