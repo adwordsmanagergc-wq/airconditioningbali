@@ -9,6 +9,13 @@ import { brands } from "@/data/brands";
 import { site, waLink } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
+const serviceNav = [
+  ...services.map((s) => ({ href: `/services/${s.slug}`, label: s.shortName })),
+  { href: "/hvac-repair-bali", label: "24/7 HVAC Repair" },
+  { href: "/air-conditioner-bali", label: "Buy an Air Conditioner" },
+  { href: "/service-ac-bali", label: "Service AC (Bahasa)" },
+];
+
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
@@ -25,7 +32,7 @@ export default function Header() {
           />
         </Link>
         <nav aria-label="Primary" className="hidden items-center gap-6 lg:flex">
-          <NavDropdown label="Services" items={services.map((s) => ({ href: `/services/${s.slug}`, label: s.shortName }))} />
+          <NavDropdown label="Services" items={serviceNav} footer={{ href: "/services", label: "All services →" }} />
           <NavDropdown
             label="Areas"
             items={areas.slice(0, 12).map((a) => ({ href: `/areas/${a.slug}`, label: a.name }))}
@@ -36,6 +43,7 @@ export default function Header() {
             items={brands.map((b) => ({ href: `/brands/${b.slug}`, label: b.name }))}
             footer={{ href: "/brands", label: "Compare all brands →" }}
           />
+          <Link href="/ac-service-price-bali" className="text-sm font-medium hover:text-brand">Prices</Link>
           <Link href="/about" className="text-sm font-medium hover:text-brand">About</Link>
           <Link href="/blog" className="text-sm font-medium hover:text-brand">Blog</Link>
           <Link href="/contact" className="text-sm font-medium hover:text-brand">Contact</Link>
@@ -58,7 +66,7 @@ export default function Header() {
       {open ? (
         <nav aria-label="Mobile" className="border-t border-slate-100 bg-white lg:hidden">
           <div className="container-prose grid gap-1 py-3">
-            <MobileGroup label="Services" items={services.map((s) => ({ href: `/services/${s.slug}`, label: s.shortName }))} />
+            <MobileGroup label="Services" items={serviceNav} footer={{ href: "/services", label: "All services →" }} />
             <MobileGroup
               label="Areas"
               items={areas.slice(0, 12).map((a) => ({ href: `/areas/${a.slug}`, label: a.name }))}
@@ -69,6 +77,7 @@ export default function Header() {
               items={brands.map((b) => ({ href: `/brands/${b.slug}`, label: b.name }))}
               footer={{ href: "/brands", label: "Compare all →" }}
             />
+            <Link className="px-3 py-2 text-sm font-medium" href="/ac-service-price-bali">Prices</Link>
             <Link className="px-3 py-2 text-sm font-medium" href="/about">About</Link>
             <Link className="px-3 py-2 text-sm font-medium" href="/blog">Blog</Link>
             <Link className="px-3 py-2 text-sm font-medium" href="/contact">Contact</Link>

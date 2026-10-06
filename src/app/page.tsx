@@ -14,10 +14,10 @@ import { site, waLink, brandList } from "@/lib/site";
 import { Wrench, SprayCan, Hammer, ClipboardCheck, Building2, Home as HomeIcon, ShieldCheck, Sparkles, Truck, Users } from "lucide-react";
 
 export const metadata = {
-  title: "Air Conditioning Bali — Installation, Cleaning & 24/7 Repair",
+  title: { absolute: "Air Conditioning Bali — AC Installation, Cleaning & 24/7 Repair" },
   description:
     "Bali's trusted air conditioning experts. Same-day AC installation, cleaning, servicing and repair across Canggu, Seminyak, Uluwatu, Ubud, Sanur and 35+ areas. Authorised installer for Gree, Daikin, Panasonic, Mitsubishi, LG and Samsung.",
-  alternates: { canonical: "/" },
+  alternates: { canonical: "/", languages: { "en-ID": "/", "id-ID": "/service-ac-bali" } },
 };
 
 const serviceIcons: Record<string, React.ReactNode> = {

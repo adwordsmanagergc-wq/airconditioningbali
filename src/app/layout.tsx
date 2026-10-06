@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description: site.tagline,
   alternates: {
     canonical: "/",
-    languages: { "en-ID": "/", "id-ID": "/" },
+    languages: { "en-ID": "/", "id-ID": "/service-ac-bali" },
   },
   openGraph: {
     type: "website",

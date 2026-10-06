@@ -1,9 +1,18 @@
 import Link from "next/link";
 import Image from "next/image";
 import { services } from "@/data/services";
-import { areas } from "@/data/areas";
+import { areas, getAreaName } from "@/data/areas";
+import { idAreaPaths } from "@/data/landings-id";
 import { brands } from "@/data/brands";
 import { site, telLink, waLink } from "@/lib/site";
+
+const popular = [
+  { href: "/hvac-repair-bali", label: "HVAC Repair Bali 24/7" },
+  { href: "/ac-service-price-bali", label: "AC Service Prices" },
+  { href: "/air-conditioner-bali", label: "Air Conditioners Bali" },
+  { href: "/blog/daikin-vs-gree-bali", label: "Gree vs Daikin" },
+  { href: "/service-ac-bali", label: "Service AC Bali" },
+];
 
 export default function Footer() {
   return (
@@ -39,6 +48,12 @@ export default function Footer() {
               <li key={s.slug}><Link href={`/services/${s.slug}`} className="text-slate-700 hover:text-brand">{s.shortName}</Link></li>
             ))}
           </ul>
+          <h3 className="mt-6 text-sm font-bold uppercase tracking-wide">Popular</h3>
+          <ul className="mt-4 space-y-2 text-sm">
+            {popular.map((p) => (
+              <li key={p.href}><Link href={p.href} className="text-slate-700 hover:text-brand">{p.label}</Link></li>
+            ))}
+          </ul>
           <h3 className="mt-6 text-sm font-bold uppercase tracking-wide">Brands</h3>
           <ul className="mt-4 space-y-2 text-sm">
             {brands.map((b) => (
@@ -51,6 +66,12 @@ export default function Footer() {
           <ul className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
             {areas.map((a) => (
               <li key={a.slug}><Link href={`/areas/${a.slug}`} className="text-slate-700 hover:text-brand">{a.name}</Link></li>
+            ))}
+          </ul>
+          <h3 className="mt-6 text-sm font-bold uppercase tracking-wide">Service AC (Bahasa Indonesia)</h3>
+          <ul className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+            {Object.entries(idAreaPaths).map(([slug, href]) => (
+              <li key={href}><Link href={href} className="text-slate-700 hover:text-brand">Service AC {getAreaName(slug)}</Link></li>
             ))}
           </ul>
         </div>

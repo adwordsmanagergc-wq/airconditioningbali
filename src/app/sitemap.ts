@@ -3,6 +3,7 @@ import { services } from "@/data/services";
 import { areas } from "@/data/areas";
 import { brands } from "@/data/brands";
 import { posts } from "@/data/posts";
+import { landings } from "@/data/landings";
 import { site } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -44,5 +45,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticUrls, ...serviceUrls, ...brandUrls, ...areaUrls, ...postUrls];
+  const landingUrls = landings.map((l) => ({
+    url: `${base}/${l.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: l.areaName ? 0.8 : 0.9,
+  }));
+
+  return [...staticUrls, ...serviceUrls, ...landingUrls, ...brandUrls, ...areaUrls, ...postUrls];
 }

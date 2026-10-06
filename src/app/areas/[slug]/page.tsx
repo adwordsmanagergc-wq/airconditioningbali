@@ -12,6 +12,7 @@ import LocalBusinessSchema from "@/components/schema/LocalBusinessSchema";
 import { areas, getArea } from "@/data/areas";
 import { services } from "@/data/services";
 import { site, waLink, brandList } from "@/lib/site";
+import { idAreaPaths } from "@/data/landings-id";
 
 export function generateStaticParams() {
   return areas.map((a) => ({ slug: a.slug }));
@@ -25,7 +26,10 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   return {
     title,
     description: description.slice(0, 158),
-    alternates: { canonical: `/areas/${a.slug}` },
+    alternates: {
+      canonical: `/areas/${a.slug}`,
+      ...(idAreaPaths[a.slug] ? { languages: { "en-ID": `/areas/${a.slug}`, "id-ID": idAreaPaths[a.slug] } } : {}),
+    },
   };
 }
 
@@ -109,6 +113,9 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
             <QuickAnswer>
               We provide air conditioning installation, chemical cleaning, scheduled servicing and 24/7 repair across {a.name}, Bali. {a.responseTime}. Authorised installer for {brandList}. WhatsApp <a className="font-semibold text-brand" href={waLink(`Hi, I'd like a quote for AC services in ${a.name}.`)}>{site.phone}</a> for a fixed quote.
             </QuickAnswer>
+            {idAreaPaths[a.slug] ? (
+              <p className="text-sm text-slate-600" lang="id">Baca dalam Bahasa Indonesia: <Link className="font-semibold text-brand" href={idAreaPaths[a.slug]}>Service AC {a.name}</Link> — harga cuci AC, isi freon dan perbaikan.</p>
+            ) : null}
             <p className="text-slate-700"><strong>TL;DR:</strong> full AC service in {a.name} — install, clean, fix. {a.responseTime}. Authorised installer for every major brand.</p>
 
             <div>

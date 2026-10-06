@@ -3,6 +3,7 @@ import { services } from "@/data/services";
 import { areas } from "@/data/areas";
 import { brands } from "@/data/brands";
 import { posts } from "@/data/posts";
+import { landings } from "@/data/landings";
 import { site } from "@/lib/site";
 
 export async function GET() {
@@ -23,6 +24,12 @@ export async function GET() {
   lines.push("## Core services");
   for (const s of services) {
     lines.push(`- [${s.shortName}](${base}/services/${s.slug}): ${s.quickAnswer}`);
+  }
+  lines.push("");
+
+  lines.push("## Key pages");
+  for (const l of landings.filter((x) => x.lang === "en" || !x.areaName)) {
+    lines.push(`- [${l.h1}](${base}/${l.slug}): ${l.quickAnswer}`);
   }
   lines.push("");
 

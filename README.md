@@ -47,6 +47,8 @@ All content lives under `src/data/`:
 - `src/data/areas.ts` — 37 Bali areas with name, slug, region, lat/lng, blurb, neighbours
 - `src/data/faqs.ts` — FAQ banks per service
 - `src/data/posts.ts` — blog articles (markdown body + FAQ)
+- `src/data/landings.ts` / `src/data/landings-id.ts` — search-intent landing pages served at the site root (`/hvac-repair-bali`, `/air-conditioner-bali`, `/ac-service-price-bali`, `/service-ac-bali`, `/service-ac-<area>`), rendered by `src/app/[landing]/page.tsx`
+- `src/data/pricing.ts` — indicative IDR price list shared by the landing pages (edit once, updates everywhere)
 - `src/lib/site.ts` — business name, phone, address, hours, social
 
 After editing, restart `npm run dev`. Builds are static — no CMS or DB needed.

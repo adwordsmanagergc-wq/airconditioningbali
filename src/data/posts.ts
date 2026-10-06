@@ -14,71 +14,227 @@ export type Post = {
 export const posts: Post[] = [
   {
     slug: "daikin-vs-gree-bali",
-    title: "Daikin vs Gree in Bali: Which AC Brand Is Best for the Tropics?",
-    description: "Side-by-side comparison of Daikin and Gree air conditioners in Bali — warranty, noise, real-world durability in salt air and humidity, and which one wins for your villa.",
-    excerpt: "Daikin or Gree? We install both every week across Bali. Here's the honest comparison — warranty, noise, real-world salt-air durability, and which one wins for your villa.",
-    date: "2026-01-12",
+    title: "Gree vs Daikin: Which AC Is Better? A Bali Technician's 2026 Verdict",
+    description: "Gree vs Daikin compared by a Bali AC technician — price, noise, warranty, lifespan, salt-air durability and who makes Gree. Which air conditioner should you buy?",
+    excerpt: "Gree or Daikin? We install both every week across Bali. Here's the honest comparison — price, noise, warranty, lifespan, salt-air durability, and which one wins for each room.",
+    date: "2026-10-06",
     author: "I Made Suarjana, Lead Technician",
     reviewer: "Reviewed by the technical team at Air Conditioning Bali",
-    readingTime: "8 min read",
-    body: `## TL;DR
+    readingTime: "10 min read",
+    body: `## The short answer
 
-Gree gives you excellent value-for-money inverter splits in Bali. Daikin gives you the quietest, most precise, longest-lasting unit money can buy on the island. For most villas and apartments, Gree is the smart pick — for master bedrooms, hotel rooms and noise-sensitive spaces, the Daikin premium is worth it.
+**Daikin is the better air conditioner; Gree is the better value.** Daikin is quieter, smoother and lasts longer in real-world Bali conditions. Gree costs roughly 20–30% less, carries a longer compressor warranty in Indonesia (5 years vs 3), and cools a room just as well when it is correctly sized. For most villas we fit Daikin in the master bedroom and Gree everywhere else.
 
-## Quick comparison table
+## Gree vs Daikin comparison table
 
 | Feature | Gree | Daikin |
 | --- | --- | --- |
-| Compressor warranty | 5 years | 3 years |
-| Indoor noise (low fan) | 25–28 dB | 19–22 dB |
+| Headquarters | Zhuhai, China (founded 1989) | Osaka, Japan (founded 1924) |
+| 1 PK inverter price in Bali (unit only) | about Rp 4,3–5,5 jt | about Rp 5,5–7 jt |
+| Compressor warranty (Indonesia) | 5 years | 3 years |
+| Indoor noise on low fan | 25–28 dB | 19–22 dB |
 | Refrigerant | R32 | R32 |
-| Coil protection | Gold Fin (anti-corrosion) | Blue Fin (anti-corrosion) |
-| Inverter ramp smoothness | Very good | Excellent |
+| Anti-corrosion coil | Gold Fin | Blue Fin |
+| Inverter smoothness | Very good | Excellent |
+| Typical lifespan in Bali (serviced quarterly) | 8–10 years | 10–12 years |
 | Spare parts in Bali | Excellent | Excellent |
-| Best for | Villas, apartments, value-conscious | Premium villas, hotel rooms, hospitality |
+| Best for | Guest rooms, rentals, whole-villa fit-outs | Master bedrooms, hotels, noise-sensitive rooms |
 
-## Warranty: where Gree actually wins
+## Is Gree made by Daikin?
 
-This surprises people. Gree gives a 5-year compressor warranty — two years longer than Daikin's 3 years. In Bali's tropical environment that matters: the compressor is the single most expensive component to replace, and it's the part most stressed by 30°C+ ambient temperatures running 8–12 hours a day.
+No. Gree Electric Appliances is an independent Chinese manufacturer headquartered in Zhuhai, Guangdong, and is the world's largest maker of residential air conditioners by volume. Daikin Industries is a separate Japanese company and the world's largest HVAC company overall. The confusion comes from a real partnership: since around 2009 the two companies have cooperated through joint ventures in China on inverter compressors and precision components. Gree also makes the compressors, motors and PCBs for its own units — and builds air conditioners sold under other names, including its own Tosot brand.
 
-We register every unit with Gree Indonesia and Daikin Indonesia under your name, so claims go directly through us as the authorised partner.
+## Price: Gree is 20–30% cheaper
+
+Model for model, a Gree inverter split costs about 20–30% less than the equivalent Daikin in Bali. On a 4-bedroom villa that is often Rp 6–10 jt saved — enough to cover two years of quarterly servicing. See current [air conditioner prices in Bali](/air-conditioner-bali).
+
+## Warranty: Gree wins
+
+In Indonesia, Gree gives a 5-year compressor warranty; Daikin gives 3 years. The compressor is the most expensive part to replace and the one most stressed by Bali's 30°C+ days. We register every unit with Gree Indonesia or Daikin Indonesia under your name, so claims go directly through us.
 
 ## Noise: Daikin is in another league
 
-A Daikin Smile Inverter on low fan runs at 19–22 dB. That's quieter than a whisper. A Gree Lomo Eco on low fan runs at 25–28 dB. Both are good — but in a master bedroom or a hotel suite, the Daikin difference is audible.
+A Daikin inverter on low fan runs at 19–22 dB — quieter than a whisper. A comparable Gree runs at 25–28 dB. Both are quiet, but in a master bedroom, a baby's room or a hotel suite the Daikin difference is audible, especially at night when the compressor ramps up and down.
 
-If your unit is over a study, a music room or a baby's bedroom, the Daikin premium is worth it. If it's in a guest bedroom or living room, the Gree is fine.
+## Which cools better?
 
-## Salt-air corrosion: Bukit and beachfront villas
+Neither, if both are the same capacity. A 1 PK Gree and a 1 PK Daikin deliver the same rated cooling. What actually decides how cold a room gets in Bali is **sizing and installation** — an undersized or badly vacuumed unit of either brand will struggle. Daikin's inverter holds the set temperature more precisely and its dry mode removes humidity slightly better, which makes rooms feel cooler at the same setting.
 
-This is where Bali destroys cheap AC units. Both Gree and Daikin offer anti-corrosion coil treatments — Gree calls it Gold Fin, Daikin calls it Blue Fin. Both work. Both extend outdoor unit life from roughly 4–5 years (untreated) to 8–10 years (treated) on the Bukit and beachfront Canggu.
+## Which lasts longer?
 
-If you're buying for an Uluwatu, Bingin, Balangan or Pererenan villa, **always pay the small extra for the anti-corrosion model** — it's the cheapest insurance you can buy.
+In our service records, a quarterly-serviced Daikin typically runs 10–12 years in Bali and a Gree 8–10 years. Daikin's PCBs and fan motors tolerate Bali's power fluctuations a little better. Both last far longer when protected with a surge protector and cleaned every 3 months — see [how often to service your AC](/blog/how-often-to-service-ac-bali).
 
-## Inverter performance and electricity bills
+## Salt air: buy the anti-corrosion model of either
 
-Both brands run R32 refrigerant, both have full inverter compressors, both will run at 30–60% lower steady-state power than an old non-inverter unit. The Daikin inverter is smoother — it ramps the compressor speed more gradually, which means less wear and slightly lower bills (we estimate 5–10% lower than the equivalent Gree).
+Bali's coast destroys untreated outdoor units. Gree Gold Fin and Daikin Blue Fin coatings both roughly double outdoor-unit life in Uluwatu, Bingin, Jimbaran, Canggu and Sanur. If you are within 1 km of the sea, the coated model matters more than the brand.
 
-For a 1 PK unit running 8 hours a day in Bali, expect roughly 90–150 kWh per month.
+## Energy use
+
+Both run full-inverter compressors on R32 and use 30–60% less power than old fixed-speed units. Daikin's smoother inverter typically saves another 5–10% on the PLN bill. A 1 PK unit running 8 hours a day uses roughly 90–150 kWh a month.
+
+## Gree vs Daikin mini splits and heat pumps outside Indonesia
+
+In the USA, New Zealand, Australia and Europe the same two brands sell "mini splits" and "heat pumps" — these are the same inverter split systems with a heating mode. The comparison holds: Daikin is the premium, quieter option with the bigger dealer network; Gree is the value option with strong specs for the price. Warranty terms differ by country, so check your local distributor.
+
+## What about Midea, TCL or LG vs Gree?
+
+Gree sits between the budget brands and the Japanese premium brands. In Bali we rate it above Midea and TCL for long-term reliability and parts support, and on par with LG and Samsung for value. See our full [best AC brands in Bali ranking](/blog/best-ac-brands-bali-2026) and our [honest Gree review](/blog/gree-air-conditioner-review).
 
 ## Which should you buy?
 
-- **Buy Gree if:** you want the best value for money, you have multiple bedrooms to fit out, you care about the 5-year compressor warranty, or you're outfitting a long-term rental villa.
-- **Buy Daikin if:** noise matters, you're outfitting a hotel or boutique villa, you want the quietest possible bedroom unit, or you want the longest real-world lifespan.
+- **Buy Gree if:** value matters, you are fitting out several rooms, you want the 5-year compressor warranty, or it is a rental villa.
+- **Buy Daikin if:** noise matters, it is a master bedroom, hotel room or study, or you want the longest real-world lifespan.
 
 ## What we recommend most often
 
-For a typical 4-bedroom Bali villa:
-
-- Master bedroom + main living: Daikin (quiet, premium)
-- Guest bedrooms + staff rooms: Gree (value)
-
-That mix is what most of our villa-package clients choose. WhatsApp us a floor plan and we'll size every room and quote both brands side by side.`,
+For a typical 4-bedroom Bali villa: Daikin in the master bedroom and main living area, Gree in the guest and staff rooms. WhatsApp us a floor plan and we'll size every room and quote both brands side by side — [Gree in Bali](/brands/gree-air-conditioning-bali) or [Daikin in Bali](/brands/daikin-air-conditioning-bali).`,
     faq: [
-      { q: "Is Daikin worth the extra cost in Bali?", a: "For master bedrooms, hotel rooms and noise-sensitive spaces — yes. The lower noise floor (19–22 dB) and smoother inverter are noticeable. For guest rooms and living areas, Gree gives you most of the performance for a lower spend." },
-      { q: "Are Gree units reliable in Bali's humidity?", a: "Yes. Modern Gree inverters with R32 refrigerant and Gold Fin coil protection are designed for tropical conditions, with a 5-year compressor warranty. We've installed thousands across Bali and the failure rate is comparable to Daikin." },
+      { q: "Which is better, Gree or Daikin?", a: "Daikin is the better-built, quieter and longer-lasting air conditioner. Gree is the better value — about 20–30% cheaper with a longer 5-year compressor warranty in Indonesia. For bedrooms where noise matters choose Daikin; for most other rooms Gree is the smart buy." },
+      { q: "Is Gree made by Daikin?", a: "No. Gree is an independent Chinese manufacturer based in Zhuhai and the world's largest residential AC maker. Daikin is a separate Japanese company. The two have cooperated through joint ventures on compressors and components since around 2009, but Gree is not owned by Daikin." },
+      { q: "Which is quieter, Gree or Daikin?", a: "Daikin. Its indoor units run at about 19–22 dB on low fan versus 25–28 dB for a comparable Gree." },
+      { q: "Which lasts longer?", a: "With quarterly servicing in Bali, Daikin typically lasts 10–12 years and Gree 8–10 years. Both last much longer with surge protection and an anti-corrosion coil near the coast." },
+      { q: "Gree atau Daikin, mending mana?", a: "Daikin lebih senyap dan lebih awet, cocok untuk kamar tidur utama. Gree lebih murah 20–30% dengan garansi kompresor 5 tahun, cocok untuk kamar tamu dan villa sewa. Dengan PK yang sama, keduanya sama dinginnya." },
       { q: "Which brand handles salt air better?", a: "Both — provided you buy the anti-corrosion model. Gree's Gold Fin and Daikin's Blue Fin treatments both roughly double outdoor unit lifespan in coastal areas." },
       { q: "Are spare parts available in Bali?", a: "Yes for both. We carry capacitors, sensors, PCBs and refrigerant for both brands in our service vans, and Indonesian distributors stock everything else with 1–3 day lead time to Bali." },
+    ],
+  },
+  {
+    slug: "gree-air-conditioner-review",
+    title: "Is Gree a Good AC Brand? Honest Gree Air Conditioner Review (2026)",
+    description: "Honest Gree air conditioner review from Bali technicians: who makes Gree, where it's made, reliability, common problems, error codes, warranty and price.",
+    excerpt: "Gree is the AC we install most in Bali. Here's what we've learned from thousands of installs and repairs — who makes it, how reliable it really is, and its common problems.",
+    date: "2026-10-06",
+    author: "I Made Suarjana, Lead Technician",
+    reviewer: "Reviewed by the technical team at Air Conditioning Bali",
+    readingTime: "8 min read",
+    body: `## Verdict: yes, Gree is a good brand
+
+Gree is a genuinely good air conditioner brand and the best value on the Indonesian market. It is not as quiet or as refined as Daikin or Mitsubishi Electric, but it cools well, its inverter units are efficient, parts are easy to find in Bali, and the 5-year compressor warranty in Indonesia is longer than most premium brands offer. Around half of the new units we install in Bali are Gree.
+
+## Who makes Gree, and where is it made?
+
+Gree air conditioners are made by **Gree Electric Appliances Inc. of Zhuhai**, a company founded in 1989 in Zhuhai, Guangdong province, China. It is the world's largest manufacturer of residential air conditioners by volume. Most Gree units are built in China, with additional plants outside China (including Brazil and Pakistan). Unlike many budget brands, Gree makes its own compressors, motors and control boards. Gree is not owned by Daikin — see [Gree vs Daikin](/blog/daikin-vs-gree-bali) for how the two companies are linked.
+
+Gree also sells under its own sub-brand **Tosot**, and builds units that are sold under other brand names in some countries.
+
+## Gree pros and cons
+
+| Pros | Cons |
+| --- | --- |
+| 20–30% cheaper than Daikin or Mitsubishi | Indoor units a few dB louder than Japanese premium brands |
+| 5-year compressor warranty in Indonesia | PCBs more sensitive to power surges without protection |
+| Efficient R32 inverter range | Wi-Fi app less polished than Daikin's |
+| Gold Fin anti-corrosion coil available | Resale value lower than Daikin |
+| Spare parts widely stocked in Bali | Quality of third-party installs varies a lot |
+
+## Is a Gree air conditioner reliable in Bali?
+
+Yes, when it is sized properly, installed properly and serviced every 3 months. Across thousands of Gree installs our failure rate is comparable to the Japanese brands in the first five years. Where Gree units fail early, the cause is almost always installation (no vacuum, poor flaring, undersized unit) or power quality, not the unit itself.
+
+## Common Gree problems we fix
+
+- **Water leaking indoors:** a blocked drain line — the most common fault on any brand in Bali.
+- **E6 code:** indoor–outdoor communication error, often a loose or corroded interconnect cable or a surge-damaged PCB.
+- **F1 / F2 codes:** room or coil temperature sensor faults — a quick, inexpensive fix.
+- **H6 code:** indoor fan motor not running.
+- **Not cooling:** low refrigerant from a flare-joint leak on a poor install.
+
+See our [HVAC and AC repair page](/hvac-repair-bali) for the full error-code table and repair prices.
+
+## Gree models available in Bali
+
+| Model line | Type | Sizes | Best for |
+| --- | --- | --- | --- |
+| Gree inverter wall split (e.g. Lomo Eco) | Inverter split, R32 | 0.5–2.5 PK | Bedrooms, living rooms, rentals |
+| Gree non-inverter split | Fixed-speed | 0.5–2 PK | Budget, low-use rooms (we rarely recommend) |
+| Gree ceiling cassette | Cassette | 2–5 PK | Restaurants, cafés, retail |
+| Gree floor-standing | Standing | 3–5 PK | Halls, function rooms |
+
+Indicative price for a 1 PK Gree inverter in Bali: about Rp 4,3–5,5 jt, unit only. See all sizes on our [air conditioner prices page](/air-conditioner-bali).
+
+## Gree heat pumps
+
+In New Zealand, Australia, the UK and North America, Gree's split systems are sold as **heat pumps** or **mini splits** because they heat as well as cool. They are the same inverter technology we install in Bali, and they generally review well for value. Warranty terms and model names vary by country, so check your local distributor.
+
+## Our recommendation
+
+Buy Gree for guest rooms, living areas, staff quarters and rental villas, and choose the Gold Fin anti-corrosion model near the coast. If a bedroom needs to be whisper-quiet, consider Daikin for that room. We are an authorised [Gree installer in Bali](/brands/gree-air-conditioning-bali) — WhatsApp us your room sizes for a fixed supply-and-install quote.`,
+    faq: [
+      { q: "Is Gree a good air conditioner brand?", a: "Yes. Gree is the world's largest residential AC manufacturer and offers excellent value, efficient R32 inverter units and a 5-year compressor warranty in Indonesia. It is a few decibels louder than Daikin but very reliable when installed and serviced properly." },
+      { q: "Who makes Gree air conditioners?", a: "Gree Electric Appliances Inc. of Zhuhai, a Chinese company founded in 1989. It makes its own compressors, motors and control boards." },
+      { q: "Where are Gree air conditioners made?", a: "Mainly in China, at Gree's factories headquartered in Zhuhai, Guangdong, with additional production outside China including Brazil and Pakistan." },
+      { q: "Is Tosot the same as Gree?", a: "Yes. Tosot is a brand owned by Gree." },
+      { q: "What are the most common Gree AC problems?", a: "In Bali: water leaks from blocked drains, E6 communication errors after power surges, F1/F2 sensor faults and low refrigerant from poorly made flare joints. All are routine repairs." },
+      { q: "How long does a Gree AC last?", a: "Typically 8–10 years in Bali with quarterly servicing, longer inland and with surge protection." },
+    ],
+  },
+  {
+    slug: "bali-ac-terms-pk-btu-explained",
+    title: "AC Terms in Bali Explained: PK, BTU, Tukang AC, Freon & More",
+    description: "What does PK mean on an air conditioner? BTU to PK conversion, kW and tons, plus the Indonesian AC words you'll hear in Bali — tukang AC, cuci AC, isi freon.",
+    excerpt: "PK, BTU, tukang AC, cuci AC, isi freon, bongkar pasang — a plain-English guide to the air conditioning terms you'll hear in Bali, with a BTU-to-PK conversion table.",
+    date: "2026-10-06",
+    author: "I Made Suarjana, Lead Technician",
+    readingTime: "5 min read",
+    body: `## What does PK stand for?
+
+**PK stands for paardenkracht — Dutch for "horsepower".** Indonesia still uses this old Dutch term to describe air conditioner size. It originally described the compressor's power, but today it is shorthand for cooling capacity: **1 PK is roughly 9,000 BTU/h of cooling**.
+
+## BTU to PK conversion table
+
+| PK | BTU/h (approx.) | kW cooling (approx.) | Room size in Bali |
+| --- | --- | --- | --- |
+| 0.5 PK | 5,000 | 1.5 kW | up to 10 m² |
+| 0.75 PK | 7,000 | 2.0 kW | 10–12 m² |
+| 1 PK | 9,000 | 2.6 kW | 12–18 m² |
+| 1.5 PK | 12,000 | 3.5 kW | 18–25 m² |
+| 2 PK | 18,000 | 5.3 kW | 25–35 m² |
+| 2.5 PK | 24,000 | 7.0 kW | 35–45 m² |
+
+So a **5 kW** split is about 17,000 BTU — a 2 PK unit — and a **7 kW** split is about 24,000 BTU — a 2.5 PK unit. Read the full [Bali sizing guide](/blog/ac-bali-bts-sizing-guide).
+
+## PK vs tons
+
+India, the Middle East and the US often size ACs in **tons**. One ton of cooling is 12,000 BTU/h. So a **1-ton AC is about 1.5 PK**, a **1.5-ton AC is about 2 PK**, and a **2-ton AC is about 2.5 PK**.
+
+## Indonesian AC words you'll hear in Bali
+
+| Indonesian | English meaning |
+| --- | --- |
+| Tukang AC / teknisi AC | AC technician, aircon repairman |
+| Service AC | AC servicing / maintenance visit |
+| Cuci AC | AC cleaning (filter, coil and drain wash) |
+| Cuci besar / overhaul | Deep clean with the indoor unit stripped down |
+| Isi freon / tambah freon | Refrigerant refill / top-up |
+| AC bocor | AC leaking (water or refrigerant) |
+| AC tidak dingin | AC not cooling |
+| Bongkar pasang | Remove and reinstall (relocation) |
+| Pasang AC baru | New AC installation |
+| Kapasitor | Capacitor (common failure after power surges) |
+| Modul / PCB | Control board |
+| Unit indoor / outdoor | Indoor head / outdoor condenser |
+| MCB turun / jeglek | Breaker tripping |
+| Service AC terdekat | AC service near me |
+
+## Other terms worth knowing
+
+- **Inverter:** a variable-speed compressor that slows down once the room is cool, using 30–50% less electricity than a fixed-speed (non-inverter) unit.
+- **R32 / R410A / R22:** refrigerant types. R32 is today's standard; R22 is obsolete and expensive to refill.
+- **Split AC:** an indoor head plus an outdoor condenser — the standard system in Bali homes and villas.
+- **Multi-split:** several indoor heads sharing one outdoor unit.
+- **Cassette:** a ceiling-mounted unit blowing in four directions, common in restaurants and shops.
+- **VRF / VRV:** large commercial systems serving many rooms from one outdoor plant (VRV is Daikin's name).
+- **HVAC:** heating, ventilation and air conditioning — in Bali it almost always means cooling.
+
+## Need a tukang AC in Bali?
+
+WhatsApp us for [service AC Bali](/service-ac-bali) in Bahasa Indonesia or English, our [AC service price list](/ac-service-price-bali), or 24/7 [HVAC and AC repair](/hvac-repair-bali).`,
+    faq: [
+      { q: "What does PK stand for in air conditioners?", a: "PK stands for paardenkracht, Dutch for horsepower. In Indonesia it describes AC size: 1 PK is roughly 9,000 BTU/h of cooling, 1.5 PK about 12,000 BTU/h and 2 PK about 18,000 BTU/h." },
+      { q: "How do I convert BTU to PK?", a: "Divide roughly by 9,000 for small units: 9,000 BTU ≈ 1 PK, 12,000 BTU ≈ 1.5 PK, 18,000 BTU ≈ 2 PK, 24,000 BTU ≈ 2.5 PK." },
+      { q: "What is tukang AC in English?", a: "Tukang AC means AC technician or aircon repairman — the person who cleans, services, repairs and installs air conditioners." },
+      { q: "How many PK is a 1.5 ton AC?", a: "One ton is 12,000 BTU/h, so a 1.5-ton AC (18,000 BTU/h) is about 2 PK." },
+      { q: "What size AC is 5 kW?", a: "A 5 kW cooling capacity is about 17,000 BTU/h, which is a 2 PK unit — right for a 25–35 m² room in Bali." },
     ],
   },
   {
