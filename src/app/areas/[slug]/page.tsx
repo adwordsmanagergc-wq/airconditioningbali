@@ -21,7 +21,7 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const a = getArea(params.slug);
   if (!a) return {};
-  const title = `Air Conditioning ${a.name}, Bali — AC Service, Installation & Repair`;
+  const title = `Air Conditioning ${a.name}, Bali, AC Service, Installation & Repair`;
   const description = `Air conditioning services in ${a.name}, Bali. Same-day AC installation, cleaning and 24/7 repair. Authorised installer for Gree, Daikin, Panasonic, Mitsubishi, LG and Samsung. WhatsApp ${site.phone}.`;
   return {
     title,
@@ -35,16 +35,16 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 
 const microclimateNotes: Record<string, string> = {
   "South Bali": "South Bali runs hot and humid year-round, with wet-season power surges and dry-season dust. Most units in this region need a chemical wash every 3 months and a full service every 6 months to keep cooling capacity above 90%.",
-  "Bukit Peninsula": "The Bukit faces heavy salt-air corrosion from constant onshore wind. Outdoor condensers without anti-corrosion coatings typically lose 30–40% lifespan compared to inland units. We always spec Gold Fin or Daikin's Blue Fin coil protection here.",
-  "Central Bali": "Ubud and the central highlands sit at higher humidity than the coast — frequently 85%+ — which encourages mould growth on evaporator coils. Power supply can also be unstable, so a surge protector on every outdoor unit is a must.",
+  "Bukit Peninsula": "The Bukit faces heavy salt-air corrosion from constant onshore wind. Outdoor condensers without anti-corrosion coatings typically lose 30-40% lifespan compared to inland units. We always spec Gold Fin or Daikin's Blue Fin coil protection here.",
+  "Central Bali": "Ubud and the central highlands sit at higher humidity than the coast, frequently 85%+, which encourages mould growth on evaporator coils. Power supply can also be unstable, so a surge protector on every outdoor unit is a must.",
   "East Bali": "East Bali combines coastal salt exposure with longer travel times for parts. We schedule weekly visits and hold a stock of common parts (Gree, Daikin, Panasonic, Mitsubishi, LG, Samsung) in our service van for the trip.",
-  "West Bali": "West Bali ranges from rice-paddy humidity inland to direct salt spray on the Tanah Lot coast. Sizing matters more here — undersized units run flat-out 24/7 and burn through compressors.",
+  "West Bali": "West Bali ranges from rice-paddy humidity inland to direct salt spray on the Tanah Lot coast. Sizing matters more here, undersized units run flat-out 24/7 and burn through compressors.",
   "North Bali": "North Bali is generally cooler and drier than the south, but overnight humidity still drives mould without proper drain maintenance. Lovina and Singaraja both need quarterly cleaning at minimum.",
 };
 
 const commonIssuesByRegion: Record<string, string[]> = {
   "South Bali": [
-    "Drain lines blocked by mould and dust — water leaking inside the room",
+    "Drain lines blocked by mould and dust, water leaking inside the room",
     "Evaporator coils caked in greasy kitchen / café air",
     "Capacitor failures from frequent power flickers in wet season",
     "Outdoor units corroding faster than expected near the coast",
@@ -68,7 +68,7 @@ const commonIssuesByRegion: Record<string, string[]> = {
     "Power outages causing repeated start-stop compressor strain",
   ],
   "West Bali": [
-    "Sizing mistakes from builders — units too small for living rooms",
+    "Sizing mistakes from builders, units too small for living rooms",
     "Salt exposure on Tanah Lot coastal villas",
     "Rural power-line surges damaging outdoor PCBs",
     "Dust from rice harvest season clogging filters",
@@ -90,12 +90,12 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
   const neighbours = a.neighbours.map((slug) => areas.find((x) => x.slug === slug)).filter(Boolean) as typeof areas;
 
   const areaFaqs = [
-    { q: `How do I get a quote for AC services in ${a.name}?`, a: `WhatsApp us at ${site.phone} with a photo of the room or unit, plus what you need (install, clean, fix, new system). We reply within 15 minutes with a fixed quote — no callout fees and no hourly meter.` },
-    { q: `Can you service AC the same day in ${a.name}?`, a: `${a.responseTime} for ${a.name}. ${a.region === "South Bali" ? "We have technicians based in Canggu and Kerobokan who cover South Bali same day, usually within 2 hours of a midday booking." : a.region === "Bukit Peninsula" ? "Our Bukit van covers Uluwatu, Ungasan, Pecatu, Bingin, Balangan, Jimbaran and Nusa Dua same day from a single base." : a.region === "Central Bali" ? "Ubud and central Bali bookings made before midday are usually done same day; otherwise next day." : "Visits are scheduled — we batch our route to keep the cost reasonable for clients in this region."}` },
-    { q: `How often should AC be cleaned in ${a.name}?`, a: `Every 3 months minimum. ${a.region === "Bukit Peninsula" || a.region === "East Bali" ? `${a.name} sits in a heavy salt-air zone, so we strongly recommend every 6–8 weeks for short-stay villas and beach clubs.` : a.region === "Central Bali" ? `${a.name}'s humidity drives mould growth fast — short-stay villas should clean every 6–8 weeks.` : `Beach-club units, beachfront villas and high-occupancy short-stay rentals in ${a.name} should clean every 6–8 weeks.`}` },
+    { q: `How do I get a quote for AC services in ${a.name}?`, a: `WhatsApp us at ${site.phone} with a photo of the room or unit, plus what you need (install, clean, fix, new system). We reply within 15 minutes with a fixed quote, no callout fees and no hourly meter.` },
+    { q: `Can you service AC the same day in ${a.name}?`, a: `${a.responseTime} for ${a.name}. ${a.region === "South Bali" ? "We have technicians based in Canggu and Kerobokan who cover South Bali same day, usually within 2 hours of a midday booking." : a.region === "Bukit Peninsula" ? "Our Bukit van covers Uluwatu, Ungasan, Pecatu, Bingin, Balangan, Jimbaran and Nusa Dua same day from a single base." : a.region === "Central Bali" ? "Ubud and central Bali bookings made before midday are usually done same day; otherwise next day." : "Visits are scheduled, we batch our route to keep the cost reasonable for clients in this region."}` },
+    { q: `How often should AC be cleaned in ${a.name}?`, a: `Every 3 months minimum. ${a.region === "Bukit Peninsula" || a.region === "East Bali" ? `${a.name} sits in a heavy salt-air zone, so we strongly recommend every 6-8 weeks for short-stay villas and beach clubs.` : a.region === "Central Bali" ? `${a.name}'s humidity drives mould growth fast, short-stay villas should clean every 6-8 weeks.` : `Beach-club units, beachfront villas and high-occupancy short-stay rentals in ${a.name} should clean every 6-8 weeks.`}` },
     { q: `What's the most common AC problem in ${a.name}?`, a: `${issues[0]}. Closely followed by ${issues[1].toLowerCase()}. We see these every week in ${a.name} and carry the parts to fix on the same visit.` },
-    { q: `Do you handle villa maintenance contracts in ${a.name}?`, a: `Yes — many of our villa-package clients are based in ${a.name}. Contracts include scheduled visits, photo reports, priority same-day breakdown response and an annual deep chemical wash on every unit. Send us a unit count for a fixed monthly or quarterly quote.` },
-    { q: `Which AC brands do you install in ${a.name}?`, a: `We are an authorised installer for Gree, Daikin, Panasonic, Mitsubishi Electric, LG and Samsung in ${a.name}. Every new unit is registered under your name with the manufacturer for full warranty — 5-year compressor on Gree and Panasonic, 10-year on LG Dual Inverter, 3-year on Daikin and Mitsubishi.` },
+    { q: `Do you handle villa maintenance contracts in ${a.name}?`, a: `Yes, many of our villa-package clients are based in ${a.name}. Contracts include scheduled visits, photo reports, priority same-day breakdown response and an annual deep chemical wash on every unit. Send us a unit count for a fixed monthly or quarterly quote.` },
+    { q: `Which AC brands do you install in ${a.name}?`, a: `We are an authorised installer for Gree, Daikin, Panasonic, Mitsubishi Electric, LG and Samsung in ${a.name}. Every new unit is registered under your name with the manufacturer for full warranty, 5-year compressor on Gree and Panasonic, 10-year on LG Dual Inverter, 3-year on Daikin and Mitsubishi.` },
   ];
 
   return (
@@ -114,9 +114,9 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
               We provide air conditioning installation, chemical cleaning, scheduled servicing and 24/7 repair across {a.name}, Bali. {a.responseTime}. Authorised installer for {brandList}. WhatsApp <a className="font-semibold text-brand" href={waLink(`Hi, I'd like a quote for AC services in ${a.name}.`)}>{site.phone}</a> for a fixed quote.
             </QuickAnswer>
             {idAreaPaths[a.slug] ? (
-              <p className="text-sm text-slate-600" lang="id">Baca dalam Bahasa Indonesia: <Link className="font-semibold text-brand" href={idAreaPaths[a.slug]}>Service AC {a.name}</Link> — harga cuci AC, isi freon dan perbaikan.</p>
+              <p className="text-sm text-slate-600" lang="id">Baca dalam Bahasa Indonesia: <Link className="font-semibold text-brand" href={idAreaPaths[a.slug]}>Service AC {a.name}</Link>, harga cuci AC, isi freon dan perbaikan.</p>
             ) : null}
-            <p className="text-slate-700"><strong>TL;DR:</strong> full AC service in {a.name} — install, clean, fix. {a.responseTime}. Authorised installer for every major brand.</p>
+            <p className="text-slate-700"><strong>TL;DR:</strong> full AC service in {a.name}, install, clean, fix. {a.responseTime}. Authorised installer for every major brand.</p>
 
             <div>
               <h2 className="h2">{a.name} at a glance</h2>
@@ -129,7 +129,7 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
               <ul className="mt-3 grid gap-2 text-sm text-slate-700">
                 {issues.map((it) => <li key={it}>• {it}</li>)}
               </ul>
-              <p className="mt-3 text-slate-700">If any of those sound familiar, send us a photo or a short video on WhatsApp — most problems we can diagnose remotely and quote a fixed-price fix before sending a tech.</p>
+              <p className="mt-3 text-slate-700">If any of those sound familiar, send us a photo or a short video on WhatsApp, most problems we can diagnose remotely and quote a fixed-price fix before sending a tech.</p>
             </div>
 
             <div>
@@ -162,7 +162,7 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
 
             <div>
               <h2 className="h2">How to get a quote in {a.name}</h2>
-              <p className="mt-2 text-slate-700">Every job is fixed-fee and quoted upfront — no callout charge and no hourly meter. WhatsApp us a photo of the unit or room, and we&rsquo;ll come back within 15 minutes with a fixed total and the next available slot in {a.name}.</p>
+              <p className="mt-2 text-slate-700">Every job is fixed-fee and quoted upfront, no callout charge and no hourly meter. WhatsApp us a photo of the unit or room, and we&rsquo;ll come back within 15 minutes with a fixed total and the next available slot in {a.name}.</p>
               <div className="mt-3 flex flex-wrap gap-3">
                 <a href={waLink(`Hi, I'd like a quote for AC services in ${a.name}.`)} target="_blank" rel="noopener noreferrer" className="btn-whatsapp">WhatsApp for a quote</a>
               </div>
@@ -172,7 +172,7 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
               <h2 className="h2">Why locals in {a.name} choose us</h2>
               <ul className="mt-3 grid gap-2 text-sm text-slate-700">
                 <li>• Authorised installer for {brandList} with manufacturer warranty registered under your name</li>
-                <li>• Fixed-fee quotes on WhatsApp — no callout charge, no hourly meter</li>
+                <li>• Fixed-fee quotes on WhatsApp, no callout charge, no hourly meter</li>
                 <li>• English-speaking technicians and photo reports, perfect for absentee villa owners</li>
                 <li>• 24/7 emergency response for breakdowns in {a.name}</li>
                 <li>• 90-day workmanship warranty on every repair, 12-month on every install</li>

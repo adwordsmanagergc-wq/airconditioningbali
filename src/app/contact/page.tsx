@@ -6,7 +6,7 @@ import { site, telLink, waLink } from "@/lib/site";
 import { MessageCircle, Phone, Mail, Clock, MapPin } from "lucide-react";
 
 export const metadata = {
-  title: "Contact — Bali Air Conditioning Services",
+  title: "Contact: Bali Air Conditioning Services",
   description: "Contact Air Conditioning Bali. WhatsApp +62 818-0802-9595, 24/7 emergency line, fixed-fee quotes within 15 minutes. Coverage across all major Bali areas.",
   alternates: { canonical: "/contact" },
 };
@@ -15,7 +15,7 @@ export default function ContactPage() {
   return (
     <>
       <Breadcrumbs items={[{ label: "Contact", href: "/contact" }]} />
-      <Hero h1="Contact us" sub="WhatsApp is fastest — fixed-price quote in 15 minutes. 24/7 emergency line for breakdowns across Bali." />
+      <Hero h1="Contact us" sub="WhatsApp is fastest: fixed-price quote in 15 minutes. 24/7 emergency line for breakdowns across Bali." />
       <section className="section">
         <div className="container-prose grid items-start gap-10 md:grid-cols-[1fr_1fr]">
           <div className="space-y-6">
@@ -38,19 +38,19 @@ export default function ContactPage() {
                 <Mail className="text-brand" aria-hidden /> <h3 className="h3">Email</h3>
               </div>
               <p className="mt-2 text-slate-700">{site.email}</p>
-              <p className="mt-1 text-sm text-slate-500">For villa contracts and larger jobs — we reply within 4 hours.</p>
+              <p className="mt-1 text-sm text-slate-500">For villa contracts and larger jobs, we reply within 4 hours.</p>
             </a>
             <div className="card">
               <div className="flex items-center gap-3">
                 <Clock className="text-brand" aria-hidden /> <h3 className="h3">Hours</h3>
               </div>
-              <p className="mt-2 text-slate-700">Bookings 7am–9pm daily. {site.hours}.</p>
+              <p className="mt-2 text-slate-700">Bookings 7am-9pm daily. {site.hours}.</p>
             </div>
             <div className="card">
               <div className="flex items-center gap-3">
                 <MapPin className="text-brand" aria-hidden /> <h3 className="h3">Service area</h3>
               </div>
-              <p className="mt-2 text-slate-700">All of Bali — {site.address.street}, {site.address.city}, {site.address.region}.</p>
+              <p className="mt-2 text-slate-700">All of Bali, {site.address.street}, {site.address.city}, {site.address.region}.</p>
               <div className="mt-3 overflow-hidden rounded-xl border border-slate-100">
                 <iframe
                   title="Bali coverage map"

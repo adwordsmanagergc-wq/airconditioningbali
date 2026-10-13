@@ -65,7 +65,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
         <div className="container-prose grid items-start gap-10 md:grid-cols-[2fr_1fr]">
           <div className="space-y-6">
             <QuickAnswer>{s.quickAnswer}</QuickAnswer>
-            <p className="text-slate-700"><strong>TL;DR:</strong> {s.shortName.toLowerCase()} across Bali — same-day in South Bali, next-day across the rest of the island. Authorised installer for every major brand. WhatsApp <a className="font-semibold text-brand" href={waLink(`Hi, I'd like a quote for ${s.shortName} in Bali.`)}>{site.phone}</a> for a fixed quote.</p>
+            <p className="text-slate-700"><strong>TL;DR:</strong> {s.shortName.toLowerCase()} across Bali, same-day in South Bali, next-day across the rest of the island. Authorised installer for every major brand. WhatsApp <a className="font-semibold text-brand" href={waLink(`Hi, I'd like a quote for ${s.shortName} in Bali.`)}>{site.phone}</a> for a fixed quote.</p>
 
             <div>
               <h2 className="h2">What&rsquo;s included</h2>
@@ -93,7 +93,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
 
             <div>
               <h2 className="h2">How to get a quote</h2>
-              <p className="mt-2 text-slate-700">Every job is quoted as a fixed total before we send a technician — no callout fees, no hourly meter. WhatsApp us a photo of the unit or room, your area in Bali, and the number of units. We reply within 15 minutes with a fixed price and the next available slot.</p>
+              <p className="mt-2 text-slate-700">Every job is quoted as a fixed total before we send a technician, no callout fees, no hourly meter. WhatsApp us a photo of the unit or room, your area in Bali, and the number of units. We reply within 15 minutes with a fixed price and the next available slot.</p>
               <div className="mt-3 flex flex-wrap gap-3">
                 <a href={waLink(`Hi, I'd like a quote for ${s.shortName} in Bali.`)} target="_blank" rel="noopener noreferrer" className="btn-whatsapp">WhatsApp for a quote</a>
               </div>
@@ -111,7 +111,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
 
             <div>
               <h2 className="h2">Areas covered</h2>
-              <p className="mt-2 text-slate-700">We provide {s.shortName.toLowerCase()} services across all of Bali — same-day in South Bali, next-day elsewhere.</p>
+              <p className="mt-2 text-slate-700">We provide {s.shortName.toLowerCase()} services across all of Bali, same-day in South Bali, next-day elsewhere.</p>
               <div className="mt-4 grid gap-1 sm:grid-cols-2 md:grid-cols-3">
                 {areas.map((a) => (
                   <Link key={a.slug} href={`/areas/${a.slug}`} className="text-sm text-slate-700 hover:text-brand">{s.shortName} in {a.name} →</Link>

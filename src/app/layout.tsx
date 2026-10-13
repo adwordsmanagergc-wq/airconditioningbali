@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import { site } from "@/lib/site";
 import Header from "@/components/Header";
@@ -12,7 +14,7 @@ import OrganizationSchema from "@/components/schema/OrganizationSchema";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} — Installation, Cleaning & Repair Across Bali`,
+    default: `${site.name}: Installation, Cleaning & Repair Across Bali`,
     template: `%s | ${site.name}`,
   },
   description: site.tagline,
@@ -25,7 +27,7 @@ export const metadata: Metadata = {
     locale: "en_ID",
     url: site.url,
     siteName: site.name,
-    title: `${site.name} — Installation, Cleaning & Repair Across Bali`,
+    title: `${site.name}: Installation, Cleaning & Repair Across Bali`,
     description: site.tagline,
     images: [{ url: "/images/og/default.jpg", width: 1200, height: 630, alt: "Bali air conditioning services" }],
   },
@@ -42,7 +44,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0A66C2",
+  themeColor: "#F3F0E8",
   width: "device-width",
   initialScale: 1,
 };
@@ -50,21 +52,14 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const ga = process.env.NEXT_PUBLIC_GA_ID;
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body>
-        <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-white focus:px-4 focus:py-2 focus:shadow">
+        <div className="grain" aria-hidden />
+        <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-overlay focus:rounded focus:bg-white focus:px-4 focus:py-2 focus:shadow">
           Skip to content
         </a>
         <Header />
-        <main id="main">{children}</main>
+        <main id="main" className="relative">{children}</main>
         <Footer />
         <FloatingButtons />
         <MobileBottomBar />

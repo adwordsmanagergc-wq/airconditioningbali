@@ -1,8 +1,9 @@
 export default function QuickAnswer({ children }: { children: React.ReactNode }) {
   return (
-    <div className="rounded-2xl border-l-4 border-brand bg-brand/5 p-5">
-      <p className="text-xs font-bold uppercase tracking-wider text-brand">Quick Answer</p>
-      <p className="mt-2 text-base leading-relaxed text-slate-800">{children}</p>
+    <div className="reveal relative overflow-hidden rounded-surface bg-white p-6 shadow-soft sm:p-7">
+      <span aria-hidden className="absolute inset-y-0 left-0 w-1 bg-brand" />
+      <p className="text-sm font-medium text-brand">Quick answer</p>
+      <p className="mt-2 text-[1.0625rem] leading-relaxed text-black/80">{children}</p>
     </div>
   );
 }

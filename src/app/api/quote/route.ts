@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-// Quote form handler — receives JSON, forwards to:
+// Quote form handler, receives JSON, forwards to:
 // 1. WhatsApp deep link (returned to client to open)
 // 2. Optional email (uncomment SMTP block below and add env vars)
 // 3. Optional Telegram bot (uncomment block below and add TELEGRAM_BOT_TOKEN/CHAT_ID)
@@ -52,7 +52,7 @@ export async function POST(request: Request) {
     //   await transporter.sendMail({
     //     to: process.env.QUOTE_RECIPIENT_EMAIL,
     //     from: process.env.SMTP_USER,
-    //     subject: `New quote: ${name} — ${area}`,
+    //     subject: `New quote: ${name}, ${area}`,
     //     text: summary,
     //   });
 

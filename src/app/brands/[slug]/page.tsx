@@ -38,7 +38,7 @@ export default function BrandPage({ params }: { params: { slug: string } }) {
     "@type": "Product",
     name: m.name,
     brand: { "@type": "Brand", name: b.name },
-    description: `${m.type} — ${m.capacity}. ${m.bestFor}`,
+    description: `${m.type}, ${m.capacity}. ${m.bestFor}`,
   }));
 
   return (

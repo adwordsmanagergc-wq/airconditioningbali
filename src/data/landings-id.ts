@@ -69,7 +69,7 @@ const idAreas: IdArea[] = [
     name: "Jimbaran",
     admin: "Kecamatan Kuta Selatan, Badung",
     nearby: ["Kedonganan", "Bukit Jimbaran", "Kampus Udayana", "Pantai Jimbaran", "Ungasan", "Nusa Dua"],
-    intro: "Jimbaran adalah pintu gerbang Bukit — penuh resort, villa, kos-kosan mahasiswa di sekitar kampus Udayana, dan restoran seafood di pinggir pantai. Kami melayani service AC Jimbaran setiap hari dari van servis kami yang berbasis di Bukit.",
+    intro: "Jimbaran adalah pintu gerbang Bukit, penuh resort, villa, kos-kosan mahasiswa di sekitar kampus Udayana, dan restoran seafood di pinggir pantai. Kami melayani service AC Jimbaran setiap hari dari van servis kami yang berbasis di Bukit.",
     local: "Di Jimbaran kami paling sering menangani unit outdoor yang berkarat karena angin laut, AC cassette restoran seafood yang bocor air, dan AC kos atau rumah yang tidak dingin karena freon berkurang.",
     faq: { q: "Apakah bisa service AC di kos atau rumah di Bukit Jimbaran?", a: "Bisa. Kami melayani rumah, kos, villa, hotel dan restoran di seluruh Jimbaran termasuk Bukit Jimbaran, Kedonganan dan sekitar kampus Udayana. Untuk beberapa unit sekaligus kami beri harga per unit yang lebih murah." },
   },
@@ -80,14 +80,14 @@ const idAreas: IdArea[] = [
     nearby: ["Lovina", "Banyuasri", "Sukasada", "Kampung Baru", "Pemaron", "Kalibukbuk"],
     intro: "Singaraja adalah kota terbesar di Bali Utara dan pusat Kabupaten Buleleng. Kami melayani service AC Singaraja, Lovina dan sekitarnya melalui rute terjadwal Bali Utara dengan stok sparepart semua merek di mobil servis.",
     local: "Di Singaraja kami sering menemukan kapasitor rusak akibat tegangan listrik yang naik-turun, saluran buang berjamur, dan AC lama R22 yang perlu dirawat atau diganti dengan unit inverter yang lebih hemat listrik.",
-    faq: { q: "Berapa lama menunggu teknisi AC di Singaraja?", a: "Kami menjalankan rute terjadwal ke Bali Utara — biasanya teknisi datang besok hari. Untuk hotel dan bisnis dengan beberapa unit, kami bisa mengatur jadwal rutin bulanan atau 3 bulanan." },
+    faq: { q: "Berapa lama menunggu teknisi AC di Singaraja?", a: "Kami menjalankan rute terjadwal ke Bali Utara, biasanya teknisi datang besok hari. Untuk hotel dan bisnis dengan beberapa unit, kami bisa mengatur jadwal rutin bulanan atau 3 bulanan." },
   },
   {
     slug: "canggu",
     name: "Canggu",
     admin: "Kecamatan Kuta Utara, Badung",
     nearby: ["Berawa", "Batu Bolong", "Pererenan", "Tibubeneng", "Echo Beach", "Umalas"],
-    intro: "Canggu adalah area dengan kepadatan villa dan kafe tertinggi di Bali, dan juga markas kami. Service AC Canggu biasanya bisa dikerjakan di hari yang sama — sering kali teknisi tiba dalam 2 jam.",
+    intro: "Canggu adalah area dengan kepadatan villa dan kafe tertinggi di Bali, dan juga markas kami. Service AC Canggu biasanya bisa dikerjakan di hari yang sama, sering kali teknisi tiba dalam 2 jam.",
     local: "Masalah AC paling umum di Canggu: AC bocor air karena saluran buang tersumbat, unit outdoor berkarat karena dekat pantai, dan AC villa sewa harian yang bau apek karena jarang dicuci.",
     faq: { q: "Apakah ada layanan service AC Canggu yang bisa datang hari ini?", a: "Ya. Basis kami ada di Canggu, jadi untuk Berawa, Batu Bolong, Pererenan dan Tibubeneng teknisi biasanya tiba dalam ±2 jam jika pesan sebelum siang." },
   },
@@ -96,7 +96,7 @@ const idAreas: IdArea[] = [
     name: "Denpasar",
     admin: "Kota Denpasar",
     nearby: ["Renon", "Panjer", "Sesetan", "Teuku Umar", "Gatot Subroto", "Ubung", "Sidakarya"],
-    intro: "Denpasar adalah ibu kota Bali dengan ribuan rumah, ruko, kantor dan toko yang memakai AC setiap hari. Kami melayani service AC Denpasar dan cuci AC Denpasar di semua kecamatan — Denpasar Barat, Timur, Utara dan Selatan.",
+    intro: "Denpasar adalah ibu kota Bali dengan ribuan rumah, ruko, kantor dan toko yang memakai AC setiap hari. Kami melayani service AC Denpasar dan cuci AC Denpasar di semua kecamatan, Denpasar Barat, Timur, Utara dan Selatan.",
     local: "Di Denpasar yang paling sering kami tangani adalah cuci AC rutin rumah dan kantor, tambah freon, AC tidak dingin, serta pasang dan bongkar pasang AC untuk pindahan rumah atau ruko.",
     faq: { q: "Apakah melayani service AC Denpasar 24 jam?", a: "Ya, untuk keadaan darurat seperti AC bocor air deras, MCB turun terus atau AC mati total di kantor dan toko, kami siaga 24 jam. Untuk cuci AC rutin, jadwal dibuat di jam kerja." },
   },
@@ -105,9 +105,9 @@ const idAreas: IdArea[] = [
     name: "Gianyar",
     admin: "Kabupaten Gianyar",
     nearby: ["Ubud", "Sukawati", "Blahbatuh", "Tampaksiring", "Keramas", "Tegallalang"],
-    intro: "Kabupaten Gianyar mencakup Ubud, Sukawati, Blahbatuh hingga pantai Keramas — campuran rumah, villa di tengah sawah, galeri seni dan usaha kecil. Kami melayani service AC Gianyar dengan teknisi yang berbasis di Ubud.",
+    intro: "Kabupaten Gianyar mencakup Ubud, Sukawati, Blahbatuh hingga pantai Keramas, campuran rumah, villa di tengah sawah, galeri seni dan usaha kecil. Kami melayani service AC Gianyar dengan teknisi yang berbasis di Ubud.",
     local: "Kelembapan tinggi di Gianyar membuat jamur cepat tumbuh di evaporator dan saluran buang, sehingga AC bau apek dan bocor air. Listrik yang kurang stabil di pedesaan juga sering merusak kapasitor dan PCB.",
-    faq: { q: "Apakah service AC di Sukawati dan Blahbatuh juga dilayani?", a: "Ya, seluruh Kabupaten Gianyar kami layani — Sukawati, Blahbatuh, Tampaksiring, Keramas, Tegallalang dan Ubud. Biasanya kunjungan dijadwalkan di hari yang sama atau besok." },
+    faq: { q: "Apakah service AC di Sukawati dan Blahbatuh juga dilayani?", a: "Ya, seluruh Kabupaten Gianyar kami layani, Sukawati, Blahbatuh, Tampaksiring, Keramas, Tegallalang dan Ubud. Biasanya kunjungan dijadwalkan di hari yang sama atau besok." },
   },
   {
     slug: "tabanan",
@@ -132,8 +132,8 @@ const idAreas: IdArea[] = [
     name: "Seminyak",
     admin: "Kecamatan Kuta, Badung",
     nearby: ["Petitenget", "Basangkasa", "Kerobokan", "Legian", "Umalas"],
-    intro: "Seminyak adalah kawasan villa mewah, beach club dan butik hotel. Kami melayani service AC Seminyak dengan teknisi yang terbiasa bekerja rapi di villa dan hotel — memakai alas, cover bilas dan membersihkan setelah selesai.",
-    local: "Di Seminyak, AC villa sewa harian dan restoran bekerja sangat berat, jadi kami menyarankan cuci AC setiap 6–8 minggu agar tidak bau dan tidak bocor air saat ada tamu.",
+    intro: "Seminyak adalah kawasan villa mewah, beach club dan butik hotel. Kami melayani service AC Seminyak dengan teknisi yang terbiasa bekerja rapi di villa dan hotel, memakai alas, cover bilas dan membersihkan setelah selesai.",
+    local: "Di Seminyak, AC villa sewa harian dan restoran bekerja sangat berat, jadi kami menyarankan cuci AC setiap 6-8 minggu agar tidak bau dan tidak bocor air saat ada tamu.",
     faq: { q: "Apakah teknisi bisa datang ke villa saat ada tamu?", a: "Bisa. Kami bekerja rapi dan cepat, dan bisa menyesuaikan jadwal dengan check-out atau jam tamu keluar. Banyak manajer villa di Seminyak memakai paket perawatan rutin kami." },
   },
   {
@@ -143,7 +143,7 @@ const idAreas: IdArea[] = [
     nearby: ["Penestanan", "Peliatan", "Mas", "Sayan", "Tegallalang", "Kedewatan"],
     intro: "Ubud dikelilingi hutan dan sawah sehingga kelembapannya sering di atas 85%. Kami melayani service AC Ubud, Penestanan, Sayan, Kedewatan dan sekitarnya dengan teknisi yang berbasis di Ubud.",
     local: "Masalah AC paling umum di Ubud adalah jamur di evaporator, AC bau apek, saluran buang tersumbat dan PCB rusak karena listrik tidak stabil. Kami menyarankan pemasangan pengaman tegangan pada unit outdoor.",
-    faq: { q: "Kenapa AC di Ubud cepat bau dan berjamur?", a: "Karena kelembapan Ubud yang sangat tinggi. Jamur tumbuh di evaporator dan saluran buang dalam hitungan minggu. Cuci AC setiap 2–3 bulan dan sesekali chemical wash akan menghilangkan bau dan mencegah bocor air." },
+    faq: { q: "Kenapa AC di Ubud cepat bau dan berjamur?", a: "Karena kelembapan Ubud yang sangat tinggi. Jamur tumbuh di evaporator dan saluran buang dalam hitungan minggu. Cuci AC setiap 2-3 bulan dan sesekali chemical wash akan menghilangkan bau dan mencegah bocor air." },
   },
   {
     slug: "sanur",
@@ -168,10 +168,10 @@ const idAreas: IdArea[] = [
 const hub: Landing = {
   slug: "service-ac-bali",
   lang: "id",
-  metaTitle: "Service AC Bali — Cuci AC, Isi Freon & Perbaikan 24 Jam",
+  metaTitle: "Service AC Bali: Cuci AC, Isi Freon & Perbaikan 24 Jam",
   description:
     "Jasa service AC Bali: cuci AC mulai Rp 150.000, tambah freon, perbaikan AC bocor & tidak dingin, pasang AC. Teknisi datang hari ini, garansi 90 hari.",
-  h1: "Service AC Bali — Cuci AC, Isi Freon, Perbaikan & Pasang AC",
+  h1: "Service AC Bali: Cuci AC, Isi Freon, Perbaikan & Pasang AC",
   heroSub:
     "Teknisi AC profesional untuk rumah, villa, kos, hotel, restoran dan kantor di seluruh Bali. Harga pasti lewat WhatsApp sebelum teknisi berangkat, siaga 24 jam untuk keadaan darurat.",
   breadcrumb: "Service AC Bali",
@@ -206,11 +206,11 @@ ${priceDisclaimerId}
 
 ## Area service AC di Bali
 
-Kami punya halaman khusus untuk area dengan permintaan tertinggi: ${idAreas.map((a) => `[Service AC ${a.name}](/service-ac-${a.slug})`).join(", ")}. Seluruh area lain di Bali juga kami layani — [lihat semua area](/areas).
+Kami punya halaman khusus untuk area dengan permintaan tertinggi: ${idAreas.map((a) => `[Service AC ${a.name}](/service-ac-${a.slug})`).join(", ")}. Seluruh area lain di Bali juga kami layani, [lihat semua area](/areas).
 
 ## Kenapa memilih kami
 
-- Harga pasti di depan lewat WhatsApp — tidak ada biaya tersembunyi
+- Harga pasti di depan lewat WhatsApp, tidak ada biaya tersembunyi
 - Tanpa biaya kunjungan di Bali Selatan untuk layanan terjadwal
 - Teknisi bersertifikat, bekerja rapi dengan alas dan cover bilas
 - Garansi 90 hari untuk perbaikan dan 12 bulan untuk pemasangan
@@ -226,9 +226,9 @@ Kami punya halaman khusus untuk area dengan permintaan tertinggi: ${idAreas.map(
 
 ## Berapa kali AC harus dicuci di Bali?
 
-Minimal setiap 3 bulan. Udara Bali yang panas, lembap, berdebu dan (di dekat pantai) mengandung garam membuat evaporator dan saluran buang cepat kotor. Villa sewa harian, restoran dan rumah di pinggir pantai sebaiknya cuci AC setiap 6–8 minggu.`,
+Minimal setiap 3 bulan. Udara Bali yang panas, lembap, berdebu dan (di dekat pantai) mengandung garam membuat evaporator dan saluran buang cepat kotor. Villa sewa harian, restoran dan rumah di pinggir pantai sebaiknya cuci AC setiap 6-8 minggu.`,
   faqs: [
-    { q: "Berapa biaya service AC di Bali?", a: "Cuci AC standar mulai Rp 150.000 per unit (0,5–1 PK), cuci besar / chemical wash mulai Rp 350.000, tambah freon mulai Rp 250.000, pasang AC baru mulai Rp 450.000. Harga pasti kami berikan lewat WhatsApp sebelum teknisi berangkat." },
+    { q: "Berapa biaya service AC di Bali?", a: "Cuci AC standar mulai Rp 150.000 per unit (0,5-1 PK), cuci besar / chemical wash mulai Rp 350.000, tambah freon mulai Rp 250.000, pasang AC baru mulai Rp 450.000. Harga pasti kami berikan lewat WhatsApp sebelum teknisi berangkat." },
     { q: "Apakah ada service AC terdekat yang bisa datang hari ini?", a: "Ya. Di Bali Selatan (Canggu, Seminyak, Kuta, Denpasar, Sanur, Jimbaran, Nusa Dua) teknisi biasanya tiba di hari yang sama, sering dalam ±2 jam. Ubud di hari yang sama atau besok, Bali Utara dan Timur besok hari." },
     { q: "Apakah melayani service AC 24 jam?", a: "Ya, untuk keadaan darurat seperti AC bocor air deras, MCB turun, bau terbakar atau AC mati total di villa, hotel dan restoran." },
     { q: "Merek AC apa saja yang bisa diservice?", a: "Semua merek: Daikin, Gree, Panasonic, LG, Samsung, Sharp, Mitsubishi Electric, Midea, Polytron, AUX dan merek lainnya, termasuk AC lama dengan freon R22." },
@@ -248,9 +248,9 @@ const buildAreaLanding = (a: IdArea): Landing => {
   return {
     slug: `service-ac-${a.slug}`,
     lang: "id",
-    metaTitle: `Service AC ${a.name} Bali — Cuci AC, Freon & Perbaikan`,
+    metaTitle: `Service AC ${a.name} Bali: Cuci AC, Freon & Perbaikan`,
     description: `Jasa service AC ${a.name}: cuci AC mulai Rp 150.000, tambah freon, AC bocor & tidak dingin, pasang AC. ${resp.charAt(0).toUpperCase() + resp.slice(1)}. WA 0818-0802-9595.`.slice(0, 160),
-    h1: `Service AC ${a.name} — Cuci AC, Isi Freon & Perbaikan AC`,
+    h1: `Service AC ${a.name}: Cuci AC, Isi Freon & Perbaikan AC`,
     heroSub: `Teknisi AC terdekat untuk rumah, villa, kos, hotel, restoran dan kantor di ${a.name} (${a.admin}). Harga pasti lewat WhatsApp, garansi 90 hari.`,
     breadcrumb: `Service AC ${a.name}`,
     quickAnswer: `Kami melayani service AC ${a.name}: cuci AC mulai Rp 150.000 per unit, tambah freon mulai Rp 250.000, perbaikan AC bocor air dan tidak dingin, serta pasang AC baru. Untuk ${a.name}, ${resp}. Kirim lokasi dan keluhan ke WhatsApp 0818-0802-9595.`,
@@ -264,7 +264,7 @@ const buildAreaLanding = (a: IdArea): Landing => {
     withPriceOffers: true,
     alternates: { en: `/areas/${a.slug}` },
     related: [
-      { label: "Service AC Bali — semua area", href: "/service-ac-bali" },
+      { label: "Service AC Bali, semua area", href: "/service-ac-bali" },
       { label: `Air conditioning ${a.name} (English)`, href: `/areas/${a.slug}` },
       { label: "HVAC & AC repair 24/7", href: "/hvac-repair-bali" },
       { label: "Harga AC baru di Bali", href: "/air-conditioner-bali" },
@@ -287,11 +287,11 @@ ${a.local}
 
 ${issues.map((i) => `- ${i}`).join("\n")}
 
-Kirim foto atau video singkat lewat WhatsApp — sebagian besar masalah bisa kami diagnosa dari jauh dan kami berikan harga perbaikannya sebelum teknisi berangkat.
+Kirim foto atau video singkat lewat WhatsApp, sebagian besar masalah bisa kami diagnosa dari jauh dan kami berikan harga perbaikannya sebelum teknisi berangkat.
 
 ## Layanan AC di ${a.name}
 
-- **Cuci AC ${a.name}:** filter, evaporator, bak dan saluran buang, unit outdoor — termasuk cuci besar untuk AC yang bau atau bocor.
+- **Cuci AC ${a.name}:** filter, evaporator, bak dan saluran buang, unit outdoor, termasuk cuci besar untuk AC yang bau atau bocor.
 - **Tambah freon:** cek tekanan, isi freon R32 / R410A / R22 dan tes kebocoran.
 - **Perbaikan AC:** tidak dingin, bocor air, berisik, MCB turun, kode error, kapasitor, PCB, motor kipas.
 - **Pasang & bongkar pasang AC:** pemasangan rapi dengan vakum, cocok untuk rumah baru atau pindahan.
@@ -303,7 +303,7 @@ Untuk ${a.name}, ${resp}. Untuk keadaan darurat (AC bocor deras, MCB turun, AC m
 
 ${nearbyLinks.length ? `## Area terdekat\n\n${nearbyLinks.join(" · ")} · [Semua area service AC Bali](/service-ac-bali)` : `## Area lain\n\n[Semua area service AC Bali](/service-ac-bali)`}`,
     faqs: [
-      { q: `Berapa harga cuci AC di ${a.name}?`, a: `Cuci AC standar di ${a.name} mulai Rp 150.000 per unit untuk 0,5–1 PK dan Rp 175.000 untuk 1,5–2 PK. Cuci besar (chemical wash) mulai Rp 350.000. Untuk beberapa unit sekaligus ada harga khusus.` },
+      { q: `Berapa harga cuci AC di ${a.name}?`, a: `Cuci AC standar di ${a.name} mulai Rp 150.000 per unit untuk 0,5-1 PK dan Rp 175.000 untuk 1,5-2 PK. Cuci besar (chemical wash) mulai Rp 350.000. Untuk beberapa unit sekaligus ada harga khusus.` },
       { q: `Apakah ada service AC terdekat di ${a.name} yang bisa datang hari ini?`, a: `Untuk ${a.name}, ${resp}. Pesan lewat WhatsApp 0818-0802-9595 dengan lokasi dan jumlah unit.` },
       { q: `Kenapa AC saya di ${a.name} tidak dingin?`, a: "Penyebab paling umum adalah freon berkurang karena bocor halus, filter dan evaporator yang sangat kotor, atau kapasitor yang rusak. Teknisi kami bisa memastikan penyebabnya dalam ±30 menit dengan manifold dan tang ampere." },
       { q: "Kenapa AC bocor air?", a: "Hampir selalu karena saluran buang (drain) tersumbat lumut dan debu sehingga air meluap dari bak penampung. Kami tiup dengan angin kompresor dan bilas dengan cairan anti-lumut." },

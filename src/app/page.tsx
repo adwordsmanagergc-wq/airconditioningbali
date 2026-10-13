@@ -1,146 +1,114 @@
 import Link from "next/link";
-import Hero from "@/components/Hero";
-import TrustStrip from "@/components/TrustStrip";
 import QuickAnswer from "@/components/QuickAnswer";
 import FAQList from "@/components/FAQList";
 import CTASection from "@/components/CTASection";
-import QuoteForm from "@/components/QuoteForm";
 import LocalBusinessSchema from "@/components/schema/LocalBusinessSchema";
-import { services } from "@/data/services";
-import { areas } from "@/data/areas";
-import { brands } from "@/data/brands";
 import { homeFaqs } from "@/data/faqs";
-import { site, waLink, brandList } from "@/lib/site";
-import { Wrench, SprayCan, Hammer, ClipboardCheck, Building2, Home as HomeIcon, ShieldCheck, Sparkles, Truck, Users } from "lucide-react";
+import { site, brandList } from "@/lib/site";
+import TrustStrip from "@/components/TrustStrip";
+import HomeHero from "@/components/home/HomeHero";
+import BrandMarquee from "@/components/home/BrandMarquee";
+import CoolingStory from "@/components/home/CoolingStory";
+import ServicesBento from "@/components/home/ServicesBento";
+import CostEstimator from "@/components/home/CostEstimator";
+import AreaTabs from "@/components/home/AreaTabs";
+import { img } from "@/data/images";
+import { ArrowRight } from "lucide-react";
 
 export const metadata = {
-  title: { absolute: "Air Conditioning Bali — AC Installation, Cleaning & 24/7 Repair" },
+  title: { absolute: "Air Conditioning Bali: AC Installation, Cleaning & 24/7 Repair" },
   description:
     "Bali's trusted air conditioning experts. Same-day AC installation, cleaning, servicing and repair across Canggu, Seminyak, Uluwatu, Ubud, Sanur and 35+ areas. Authorised installer for Gree, Daikin, Panasonic, Mitsubishi, LG and Samsung.",
   alternates: { canonical: "/", languages: { "en-ID": "/", "id-ID": "/service-ac-bali" } },
 };
 
-const serviceIcons: Record<string, React.ReactNode> = {
-  "ac-installation-bali": <Wrench size={22} />,
-  "new-ac-systems-bali": <Truck size={22} />,
-  "ac-cleaning-bali": <SprayCan size={22} />,
-  "ac-servicing-bali": <ClipboardCheck size={22} />,
-  "ac-repair-bali": <Hammer size={22} />,
-  "commercial-ac-bali": <Building2 size={22} />,
-  "villa-ac-maintenance-packages": <HomeIcon size={22} />,
-};
+const conditions = [
+  {
+    title: "Salt air eats outdoor units",
+    body: "Sea spray corrodes untreated condenser fins within a few years. Near the coast we fit anti-corrosion coils and rinse the fins on every service.",
+    stat: "1 km",
+    statLabel: "from the sea: we always spec a coated coil",
+    image: img.rooftop,
+  },
+  {
+    title: "Humidity grows mould in drains",
+    body: "At 80% humidity, drain lines clog with algae in weeks. That is the leak dripping on your floor. A three-monthly clean stops it.",
+    stat: "3 mo",
+    statLabel: "cleaning interval we recommend",
+    image: img.eaves,
+  },
+];
+
+const guides = [
+  { slug: "daikin-vs-gree-bali", title: "Gree vs Daikin: which AC is better?" },
+  { slug: "how-often-to-service-ac-bali", title: "How often should you service your AC in Bali?" },
+  { slug: "ac-bali-bts-sizing-guide", title: "What size AC do you need? Bali sizing guide" },
+  { slug: "gree-air-conditioner-review", title: "Is Gree a good brand? An honest review" },
+];
 
 export default function HomePage() {
   return (
     <>
-      <Hero
-        h1="Bali's Trusted Air Conditioning Experts — Installation, Cleaning & Servicing Across the Island"
-        sub="Same-day AC service from a 24/7 team that actually knows Bali villas. Authorised installer for every major brand sold in Indonesia. Fixed quotes on WhatsApp in 15 minutes."
-      />
+      <HomeHero />
       <TrustStrip />
+      <BrandMarquee />
+      <CoolingStory />
+      <ServicesBento />
 
-      <section className="section">
-        <div className="container-prose grid items-start gap-10 md:grid-cols-[2fr_1fr]">
-          <div className="space-y-6">
+      <section className="pb-4">
+        <div className="container-prose">
+          <div className="max-w-[760px]">
             <QuickAnswer>
-              We are a Bali-based air conditioning company specialising in residential and commercial AC installation, cleaning, servicing and 24/7 repair. We are an authorised installer for {brandList} and cover Canggu, Seminyak, Uluwatu, Ubud, Sanur and 35+ other Bali areas same-day. Quotes are fixed-fee and sent on WhatsApp within 15 minutes.
+              We are a Bali-based air conditioning company for homes, villas and businesses: installation, cleaning, servicing and 24/7 repair. Authorised installer for {brandList}, covering Canggu, Seminyak, Uluwatu, Ubud, Sanur and 35+ other areas, usually same day. Quotes are fixed and sent on WhatsApp within 15 minutes.
             </QuickAnswer>
-            <p className="text-slate-700">
-              <strong>TL;DR:</strong> we install, clean, service and fix split, multi-split and ceiling-cassette air conditioners across Bali — usually same day in South Bali. Authorised installer for every major brand. WhatsApp <a className="font-semibold text-brand" href={waLink()}>{site.phone}</a> for a fixed quote.
-            </p>
           </div>
-          <QuoteForm />
         </div>
       </section>
 
-      <section className="section bg-brand-mist">
+      <CostEstimator />
+
+      <section className="section" aria-labelledby="bali-heading">
         <div className="container-prose">
-          <h2 className="h2">Our services</h2>
-          <p className="mt-2 max-w-2xl text-slate-700">From a single bedroom split clean to a beach-club VRF design — we handle every AC job in Bali, with a 12-month workmanship warranty on every install.</p>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map((s) => (
-              <Link key={s.slug} href={`/services/${s.slug}`} className="card transition hover:-translate-y-1 hover:shadow-card">
-                <div className="flex items-center gap-3">
-                  <div className="grid h-10 w-10 place-items-center rounded-full bg-brand/10 text-brand">{serviceIcons[s.slug]}</div>
-                  <h3 className="text-base font-semibold">{s.shortName}</h3>
+          <h2 id="bali-heading" className="h2 reveal max-w-[16ch]">Bali is hard on air conditioners</h2>
+          <div className="mt-14 space-y-20 sm:space-y-28">
+            {conditions.map((c, i) => (
+              <div key={c.title} className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
+                <div className={`reveal-clip overflow-hidden rounded-surface ${i % 2 === 1 ? "md:order-2" : ""}`}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={c.image.src} alt={c.image.alt} loading="lazy" width={960} height={1200} className="aspect-[5/4] w-full object-cover" />
                 </div>
-                <p className="mt-3 text-sm text-slate-600">{s.description.split(".")[0]}.</p>
-                <p className="mt-3 text-sm font-semibold text-brand">Get a quote →</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container-prose">
-          <h2 className="h2">Why Bali villa owners choose us</h2>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            <USP icon={<ShieldCheck size={22} aria-hidden />} title="Authorised partner" body="Direct relationship with Gree Indonesia and Daikin Indonesia — full manufacturer warranty registration on every install." />
-            <USP icon={<Sparkles size={22} aria-hidden />} title="Bali-specific expertise" body="Our techs spec for 80%+ humidity, salt-air corrosion on the Bukit, and the power-surge issues common in Ubud." />
-            <USP icon={<Users size={22} aria-hidden />} title="English-speaking team" body="Owner-friendly communication, photo reports for absentee owners, and one master account for villa managers." />
-            <USP icon={<ShieldCheck size={22} aria-hidden />} title="Fixed-fee quotes" body="No hourly meter running. Every job quoted upfront on WhatsApp before we send a tech." />
-          </div>
-        </div>
-      </section>
-
-      <section className="section bg-brand-mist">
-        <div className="container-prose">
-          <h2 className="h2">Brands we supply, install and service in Bali</h2>
-          <p className="mt-2 max-w-2xl text-slate-700">We are an authorised installer for every major air conditioning brand sold in Indonesia — full supply, install, manufacturer warranty registration and lifetime servicing.</p>
-          <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {brands.map((b) => (
-              <Link key={b.slug} href={`/brands/${b.slug}`} className="card transition hover:-translate-y-1">
-                <div className="flex items-center justify-between">
-                  <h3 className="h3">{b.name}</h3>
-                  {b.authorised ? <span className="pill">Authorised</span> : null}
+                <div className="reveal">
+                  <h3 className="text-3xl font-semibold tracking-[-0.03em] sm:text-4xl">{c.title}</h3>
+                  <p className="mt-5 max-w-[44ch] text-lg leading-relaxed text-black/65">{c.body}</p>
+                  <div className="mt-8 flex items-baseline gap-4 border-t border-black/[0.08] pt-6">
+                    <span className="readout shrink-0 whitespace-nowrap text-5xl font-medium text-brand">{c.stat}</span>
+                    <span className="text-sm text-black/55">{c.statLabel}</span>
+                  </div>
                 </div>
-                <p className="mt-3 text-sm text-slate-700">{b.tagline}</p>
-                <p className="mt-3 text-xs text-slate-500"><strong>Best for:</strong> {b.bestFor.split(".")[0]}.</p>
-                <p className="mt-3 text-sm font-semibold text-brand">See {b.name} range →</p>
-              </Link>
-            ))}
-          </div>
-          <div className="mt-6">
-            <Link href="/brands" className="btn-outline">Compare all brands</Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container-prose">
-          <h2 className="h2">Areas we cover across Bali</h2>
-          <p className="mt-2 max-w-2xl text-slate-700">We serve all 40+ major areas of Bali — same-day across South Bali, next-day in East and North Bali, and scheduled service for the Nusa islands by fast boat.</p>
-          <div className="mt-8 grid gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {areas.map((a) => (
-              <Link key={a.slug} href={`/areas/${a.slug}`} className="rounded-lg border border-slate-100 bg-white px-4 py-3 text-sm font-medium hover:border-brand hover:text-brand">
-                AC service {a.name}
-              </Link>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section bg-brand-mist">
-        <div className="container-prose">
-          <h2 className="h2">How it works</h2>
-          <ol className="mt-8 grid gap-6 md:grid-cols-3">
-            <Step n={1} title="WhatsApp us" body="Send a photo of the room or the unit, plus your area and the issue. We reply within 15 minutes with a fixed quote." />
-            <Step n={2} title="Free quote" body="No hidden callout fees. We agree the price and the time slot before any technician sets out." />
-            <Step n={3} title="Same-day service" body="Our two-technician crew arrives in a stocked van. Most jobs complete in 1–3 hours, with a printed warranty card." />
-          </ol>
-        </div>
-      </section>
+      <AreaTabs />
 
-      <section className="section bg-brand-mist">
-        <div className="container-prose">
-          <h2 className="h2">From the blog</h2>
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
-            <BlogTeaser slug="daikin-vs-gree-bali" title="Daikin vs Gree in Bali: Which AC Brand Is Best?" excerpt="Side-by-side: warranty, noise and tropical durability — which one wins for Bali villas." />
-            <BlogTeaser slug="how-often-to-service-ac-bali" title="How Often Should You Service Your AC in Bali?" excerpt="The complete servicing schedule for Bali, by climate zone and use case." />
-            <BlogTeaser slug="ac-bali-bts-sizing-guide" title="What Size AC Do You Need? Bali BTU Sizing Guide" excerpt="Why Bali sizing runs higher than Australia or Europe, with a room-by-room sizing chart." />
+      <section className="section" aria-labelledby="guides-heading">
+        <div className="container-prose grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
+          <div>
+            <h2 id="guides-heading" className="h2 reveal max-w-[12ch]">Straight answers from our technicians</h2>
+            <Link href="/blog" className="link-underline mt-6 inline-block text-sm font-medium text-brand">All guides</Link>
           </div>
-          <div className="mt-6"><Link href="/blog" className="btn-outline">All articles</Link></div>
+          <ul className="border-t border-black/[0.08]">
+            {guides.map((g) => (
+              <li key={g.slug} className="border-b border-black/[0.08]">
+                <Link href={`/blog/${g.slug}`} className="group flex min-h-[80px] items-center justify-between gap-6 py-6">
+                  <span className="text-xl font-medium tracking-[-0.02em] transition-colors duration-150 group-hover:text-brand sm:text-2xl">{g.title}</span>
+                  <ArrowRight size={22} className="shrink-0 text-brand transition-transform duration-200 ease-out group-hover:translate-x-1" aria-hidden />
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
@@ -148,35 +116,5 @@ export default function HomePage() {
       <CTASection />
       <LocalBusinessSchema url={site.url} />
     </>
-  );
-}
-
-function USP({ icon, title, body }: { icon: React.ReactNode; title: string; body: string }) {
-  return (
-    <div className="card">
-      <div className="grid h-10 w-10 place-items-center rounded-full bg-brand/10 text-brand">{icon}</div>
-      <h3 className="mt-3 text-base font-semibold">{title}</h3>
-      <p className="mt-2 text-sm text-slate-600">{body}</p>
-    </div>
-  );
-}
-
-function Step({ n, title, body }: { n: number; title: string; body: string }) {
-  return (
-    <li className="card">
-      <div className="grid h-10 w-10 place-items-center rounded-full bg-brand text-white font-bold">{n}</div>
-      <h3 className="mt-3 text-base font-semibold">{title}</h3>
-      <p className="mt-2 text-sm text-slate-600">{body}</p>
-    </li>
-  );
-}
-
-function BlogTeaser({ slug, title, excerpt }: { slug: string; title: string; excerpt: string }) {
-  return (
-    <Link href={`/blog/${slug}`} className="card block transition hover:-translate-y-1">
-      <h3 className="text-base font-semibold">{title}</h3>
-      <p className="mt-2 text-sm text-slate-600">{excerpt}</p>
-      <span className="mt-3 inline-block text-sm font-semibold text-brand">Read article →</span>
-    </Link>
   );
 }

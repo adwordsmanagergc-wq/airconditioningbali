@@ -5,8 +5,8 @@ import CTASection from "@/components/CTASection";
 import { brands } from "@/data/brands";
 
 export const metadata = {
-  title: "AC Brands Bali — Gree, Daikin, Panasonic, Mitsubishi, LG & Samsung",
-  description: "Compare every major air conditioning brand sold in Bali — Gree, Daikin, Panasonic, Mitsubishi Electric, LG and Samsung. Authorised installer for all six, with full supply, install and lifetime service.",
+  title: "AC Brands Bali: Gree, Daikin, Panasonic, Mitsubishi, LG & Samsung",
+  description: "Compare every major air conditioning brand sold in Bali, Gree, Daikin, Panasonic, Mitsubishi Electric, LG and Samsung. Authorised installer for all six, with full supply, install and lifetime service.",
   alternates: { canonical: "/brands" },
 };
 
@@ -16,12 +16,12 @@ export default function BrandsIndex() {
       <Breadcrumbs items={[{ label: "Brands", href: "/brands" }]} />
       <Hero
         h1="AC Brands We Supply, Install & Service in Bali"
-        sub="Authorised installer for every major brand sold in Indonesia — Gree, Daikin, Panasonic, Mitsubishi Electric, LG and Samsung. Manufacturer warranty registered under your name."
+        sub="Authorised installer for every major brand sold in Indonesia, Gree, Daikin, Panasonic, Mitsubishi Electric, LG and Samsung. Manufacturer warranty registered under your name."
       />
       <section className="section">
         <div className="container-prose">
           <h2 className="h2">All six brands at a glance</h2>
-          <p className="mt-2 max-w-3xl text-slate-700">Pick by use case — premium quietness, value, smart features, or longest warranty. Every brand is supplied as a brand-new sealed unit, registered under your name with the manufacturer, and backed by our 12-month installation workmanship warranty.</p>
+          <p className="mt-2 max-w-3xl text-slate-700">Pick by use case, premium quietness, value, smart features, or longest warranty. Every brand is supplied as a brand-new sealed unit, registered under your name with the manufacturer, and backed by our 12-month installation workmanship warranty.</p>
           <div className="mt-6 overflow-x-auto rounded-2xl border border-slate-100">
             <table className="min-w-full divide-y divide-slate-100 text-sm">
               <thead className="bg-brand/5 text-left">
@@ -81,6 +81,6 @@ function tierFor(slug: string) {
     case "gree-air-conditioning-bali":
       return "Value";
     default:
-      return "—";
+      return "n/a";
   }
 }

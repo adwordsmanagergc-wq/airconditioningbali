@@ -4,16 +4,16 @@ import { telLink, waLink } from "@/lib/site";
 
 export default function MobileBottomBar() {
   return (
-    <div className="fixed inset-x-0 bottom-0 z-30 grid grid-cols-3 border-t border-slate-200 bg-white sm:hidden" role="navigation" aria-label="Quick actions">
-      <a href={telLink} className="flex flex-col items-center gap-0.5 py-3 text-xs font-semibold text-brand" aria-label="Call us">
-        <Phone size={18} aria-hidden /> Call
+    <nav className="fixed inset-x-3 bottom-3 z-bar grid grid-cols-3 overflow-hidden rounded-full border border-black/10 bg-white/85 shadow-lift backdrop-blur-xl sm:hidden" aria-label="Quick actions">
+      <a href={telLink} className="flex min-h-[52px] items-center justify-center gap-1.5 text-sm font-medium text-brand-ink active:scale-[0.97]">
+        <Phone size={17} aria-hidden /> Call
       </a>
-      <a href={waLink()} className="flex flex-col items-center gap-0.5 py-3 text-xs font-semibold text-[#25D366]" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
-        <MessageCircle size={18} aria-hidden /> WhatsApp
+      <a href={waLink()} className="flex min-h-[52px] items-center justify-center gap-1.5 bg-brand text-sm font-medium text-white active:scale-[0.97]" target="_blank" rel="noopener noreferrer">
+        <MessageCircle size={17} aria-hidden /> WhatsApp
       </a>
-      <Link href="/contact" className="flex flex-col items-center gap-0.5 py-3 text-xs font-semibold text-brand-ink" aria-label="Get a quote">
-        <FileText size={18} aria-hidden /> Get Quote
+      <Link href="/contact" className="flex min-h-[52px] items-center justify-center gap-1.5 text-sm font-medium text-brand-ink active:scale-[0.97]">
+        <FileText size={17} aria-hidden /> Get a quote
       </Link>
-    </div>
+    </nav>
   );
 }

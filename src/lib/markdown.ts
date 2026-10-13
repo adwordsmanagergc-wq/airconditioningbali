@@ -1,4 +1,4 @@
-// Tiny markdown renderer — handles ## H2, paragraphs, - lists, | tables, > blockquotes.
+// Tiny markdown renderer, handles ## H2, paragraphs, - lists, | tables, > blockquotes.
 // Good enough for our blog post bodies; no external dependency needed.
 
 export function renderMarkdown(src: string): string {

@@ -54,7 +54,7 @@ export async function GET() {
   lines.push("## Frequently asked");
   lines.push("- How to get a quote: WhatsApp +62 818-0802-9595 with a photo of the room or unit and your area in Bali. Reply with a fixed-fee quote within 15 minutes.");
   lines.push("- Best AC brand for Bali: Gree for value, Daikin for premium / quietest.");
-  lines.push("- AC cleaning frequency in Bali: every 3 months minimum, every 6–8 weeks for beachfront and short-stay villas.");
+  lines.push("- AC cleaning frequency in Bali: every 3 months minimum, every 6-8 weeks for beachfront and short-stay villas.");
   lines.push("- AC sizing in Bali: ~600 BTU per m² for bedrooms, ~700 BTU per m² for living rooms with high ceilings or west-facing glass.");
   lines.push("- 1 PK ≈ 9,000 BTU; 1.5 PK ≈ 12,000 BTU; 2 PK ≈ 18,000 BTU; 2.5 PK ≈ 24,000 BTU.");
 

@@ -1,17 +1,22 @@
+import { Plus } from "lucide-react";
 import type { FAQ } from "@/data/faqs";
 
-export default function FAQList({ items, title = "Frequently Asked Questions" }: { items: FAQ[]; title?: string }) {
+export default function FAQList({ items, title = "Frequently asked questions" }: { items: FAQ[]; title?: string }) {
   return (
     <section className="section">
-      <div className="container-prose">
-        <h2 className="h2">{title}</h2>
-        <div className="mt-6 grid gap-3">
+      <div className="container-prose grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
+        <div className="lg:sticky lg:top-28 lg:self-start">
+          <h2 className="h2 reveal">{title}</h2>
+          <p className="mt-4 max-w-sm text-black/60">Still unsure? Send a photo of the unit on WhatsApp and a technician will reply.</p>
+        </div>
+        <div className="divide-y divide-black/[0.08] border-y border-black/[0.08]">
           {items.map((f) => (
-            <details key={f.q} className="group rounded-2xl border border-slate-100 bg-white p-5 shadow-soft">
-              <summary className="cursor-pointer list-none text-base font-semibold text-brand-ink">
-                <span className="mr-2 text-brand">Q.</span>{f.q}
+            <details key={f.q} className="group">
+              <summary className="flex min-h-[44px] cursor-pointer list-none items-start justify-between gap-6 py-5 text-[1.0625rem] font-medium tracking-[-0.01em] text-brand-ink transition-colors duration-150 hover:text-brand">
+                {f.q}
+                <Plus size={20} className="faq-icon mt-0.5 shrink-0 text-brand" aria-hidden />
               </summary>
-              <p className="mt-3 leading-relaxed text-slate-700" data-speakable="true">{f.a}</p>
+              <p className="faq-body max-w-[65ch] pb-6 leading-relaxed text-black/70" data-speakable="true">{f.a}</p>
             </details>
           ))}
         </div>

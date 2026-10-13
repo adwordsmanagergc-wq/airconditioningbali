@@ -5,8 +5,8 @@ import CTASection from "@/components/CTASection";
 import { posts } from "@/data/posts";
 
 export const metadata = {
-  title: "Bali AC Blog — Guides, Pricing & Maintenance Tips",
-  description: "Honest guides on air conditioning in Bali — Gree vs Daikin, installation costs, BTU sizing, maintenance schedules and how to lower your PLN bill. Written by working AC technicians.",
+  title: "Bali AC Blog: Guides, Pricing & Maintenance Tips",
+  description: "Honest guides on air conditioning in Bali, Gree vs Daikin, installation costs, BTU sizing, maintenance schedules and how to lower your PLN bill. Written by working AC technicians.",
   alternates: { canonical: "/blog" },
 };
 

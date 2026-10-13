@@ -5,8 +5,8 @@ import CTASection from "@/components/CTASection";
 import { areas } from "@/data/areas";
 
 export const metadata = {
-  title: "Areas We Cover — AC Services Across Bali",
-  description: "Air conditioning services across 35+ Bali areas — Canggu, Seminyak, Uluwatu, Ubud, Sanur, Denpasar, Nusa Dua and more. Same-day in South Bali, scheduled across the rest of the island.",
+  title: "Areas We Cover: AC Services Across Bali",
+  description: "Air conditioning services across 35+ Bali areas, Canggu, Seminyak, Uluwatu, Ubud, Sanur, Denpasar, Nusa Dua and more. Same-day in South Bali, scheduled across the rest of the island.",
   alternates: { canonical: "/areas" },
 };
 

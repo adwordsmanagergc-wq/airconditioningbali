@@ -32,20 +32,20 @@ export default function QuoteForm({ defaultArea, defaultService }: { defaultArea
   }
 
   return (
-    <form onSubmit={onSubmit} className="grid gap-3 rounded-2xl border border-slate-100 bg-white p-6 shadow-card">
-      <h3 className="h3">Get a free quote</h3>
-      <p className="text-sm text-slate-600">We reply on WhatsApp within 15 minutes during daylight hours.</p>
+    <form onSubmit={onSubmit} className="grid gap-4 rounded-surface bg-white p-6 shadow-card sm:p-7">
+      <h3 className="text-xl font-semibold tracking-[-0.02em]">Get a quote</h3>
+      <p className="-mt-2 text-sm text-black/60">We reply on WhatsApp within 15 minutes during daylight hours.</p>
       <label className="grid gap-1 text-sm">
-        <span className="font-medium">Name</span>
-        <input required name="name" className="rounded-lg border border-slate-200 px-3 py-2" placeholder="Your name" />
+        <span className="font-medium text-black/80">Name</span>
+        <input required name="name" className="rounded-xl border border-black/15 bg-cream/50 px-4 py-3 text-base text-brand-ink placeholder:text-black/50 transition-colors duration-150 hover:border-black/30 focus:border-brand focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand/20" placeholder="Your name" />
       </label>
       <label className="grid gap-1 text-sm">
-        <span className="font-medium">WhatsApp / Phone</span>
-        <input required name="phone" className="rounded-lg border border-slate-200 px-3 py-2" placeholder="+62 ..." />
+        <span className="font-medium text-black/80">WhatsApp / Phone</span>
+        <input required name="phone" className="rounded-xl border border-black/15 bg-cream/50 px-4 py-3 text-base text-brand-ink placeholder:text-black/50 transition-colors duration-150 hover:border-black/30 focus:border-brand focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand/20" placeholder="+62 ..." />
       </label>
       <label className="grid gap-1 text-sm">
-        <span className="font-medium">Area in Bali</span>
-        <select name="area" defaultValue={defaultArea ?? ""} className="rounded-lg border border-slate-200 px-3 py-2">
+        <span className="font-medium text-black/80">Area in Bali</span>
+        <select name="area" defaultValue={defaultArea ?? ""} className="rounded-xl border border-black/15 bg-cream/50 px-4 py-3 text-base text-brand-ink placeholder:text-black/50 transition-colors duration-150 hover:border-black/30 focus:border-brand focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand/20">
           <option value="">Select area</option>
           {areas.map((a) => (
             <option key={a.slug} value={a.name}>{a.name}</option>
@@ -53,8 +53,8 @@ export default function QuoteForm({ defaultArea, defaultService }: { defaultArea
         </select>
       </label>
       <label className="grid gap-1 text-sm">
-        <span className="font-medium">Service</span>
-        <select name="service" defaultValue={defaultService ?? ""} className="rounded-lg border border-slate-200 px-3 py-2">
+        <span className="font-medium text-black/80">Service</span>
+        <select name="service" defaultValue={defaultService ?? ""} className="rounded-xl border border-black/15 bg-cream/50 px-4 py-3 text-base text-brand-ink placeholder:text-black/50 transition-colors duration-150 hover:border-black/30 focus:border-brand focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand/20">
           <option value="">Select service</option>
           {services.map((s) => (
             <option key={s.slug} value={s.shortName}>{s.shortName}</option>
@@ -62,14 +62,14 @@ export default function QuoteForm({ defaultArea, defaultService }: { defaultArea
         </select>
       </label>
       <label className="grid gap-1 text-sm">
-        <span className="font-medium">Message</span>
-        <textarea name="message" rows={3} className="rounded-lg border border-slate-200 px-3 py-2" placeholder="Number of units, brand, what's happening..." />
+        <span className="font-medium text-black/80">Message</span>
+        <textarea name="message" rows={3} className="rounded-xl border border-black/15 bg-cream/50 px-4 py-3 text-base text-brand-ink placeholder:text-black/50 transition-colors duration-150 hover:border-black/30 focus:border-brand focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand/20" placeholder="Number of units, brand, what's happening..." />
       </label>
       <button type="submit" disabled={status === "sending"} className="btn-primary">
-        {status === "sending" ? "Sending..." : "Send Quote Request"}
+        {status === "sending" ? "Sending..." : "Get a quote"}
       </button>
-      {status === "ok" ? <p className="text-sm text-emerald-600">Thanks — we'll reply on WhatsApp shortly.</p> : null}
-      {error ? <p className="text-sm text-red-600">{error}</p> : null}
+      {status === "ok" ? <p className="text-sm text-emerald-700" role="status">Thanks. We will reply on WhatsApp shortly.</p> : null}
+      {error ? <p className="text-sm text-red-700" role="alert">{error}</p> : null}
     </form>
   );
 }

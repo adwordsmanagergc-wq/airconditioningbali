@@ -1,7 +1,7 @@
 export const site = {
   name: "Air Conditioning Bali",
   shortName: "Air Conditioning Bali",
-  tagline: "Bali's trusted air conditioning experts — installation, cleaning, and 24/7 servicing across the island.",
+  tagline: "Bali's trusted air conditioning experts, installation, cleaning, and 24/7 servicing across the island.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://baliairconditioning.com",
   phone: "+62 818-0802-9595",
   phoneE164: "+6281808029595",
@@ -15,7 +15,7 @@ export const site = {
     country: "ID",
   },
   geo: { lat: -8.6478, lng: 115.1385 },
-  hours: "Mon–Sun, 24-hour emergency response",
+  hours: "Mon-Sun, 24-hour emergency response",
   founded: "2015",
   installs: "10,000+",
   social: {

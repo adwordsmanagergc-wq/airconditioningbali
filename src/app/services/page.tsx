@@ -5,8 +5,8 @@ import CTASection from "@/components/CTASection";
 import { services } from "@/data/services";
 
 export const metadata = {
-  title: "AC Services Bali — Installation, Cleaning, Repair, Maintenance",
-  description: "Full air conditioning services across Bali — installation, new system supply, chemical cleaning, scheduled servicing, 24/7 repair, commercial AC and villa packages.",
+  title: "AC Services Bali: Installation, Cleaning, Repair, Maintenance",
+  description: "Full air conditioning services across Bali, installation, new system supply, chemical cleaning, scheduled servicing, 24/7 repair, commercial AC and villa packages.",
   alternates: { canonical: "/services" },
 };
 
